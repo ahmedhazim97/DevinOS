@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temp
+tmp/
+temp/
+
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Environment
+.env
+.env.*
+
+# Coverage
+coverage/
+
+# Build
+dist/
+build/
+
+# OS
+*.swp
+*.swo
