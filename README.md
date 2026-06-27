@@ -35,8 +35,8 @@ OG Image: https://github.com/ahmedhazim97/DevinOS/raw/main/assets/devinos-banner
 - [Core Components](#core-components)
 - [Engineering Constitution](#engineering-constitution)
 - [Priority Hierarchy](#priority-hierarchy)
-- [22 Core Skills](#22-core-skills)
-- [20 Immutable Rules](#20-immutable-rules)
+- [23 Core Skills](#23-core-skills)
+- [21 Immutable Rules](#21-immutable-rules)
 - [Self-Improving Knowledge Engine](#self-improving-knowledge-engine)
 - [Repository Structure](#repository-structure)
 - [Quality Gates](#quality-gates)
@@ -102,8 +102,8 @@ DevinOS Brain Structure
 |
 |-- ENGINEERING_CONSTITUTION.md    # The Supreme Law
 |-- .agents/
-|   |-- skills/                    # 22+ actionable capabilities
-|   |-- rules/                     # 20+ immutable principles
+|   |-- skills/                    # 23+ actionable capabilities
+|   |-- rules/                     # 21+ immutable principles
 |   |-- workflows/                 # End-to-end processes
 |   |-- playbooks/                 # Step-by-step guides
 |   |-- memory/                    # Growing knowledge base
@@ -154,7 +154,7 @@ No feature, optimization, or shortcut may violate this hierarchy.
 
 ---
 
-## 22 Core Skills
+## 23 Core Skills
 
 Every skill includes: Description, Purpose, Trigger, Context, Workflow, Examples (good & bad), Anti-patterns, Verification Checklist, and References.
 
@@ -189,12 +189,13 @@ Every skill includes: Description, Purpose, Trigger, Context, Workflow, Examples
 | [MCP Builder](.agents/skills/mcp/SKILL.md) | AI | Build Model Context Protocol servers |
 | [AI Engineering](.agents/skills/ai-engineering/SKILL.md) | AI | Build reliable systems leveraging AI |
 | [Knowledge Distillation](.agents/skills/knowledge-distillation/SKILL.md) | Meta | Extract reusable lessons from projects |
+| [Quality Audit](.agents/skills/quality-audit/SKILL.md) | Meta | Rigorously evaluate assets before acceptance |
 | [Incident Response](.agents/skills/incident-response/SKILL.md) | Ops | Systematic response to production incidents |
 | [Root Cause Analysis](.agents/skills/root-cause-analysis/SKILL.md) | Core | Determine fundamental causes, not symptoms |
 
 ---
 
-## 20 Immutable Rules
+## 21 Immutable Rules
 
 Located in `.agents/rules/`, each rule references the Constitution article it derives from and includes a verification checklist.
 
@@ -220,6 +221,7 @@ Located in `.agents/rules/`, each rule references the Constitution article it de
 | 18 | [Learning](.agents/rules/learning.md) | Extract knowledge, create assets |
 | 19 | [Deployment](.agents/rules/deployment.md) | Automated, blue-green, rollback |
 | 20 | [Monitoring](.agents/rules/monitoring.md) | Structured logs, actionable alerts |
+| 21 | [Quality](.agents/rules/quality.md) | 7-gate audit, scoring rubric, reviewer ethics |
 
 ---
 
@@ -290,8 +292,8 @@ DevinOS/
 ├── .gitignore                    # Cross-platform ignore rules
 │
 ├── .agents/
-│   ├── skills/                   # 22+ core skills
-│   ├── rules/                    # 20 foundational rules
+│   ├── skills/                   # 23+ core skills
+│   ├── rules/                    # 21 foundational rules
 │   ├── workflows/                # Reusable workflows
 │   ├── playbooks/                # Step-by-step guides
 │   ├── memory/                   # Knowledge base
