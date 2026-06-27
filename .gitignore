@@ -1,16 +1,19 @@
-# macOS
+﻿# macOS
 .DS_Store
 
 # Windows
 Thumbs.db
-Desktop.ini
+desktop.ini
 
 # IDEs
 .vscode/
 .idea/
+*.swp
+*.swo
 
 # Logs
 *.log
+logs/
 
 # Temp
 tmp/
@@ -19,6 +22,7 @@ temp/
 # Python
 __pycache__/
 *.pyc
+*.pyo
 
 # Node
 node_modules/
@@ -26,6 +30,7 @@ node_modules/
 # Environment
 .env
 .env.*
+!.env.example
 
 # Coverage
 coverage/
@@ -37,3 +42,9 @@ build/
 # OS
 *.swp
 *.swo
+*~
+
+# DevinOS specific
+.agents/memory/local/
+.agents/memory/cache/
+*.local.md
