@@ -85,13 +85,25 @@ cp -r DevinOS/.agents ./
 # Done. Devin will auto-discover and use the skills and rules.
 ```
 
-### 2. One-Command Install (Copy-Paste Ready)
+### 2. Global Install (IDE Integration)
 
+Installs directly into your IDE's global Rules & Skills folders — no project setup needed.
+
+**Windows (Windsurf / Cursor):**
+```powershell
+irm https://raw.githubusercontent.com/ahmedhazim97/DevinOS/main/install.ps1 | iex
+```
+
+**Mac / Linux (Windsurf / Cursor / Claude Code):**
 ```bash
 curl -sL https://raw.githubusercontent.com/ahmedhazim97/DevinOS/main/install.sh | bash
 ```
 
-> Devin will immediately recognize `.agents/skills/` and `.agents/rules/` directories and load them into context.
+The installer auto-detects your IDE and copies:
+- **21 Rules** → Global Rules folder
+- **23 Skills** → Global Skills folder
+
+> Restart your IDE to activate.
 
 ---
 
