@@ -1,5 +1,15 @@
-﻿<p align="center">
-  <img src="assets/devinos-banner.png" alt="DevinOS Logo" width="400">
+<!-- SEO Meta Tags for GitHub & Social Media -->
+<!--
+Title: DevinOS - The Ultimate Engineering Operating System for Devin & AI Coding Agents
+Description: DevinOS is the world's first open-source Engineering Operating System for AI coding agents. 22+ production-ready skills, 20+ immutable rules, workflows, playbooks, templates, and a self-improving knowledge engine. Free for personal and commercial use.
+Keywords: DevinOS, Devin AI, AI coding agent, engineering operating system, software engineering rules, AI prompt engineering, MCP server, Model Context Protocol, Devin skills, AI software development, automated code review, AI debugging, knowledge distillation, self-improving AI, LLM engineering, secure coding, CI/CD automation, Docker best practices, open source AI tools, AI agent framework
+Author: Ahmed Hazim
+License: MIT
+OG Image: https://github.com/ahmedhazim97/DevinOS/raw/main/assets/devinos-banner.png
+-->
+
+<p align="center">
+  <img src="assets/devinos-banner.png" alt="DevinOS - The Ultimate Engineering Operating System for Devin & AI Coding Agents" width="400">
 </p>
 
 <h1 align="center">DevinOS</h1>
@@ -38,7 +48,7 @@
 
 ## What is DevinOS?
 
-**DevinOS** is the world''s first open-source **Engineering Operating System** built specifically for [Devin](https://www.cognition.ai/devin) and AI coding agents. It is a comprehensive, modular, and self-improving knowledge base that turns every AI-assisted project into a learning opportunity.
+**DevinOS** is the world's first open-source **Engineering Operating System** built specifically for [Devin](https://www.cognition.ai/devin) and AI coding agents. It is a comprehensive, modular, and self-improving knowledge base that turns every AI-assisted project into a learning opportunity.
 
 Think of it as the "brain upgrade" for Devin: a structured collection of **rules**, **skills**, **workflows**, **playbooks**, **templates**, **memory**, and **prompts** that guide AI agents to write production-grade software with the discipline of a senior engineer.
 
@@ -254,7 +264,7 @@ Every Devin Project
 - Weekly community updates aggregate validated learnings
 - High-quality contributions from real projects are merged into the main branch
 - Every user who pulls the latest DevinOS gets the collective wisdom of thousands of projects
-- No code is ever shared automatically -- only generalized, anonymized patterns
+- No code is ever shared automatically — only generalized, anonymized patterns
 
 ### Privacy First
 
