@@ -31,7 +31,7 @@ rules() {
 }
 
 skills() {
-    echo ai-engineering api-design architecture backend ci-cd code-review database debugging docker documentation frontend git incident-response knowledge-distillation mcp performance planning quality-audit refactoring root-cause-analysis security testing verification ui-ux-pro-max design-resources-library
+    echo ai-engineering api-design architecture backend ci-cd code-review database debugging docker documentation frontend git incident-response knowledge-distillation mcp performance planning quality-audit refactoring root-cause-analysis scrollytelling security testing verification ui-ux-pro-max design-resources-library
 }
 
 prepare_agents() {
