@@ -32,7 +32,7 @@ function GetRules {
 }
 
 function GetSkills {
-    return @("ai-engineering","api-design","architecture","backend","ci-cd","code-review","database","debugging","docker","documentation","frontend","git","incident-response","knowledge-distillation","mcp","performance","planning","quality-audit","refactoring","root-cause-analysis","scrollytelling","security","testing","verification","ui-ux-pro-max","design-resources-library")
+    return @("ai-engineering","api-design","architecture","backend","ci-cd","code-review","database","debugging","docker","documentation","frontend","git","incident-response","knowledge-distillation","mcp","performance","planning","quality-audit","react-three-drei","refactoring","root-cause-analysis","scrollytelling","security","testing","verification","ui-ux-pro-max","design-resources-library")
 }
 
 function PrepareAgents {

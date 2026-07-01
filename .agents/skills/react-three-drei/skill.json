@@ -1,0 +1,9 @@
+{
+  "name": "react-three-drei",
+  "displayName": "React Three Drei",
+  "description": "Use @react-three/drei helpers and abstractions with @react-three/fiber to build performant, accessible, and maintainable 3D scenes in React.",
+  "version": "1.0.0",
+  "author": "Devin-IQ",
+  "license": "MIT",
+  "platforms": ["windsurf"]
+}

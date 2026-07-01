@@ -1,7 +1,7 @@
 ﻿<!-- SEO Meta Tags for GitHub & Social Media -->
 <!--
 Title: DevinOS - The Ultimate Engineering Operating System for Devin & AI Coding Agents
-Description: DevinOS is the world's first open-source Engineering Operating System for AI coding agents. 26 production-ready skills, 21 immutable rules, workflows, playbooks, templates, and a self-improving knowledge engine. Free for personal and commercial use.
+Description: DevinOS is the world's first open-source Engineering Operating System for AI coding agents. 27 production-ready skills, 21 immutable rules, workflows, playbooks, templates, and a self-improving knowledge engine. Free for personal and commercial use.
 Keywords: DevinOS, Devin AI, AI coding agent, engineering operating system, software engineering rules, AI prompt engineering, MCP server, Model Context Protocol, Devin skills, AI software development, automated code review, AI debugging, knowledge distillation, self-improving AI, LLM engineering, secure coding, CI/CD automation, Docker best practices, open source AI tools, AI agent framework
 Author: Ahmed Hazim
 License: MIT
@@ -35,7 +35,7 @@ OG Image: https://github.com/Devin-IQ/DevinOS/raw/main/assets/devinos-banner.png
 - [Core Components](#core-components)
 - [Engineering Constitution](#engineering-constitution)
 - [Priority Hierarchy](#priority-hierarchy)
-- [26 Skills](#26-skills)
+- [27 Skills](#27-skills)
 - [21 Immutable Rules](#21-immutable-rules)
 - [Self-Improving Knowledge Engine](#self-improving-knowledge-engine)
 - [Repository Structure](#repository-structure)
@@ -104,7 +104,7 @@ curl -sL https://raw.githubusercontent.com/Devin-IQ/DevinOS/main/install.sh | ba
 
 The installer auto-detects your IDE and copies:
 - **21 Rules** → Global Rules folder
-- **26 Skills** → Global Skills folder
+- **27 Skills** → Global Skills folder
 
 > Restart your IDE to activate.
 
@@ -117,7 +117,7 @@ DevinOS Brain Structure
 |
 |-- ENGINEERING_CONSTITUTION.md    # The Supreme Law
 |-- .agents/
-|   |-- skills/                    # 26 actionable capabilities
+|   |-- skills/                    # 27 actionable capabilities
 |   |-- rules/                     # 21+ immutable principles
 |   |-- workflows/                 # End-to-end processes
 |   |-- playbooks/                 # Step-by-step guides
@@ -169,7 +169,7 @@ No feature, optimization, or shortcut may violate this hierarchy.
 
 ---
 
-## 26 Skills
+## 27 Skills
 
 Every skill includes frontmatter with `name` and `description`, then Description, Purpose, Trigger, Context, Workflow, Examples, Anti-patterns, Verification Checklist, and References.
 
@@ -200,6 +200,7 @@ Every skill includes frontmatter with `name` and `description`, then Description
 | [UI/UX Pro Max](.agents/skills/ui-ux-pro-max/SKILL.md) | Frontend Design | Advanced UI/UX design intelligence, palettes, typography, accessibility, charts, and design systems |
 | [Design Resources Library](.agents/skills/design-resources-library/SKILL.md) | Frontend Design | Curated design systems, component libraries, and UI resources |
 | [Scrollytelling](.agents/skills/scrollytelling/SKILL.md) | Frontend Engineering | Engineer scroll-driven interactive websites with GSAP, WebGL, and smooth scroll |
+| [React Three Drei](.agents/skills/react-three-drei/SKILL.md) | Frontend Engineering | Build 3D React scenes with @react-three/drei helpers and abstractions |
 
 
 ### AI & Operations
@@ -311,7 +312,7 @@ DevinOS/
 ├── .gitignore                    # Cross-platform ignore rules
 │
 ├── .agents/
-│   ├── skills/                   # 26 skills
+│   ├── skills/                   # 27 skills
 │   ├── rules/                    # 21 foundational rules
 │   ├── workflows/                # Reusable workflows
 │   ├── playbooks/                # Step-by-step guides
