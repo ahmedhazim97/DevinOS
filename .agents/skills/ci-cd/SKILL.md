@@ -1,5 +1,9 @@
-﻿# Skill: CI/CD Pipeline Design
+﻿---
+name: ci-cd
+description: "Design and maintain automated continuous integration and delivery pipelines."
+---
 
+# Skill: CI/CD Pipeline Design
 > Category: DevOps
 > Priority: High
 
@@ -92,3 +96,8 @@ script:
 
 - [Continuous Delivery by Jez Humble](https://continuousdelivery.com/)
 - [GitLab CI Best Practices](https://docs.gitlab.com/ee/ci/best-practices/)
+
+
+---
+
+

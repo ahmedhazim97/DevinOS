@@ -1,5 +1,9 @@
-﻿# Skill: AI Engineering
+﻿---
+name: ai-engineering
+description: "Build reliable systems that leverage AI while maintaining correctness and transparency."
+---
 
+# Skill: AI Engineering
 > Category: AI Engineering
 > Priority: High
 
@@ -88,3 +92,8 @@ def review(code):
 
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
 - [OpenAI Best Practices](https://platform.openai.com/docs/guides/prompt-engineering)
+
+
+---
+
+

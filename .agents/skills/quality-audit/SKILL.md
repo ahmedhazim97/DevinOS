@@ -1,5 +1,9 @@
-# Skill: Quality Audit
+﻿---
+name: quality-audit
+description: "Rigorously evaluate any DevinOS asset (skill, rule, workflow, playbook, template, prompt, or memory) against production-quality standards before acceptance."
+---
 
+# Skill: Quality Audit
 > Category: Meta-Learning
 > Priority: Critical
 
@@ -34,7 +38,7 @@ Use this skill when:
 
 Run through all 7 gates in order. Each gate has a **Pass/Fail** decision.
 
-### Gate 1 — Purpose & Clarity
+### Gate 1 â€” Purpose & Clarity
 
 The asset must answer three questions immediately:
 
@@ -44,17 +48,17 @@ The asset must answer three questions immediately:
 | Who should use it? | Defined audience (junior, senior, specific role) |
 | When is it finished? | Measurable success criteria |
 
-**Scoring (1–10):**
-- 9–10: Purpose is obvious in first 10 seconds of reading
-- 7–8: Purpose exists but needs minor rewording
-- 5–6: Purpose is buried or vague
-- 1–4: Purpose is missing or confusing → **Reject**
+**Scoring (1â€“10):**
+- 9â€“10: Purpose is obvious in first 10 seconds of reading
+- 7â€“8: Purpose exists but needs minor rewording
+- 5â€“6: Purpose is buried or vague
+- 1â€“4: Purpose is missing or confusing â†’ **Reject**
 
 **Action if Fail:** Rewrite the Description and Purpose sections.
 
 ---
 
-### Gate 2 — Structure & Completeness
+### Gate 2 â€” Structure & Completeness
 
 Verify the asset follows DevinOS standard structure.
 
@@ -72,37 +76,37 @@ Verify the asset follows DevinOS standard structure.
 
 **Automated Check:** Run `scripts/validate-asset.py` to detect missing sections.
 
-**Scoring (1–10):**
-- 9–10: All sections present, well-organized, consistent formatting
-- 7–8: Minor missing sections or formatting inconsistencies
-- 5–6: Significant gaps in structure
-- 1–4: Critical sections missing → **Reject**
+**Scoring (1â€“10):**
+- 9â€“10: All sections present, well-organized, consistent formatting
+- 7â€“8: Minor missing sections or formatting inconsistencies
+- 5â€“6: Significant gaps in structure
+- 1â€“4: Critical sections missing â†’ **Reject**
 
 **Action if Fail:** Generate missing sections using the appropriate template.
 
 ---
 
-### Gate 3 — Engineering Quality
+### Gate 3 â€” Engineering Quality
 
 Evaluate the asset on 7 dimensions:
 
-| Dimension | Excellent (9–10) | Good (7–8) | Weak (5–6) | Unacceptable (1–4) |
+| Dimension | Excellent (9â€“10) | Good (7â€“8) | Weak (5â€“6) | Unacceptable (1â€“4) |
 |-----------|------------------|------------|------------|--------------------|
 | **Clarity** | Zero ambiguity | Minor rewording needed | Reader must guess | Contradictory statements |
 | **Consistency** | Follows all conventions | Minor deviation | Inconsistent formatting | Violates core conventions |
 | **Maintainability** | Easy to update | Minor coupling | Brittle structure | Impossible to modify |
-| **Scalability** | Works for 1–10,000 scale | Works for team scale | Works for individual | Fails at any scale |
+| **Scalability** | Works for 1â€“10,000 scale | Works for team scale | Works for individual | Fails at any scale |
 | **Reusability** | Framework-agnostic | Minor assumptions | Framework-specific | Hardcoded details |
 | **Reliability** | Proven patterns | Industry standard | Unverified approach | Risky or unsafe |
 | **Correctness** | Logically sound | Minor edge cases | Significant gaps | Contains errors |
 
-**Gate 3 Score:** Average of 7 dimensions (must be ≥ 7.0 to pass)
+**Gate 3 Score:** Average of 7 dimensions (must be â‰¥ 7.0 to pass)
 
 **Action if Fail:** Rewrite weak sections or add missing depth.
 
 ---
 
-### Gate 4 — AI Understandability
+### Gate 4 â€” AI Understandability
 
 The asset must be deterministic for an AI agent. Check for ambiguity.
 
@@ -115,17 +119,17 @@ The asset must be deterministic for an AI agent. Check for ambiguity.
 | Are edge cases covered? | Yes |
 | Does it contain placeholders that require human context? | No |
 
-**Scoring (1–10):**
-- 9–10: AI can execute without human intervention
-- 7–8: Minor clarifications needed
-- 5–6: Multiple interpretations possible
-- 1–4: High ambiguity → **Reject**
+**Scoring (1â€“10):**
+- 9â€“10: AI can execute without human intervention
+- 7â€“8: Minor clarifications needed
+- 5â€“6: Multiple interpretations possible
+- 1â€“4: High ambiguity â†’ **Reject**
 
 **Action if Fail:** Add explicit constraints, remove vague language, specify output format.
 
 ---
 
-### Gate 5 — Uniqueness (Duplicate Detection)
+### Gate 5 â€” Uniqueness (Duplicate Detection)
 
 Search the entire repository for overlapping content.
 
@@ -134,29 +138,29 @@ Search the entire repository for overlapping content.
 2. Identify any asset that solves the same problem
 3. Compare scope, approach, and audience
 4. Decision:
-   - **Unique** → Proceed
-   - **Overlap < 30%** → Add cross-reference link
-   - **Overlap 30–70%** → Merge into stronger asset
-   - **Overlap > 70%** → Reject as duplicate
+   - **Unique** â†’ Proceed
+   - **Overlap < 30%** â†’ Add cross-reference link
+   - **Overlap 30â€“70%** â†’ Merge into stronger asset
+   - **Overlap > 70%** â†’ Reject as duplicate
 
-**Scoring (1–10):**
-- 9–10: Completely novel contribution
-- 7–8: Minor overlap, cross-reference added
-- 5–6: Significant overlap, merging required
-- 1–4: Near-complete duplicate → **Reject**
+**Scoring (1â€“10):**
+- 9â€“10: Completely novel contribution
+- 7â€“8: Minor overlap, cross-reference added
+- 5â€“6: Significant overlap, merging required
+- 1â€“4: Near-complete duplicate â†’ **Reject**
 
 **Action if Fail:** Merge with existing asset or reject.
 
 ---
 
-### Gate 6 — Generalization & Safety
+### Gate 6 â€” Generalization & Safety
 
 **Generalization Check:**
-- If content contains project-specific details → Remove or generalize
-- If framework-specific → Mark as framework-specific in title
-- If contains assumptions → State them explicitly
+- If content contains project-specific details â†’ Remove or generalize
+- If framework-specific â†’ Mark as framework-specific in title
+- If contains assumptions â†’ State them explicitly
 
-**Safety Check — Reject if any exist:**
+**Safety Check â€” Reject if any exist:**
 - [ ] Hardcoded secrets, passwords, or API keys
 - [ ] Destructive commands without warnings
 - [ ] Blind automation instructions
@@ -164,24 +168,24 @@ Search the entire repository for overlapping content.
 - [ ] Instructions that could cause data loss
 - [ ] Security advice that violates OWASP
 
-**Scoring (1–10):**
-- 9–10: Fully generalized and safe
-- 7–8: Minor project-specific details
-- 5–6: Framework-specific without marking
-- 1–4: Unsafe or overly specific → **Reject**
+**Scoring (1â€“10):**
+- 9â€“10: Fully generalized and safe
+- 7â€“8: Minor project-specific details
+- 5â€“6: Framework-specific without marking
+- 1â€“4: Unsafe or overly specific â†’ **Reject**
 
 **Action if Fail:** Generalize content, add safety warnings, remove unsafe instructions.
 
 ---
 
-### Gate 7 — Examples & Stress Test
+### Gate 7 â€” Examples & Stress Test
 
 **Examples (Minimum 2 required):**
 - **Good Example:** Clear, correct, follows the asset perfectly
 - **Bad Example:** Common mistake, with explanation of why it fails
 - **Excellent Example:** (Optional) Real-world scenario with context
 
-**Stress Test — Mentally simulate these scenarios:**
+**Stress Test â€” Mentally simulate these scenarios:**
 1. Simple case (hello-world complexity)
 2. Complex case (enterprise-scale, multiple dependencies)
 3. Edge case (empty input, max load, malformed data)
@@ -202,11 +206,11 @@ For each scenario, ask: "Would this asset work here?"
 | Multi-language | Asset is language-agnostic or clearly scoped |
 | Monorepo | Asset handles cross-package concerns |
 
-**Scoring (1–10):**
-- 9–10: Passes all 7 scenarios
-- 7–8: Fails 1 scenario, documented limitation
-- 5–6: Fails 2–3 scenarios
-- 1–4: Fails >3 scenarios → **Reject**
+**Scoring (1â€“10):**
+- 9â€“10: Passes all 7 scenarios
+- 7â€“8: Fails 1 scenario, documented limitation
+- 5â€“6: Fails 2â€“3 scenarios
+- 1â€“4: Fails >3 scenarios â†’ **Reject**
 
 **Action if Fail:** Add examples for failed scenarios, document limitations.
 
@@ -231,15 +235,15 @@ For each scenario, ask: "Would this asset work here?"
 
 | Overall Score | Decision | Action |
 |---------------|----------|--------|
-| 90–100 | ✅ **Accept** | Merge with confidence |
-| 75–89 | ⚠️ **Needs Revision** | List improvements, re-review after fixes |
-| 60–74 | ⚠️ **Major Revision** | Rewrite significant portions |
-| < 60 | ❌ **Reject** | Do not merge. Provide detailed feedback. |
+| 90â€“100 | âœ… **Accept** | Merge with confidence |
+| 75â€“89 | âš ï¸ **Needs Revision** | List improvements, re-review after fixes |
+| 60â€“74 | âš ï¸ **Major Revision** | Rewrite significant portions |
+| < 60 | âŒ **Reject** | Do not merge. Provide detailed feedback. |
 
 ### Sub-Score Requirements
 - No individual gate below **5.0** (even if overall is high)
-- Gate 6 (Safety) must be **≥ 7.0** always
-- Gate 3 (Engineering) must be **≥ 6.0**
+- Gate 6 (Safety) must be **â‰¥ 7.0** always
+- Gate 3 (Engineering) must be **â‰¥ 6.0**
 
 ---
 
@@ -293,7 +297,7 @@ For each scenario, ask: "Would this asset work here?"
 
 ```
 Asset: api-design/SKILL.md
-Overall Score: 92/100 ✅ Accept
+Overall Score: 92/100 âœ… Accept
 
 Strengths:
 - Clear purpose and well-defined audience
@@ -314,7 +318,7 @@ Recommended Improvements:
 
 ```
 Asset: some-skill/SKILL.md
-Overall Score: 45/100 ❌ Reject
+Overall Score: 45/100 âŒ Reject
 
 The skill is okay I guess. It has some good ideas.
 Just fix the examples and it should be fine.
@@ -326,12 +330,12 @@ Just fix the examples and it should be fine.
 
 ## Anti-patterns
 
-- **Rubber-stamp approval** — Accepting because it "looks fine" without gate scoring
-- **Gate skipping** — Approving without running all 7 gates
-- **Vague feedback** — Comments like "improve this" without specifics
-- **Friendly bias** — Approving because you know the contributor
-- **Ignoring safety** — Letting Gate 6 fail because the rest looks good
-- **No automation** — Manual review without running `validate-asset.py`
+- **Rubber-stamp approval** â€” Accepting because it "looks fine" without gate scoring
+- **Gate skipping** â€” Approving without running all 7 gates
+- **Vague feedback** â€” Comments like "improve this" without specifics
+- **Friendly bias** â€” Approving because you know the contributor
+- **Ignoring safety** â€” Letting Gate 6 fail because the rest looks good
+- **No automation** â€” Manual review without running `validate-asset.py`
 
 ---
 
@@ -342,14 +346,19 @@ Just fix the examples and it should be fine.
 - [ ] Did you search for duplicate content?
 - [ ] Did you score each gate honestly (no inflation)?
 - [ ] Did you write a complete Final Report?
-- [ ] Did you check Gate 6 (Safety) ≥ 7.0?
+- [ ] Did you check Gate 6 (Safety) â‰¥ 7.0?
 - [ ] Did you verify no individual gate < 5.0?
 
 ---
 
 ## References
 
-- [ENGINEERING_CONSTITUTION.md](../../../../ENGINEERING_CONSTITUTION.md) — Article VIII: Quality Gates
-- [CONTRIBUTING.md](../../../../CONTRIBUTING.md) — Contribution standards
-- [Quality Rule](../../../../.agents/rules/quality.md) — Detailed quality standards
-- [Code Review Skill](../../../../.agents/skills/code-review/SKILL.md) — Review techniques
+- [ENGINEERING_CONSTITUTION.md](../../../../ENGINEERING_CONSTITUTION.md) â€” Article VIII: Quality Gates
+- [CONTRIBUTING.md](../../../../CONTRIBUTING.md) â€” Contribution standards
+- [Quality Rule](../../../../.agents/rules/quality.md) â€” Detailed quality standards
+- [Code Review Skill](../../../../.agents/skills/code-review/SKILL.md) â€” Review techniques
+
+
+---
+
+

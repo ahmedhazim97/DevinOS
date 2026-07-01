@@ -1,5 +1,9 @@
-﻿# Skill: Architecture Review
+﻿---
+name: architecture
+description: "Evaluate and improve software architecture decisions to ensure scalability, maintainability, and correctness."
+---
 
+# Skill: Architecture Review
 > Category: Core Engineering
 > Priority: Critical
 
@@ -83,3 +87,8 @@ Let us use microservices because they are modern.
 
 - [Martin Fowler - Architecture Patterns](https://martinfowler.com/architecture/)
 - [The Software Architecture Elevator](https://architectelevator.com/)
+
+
+---
+
+

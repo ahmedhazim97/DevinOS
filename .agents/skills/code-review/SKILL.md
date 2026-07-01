@@ -1,5 +1,9 @@
-﻿# Skill: Code Review
+﻿---
+name: code-review
+description: "Evaluate code changes for correctness, security, maintainability, and alignment with team standards."
+---
 
+# Skill: Code Review
 > Category: Core Engineering
 > Priority: Critical
 
@@ -76,3 +80,8 @@ This is wrong. Fix it.
 ## References
 
 - [Google Code Review Guidelines](https://google.github.io/eng-practices/review/)
+
+
+---
+
+

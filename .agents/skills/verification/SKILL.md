@@ -1,5 +1,9 @@
-﻿# Skill: Verification
+﻿---
+name: verification
+description: "Rigorous validation that a task is truly complete and correct."
+---
 
+# Skill: Verification
 > Category: Core Engineering
 > Priority: Critical
 
@@ -86,3 +90,8 @@ Task done. It works on my machine.
 
 - [Definition of Done by Scrum.org](https://www.scrum.org/resources/blog/done-understanding-definition-done)
 - [Checklist Manifesto by Atul Gawande](https://atulgawande.com/book/the-checklist-manifesto/)
+
+
+---
+
+

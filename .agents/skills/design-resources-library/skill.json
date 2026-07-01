@@ -1,0 +1,9 @@
+{
+  "name": "design-resources-library",
+  "displayName": "Design Resources Library",
+  "description": "Curated design systems, component libraries, and UI resources for building professional interfaces. Companion to ui-ux-pro-max for implementation guidance.",
+  "version": "1.0.0",
+  "author": "Devin-IQ",
+  "license": "MIT",
+  "platforms": ["windsurf"]
+}

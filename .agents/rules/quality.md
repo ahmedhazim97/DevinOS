@@ -1,4 +1,4 @@
-# Rule: Quality Standards
+﻿# Rule: Quality Standards
 
 > Derived from [ENGINEERING_CONSTITUTION.md](../../ENGINEERING_CONSTITUTION.md) Article VIII.
 
@@ -167,3 +167,4 @@ This checks:
 - [ ] Did you write a Final Report?
 - [ ] Did you justify every score with specific examples?
 - [ ] Would you use this asset in your own production project?
+

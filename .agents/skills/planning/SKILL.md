@@ -1,5 +1,9 @@
-﻿# Skill: Planning
+﻿---
+name: planning
+description: "Systematic approach to breaking down complex engineering tasks into small, verifiable, and sequenced steps."
+---
 
+# Skill: Planning
 > Category: Core Engineering
 > Priority: Critical
 
@@ -83,3 +87,8 @@ Step 1: Build the feature (3 days)
 
 - [User Story Mapping](https://www.jpattonassociates.com/story-mapping/)
 - [Shape Up by Basecamp](https://basecamp.com/shapeup)
+
+
+---
+
+

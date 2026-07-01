@@ -1,5 +1,9 @@
-﻿# Skill: API Design
+﻿---
+name: api-design
+description: "Design robust, consistent, and developer-friendly APIs."
+---
 
+# Skill: API Design
 > Category: Backend Engineering
 > Priority: High
 
@@ -82,3 +86,8 @@ GET /api/users/123/orders/getAllPendingOrders
 
 - [Microsoft REST API Guidelines](https://github.com/microsoft/api-guidelines)
 - [Stripe API Design Guide](https://stripe.com/blog/markdown-structured-data)
+
+
+---
+
+

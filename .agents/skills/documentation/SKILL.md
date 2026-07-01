@@ -1,5 +1,9 @@
-﻿# Skill: Documentation
+﻿---
+name: documentation
+description: "Write clear, accurate, and useful documentation."
+---
 
+# Skill: Documentation
 > Category: Core Engineering
 > Priority: High
 
@@ -93,3 +97,8 @@ POST /api/users - creates user
 
 - [Diataxis Framework](https://diataxis.fr/)
 - [Google Technical Writing](https://developers.google.com/tech-writing)
+
+
+---
+
+

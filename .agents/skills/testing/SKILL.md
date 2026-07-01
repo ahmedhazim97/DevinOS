@@ -1,5 +1,9 @@
-﻿# Skill: Testing
+﻿---
+name: testing
+description: "Write comprehensive, deterministic, and maintainable tests."
+---
 
+# Skill: Testing
 > Category: Core Engineering
 > Priority: Critical
 
@@ -100,3 +104,8 @@ test("user", () => {
 
 - [Test Driven Development by Kent Beck](https://www.oreilly.com/library/view/test-driven-development/0321146530/)
 - [Google Testing Blog](https://testing.googleblog.com/)
+
+
+---
+
+

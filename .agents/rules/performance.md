@@ -18,3 +18,4 @@
 - [ ] Have you measured before optimizing?
 - [ ] Is the optimization targeted at a proven bottleneck?
 - [ ] Did you verify the improvement with benchmarks?
+

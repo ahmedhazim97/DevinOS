@@ -1,5 +1,9 @@
-﻿# Skill: Performance Optimization
+﻿---
+name: performance
+description: "Measure, analyze, and improve system performance with evidence."
+---
 
+# Skill: Performance Optimization
 > Category: Core Engineering
 > Priority: High
 
@@ -88,3 +92,8 @@ The API is slow. Let us add Redis caching everywhere.
 
 - [Systems Performance by Brendan Gregg](http://www.brendangregg.com/sysperfbook.html)
 - [High Performance Browser Networking](https://hpbn.co/)
+
+
+---
+
+

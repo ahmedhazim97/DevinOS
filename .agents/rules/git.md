@@ -31,3 +31,4 @@ Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 - [ ] Are commits small and focused?
 - [ ] Do commit messages explain the why?
 - [ ] Are there any secrets in the diff?
+

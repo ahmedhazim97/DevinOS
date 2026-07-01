@@ -1,0 +1,12 @@
+Library,Type,Best For,Stack,License,Homepage
+shadcn/ui,Component Registry,Modern accessible apps; copy-paste customization; Tailwind-first,React Next.js Vue Svelte,MIT,https://ui.shadcn.com
+Ant Design,Design Language + React Library,Enterprise dashboards; admin panels; data-heavy apps,React,MIT,https://ant.design
+Material UI,React Component Library,Google Material Design; rapid React prototyping; enterprise,React,MIT,https://mui.com/material-ui
+Radix UI,Headless Primitives,Custom accessible components; design systems,React,MIT,https://www.radix-ui.com
+Headless UI,Headless Primitives,Tailwind-based accessible components,React Vue,MIT,https://headlessui.dev
+DaisyUI,CSS Component Library,Fast Tailwind prototypes; class-based components,HTML React Vue,MIT,https://daisyui.com
+Chakra UI,React Component Library,Developer-friendly APIs; accessible defaults,React,MIT,https://chakra-ui.com
+Mantine,React Component Library,Full-featured apps; hooks + components,React,MIT,https://mantine.dev
+HeroUI,React UI Library,Modern Next.js apps; Tailwind + Framer Motion,React,MIT,https://www.heroui.com
+Arco Design,Design Language + React Library,Enterprise tools; ByteDance-style admin,React,MIT,https://arco.design
+Semi Design,React UI Library,Enterprise design systems; content platforms,React,MIT,https://semi.design

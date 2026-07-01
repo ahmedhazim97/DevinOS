@@ -1,34 +1,18 @@
-$base = "https://raw.githubusercontent.com/ahmedhazim97/DevinOS/main/.agents"
-$out  = "c:\Users\Ahmed Hazim\CascadeProjects\DevinOS\.agents"
+﻿$repo = "Devin-IQ/DevinOS"
+$archiveUrl = "https://github.com/$repo/archive/refs/heads/main.zip"
+$out = "c:\Users\Ahmed Hazim\CascadeProjects\DevinOS\.agents"
+$tempDir = Join-Path $env:TEMP "devinos-agents-$(Get-Random)"
+$archive = Join-Path $tempDir "devinos.zip"
 
-$rules = @(
-  "ai.md","api.md","architecture.md","communication.md","database.md",
-  "debugging.md","deployment.md","documentation.md","engineering.md",
-  "git.md","learning.md","mcp.md","memory.md","monitoring.md",
-  "performance.md","planning.md","quality.md","review.md","security.md",
-  "testing.md","ux.md"
-)
+New-Item -ItemType Directory -Force -Path $tempDir | Out-Null
+Invoke-WebRequest -Uri $archiveUrl -OutFile $archive -UseBasicParsing
+Expand-Archive -Path $archive -DestinationPath $tempDir -Force
+$root = Get-ChildItem -Path $tempDir -Directory | Where-Object { $_.Name -like "DevinOS-*" } | Select-Object -First 1
+if (-not $root) { throw "Failed to locate extracted DevinOS archive" }
+$agents = Join-Path $root.FullName ".agents"
+if (-not (Test-Path $agents)) { throw "Archive does not contain .agents" }
+if (Test-Path $out) { Remove-Item $out -Recurse -Force }
+Copy-Item -Path $agents -Destination $out -Recurse -Force
+Remove-Item $tempDir -Recurse -Force -ErrorAction SilentlyContinue
+Write-Host "Done! All .agents/ files restored locally from $repo."
 
-$skills = @(
-  "ai-engineering","api-design","architecture","backend","ci-cd",
-  "code-review","database","debugging","docker","documentation",
-  "frontend","git","incident-response","knowledge-distillation",
-  "mcp","performance","planning","quality-audit","refactoring",
-  "root-cause-analysis","security","testing","verification"
-)
-
-New-Item -ItemType Directory -Force -Path "$out\rules" | Out-Null
-New-Item -ItemType Directory -Force -Path "$out\skills" | Out-Null
-
-foreach ($r in $rules) {
-  Invoke-WebRequest -Uri "$base/rules/$r" -OutFile "$out\rules\$r"
-  Write-Host "Downloaded rule: $r"
-}
-
-foreach ($s in $skills) {
-  New-Item -ItemType Directory -Force -Path "$out\skills\$s" | Out-Null
-  Invoke-WebRequest -Uri "$base/skills/$s/SKILL.md" -OutFile "$out\skills\$s\SKILL.md"
-  Write-Host "Downloaded skill: $s"
-}
-
-Write-Host "`nDone! All .agents/ files restored locally."

@@ -1,5 +1,9 @@
-﻿# Skill: Refactoring
+﻿---
+name: refactoring
+description: "Improve code structure without changing external behavior."
+---
 
+# Skill: Refactoring
 > Category: Core Engineering
 > Priority: Critical
 
@@ -89,3 +93,8 @@ function processOrder(order) {
 
 - [Refactoring by Martin Fowler](https://refactoring.com/)
 - [Refactoring Guru](https://refactoring.guru/)
+
+
+---
+
+

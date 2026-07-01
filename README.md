@@ -1,11 +1,11 @@
-<!-- SEO Meta Tags for GitHub & Social Media -->
+﻿<!-- SEO Meta Tags for GitHub & Social Media -->
 <!--
 Title: DevinOS - The Ultimate Engineering Operating System for Devin & AI Coding Agents
-Description: DevinOS is the world's first open-source Engineering Operating System for AI coding agents. 22+ production-ready skills, 20+ immutable rules, workflows, playbooks, templates, and a self-improving knowledge engine. Free for personal and commercial use.
+Description: DevinOS is the world's first open-source Engineering Operating System for AI coding agents. 24 production-ready skills, 21 immutable rules, workflows, playbooks, templates, and a self-improving knowledge engine. Free for personal and commercial use.
 Keywords: DevinOS, Devin AI, AI coding agent, engineering operating system, software engineering rules, AI prompt engineering, MCP server, Model Context Protocol, Devin skills, AI software development, automated code review, AI debugging, knowledge distillation, self-improving AI, LLM engineering, secure coding, CI/CD automation, Docker best practices, open source AI tools, AI agent framework
 Author: Ahmed Hazim
 License: MIT
-OG Image: https://github.com/ahmedhazim97/DevinOS/raw/main/assets/devinos-banner.png
+OG Image: https://github.com/Devin-IQ/DevinOS/raw/main/assets/devinos-banner.png
 -->
 
 <p align="center">
@@ -19,8 +19,8 @@ OG Image: https://github.com/ahmedhazim97/DevinOS/raw/main/assets/devinos-banner
 </p>
 
 <p align="center">
-  <a href="https://github.com/ahmedhazim97/DevinOS/commits/main"><img src="https://img.shields.io/github/last-commit/ahmedhazim97/DevinOS?style=flat-square" alt="Last Commit"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/ahmedhazim97/DevinOS?style=flat-square&color=blue" alt="License"></a>
+  <a href="https://github.com/Devin-IQ/DevinOS/commits/main"><img src="https://img.shields.io/github/last-commit/Devin-IQ/DevinOS?style=flat-square" alt="Last Commit"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/Devin-IQ/DevinOS?style=flat-square&color=blue" alt="License"></a>
   <a href="ROADMAP.md"><img src="https://img.shields.io/badge/roadmap-v0.1%20foundation-orange?style=flat-square" alt="Roadmap"></a>
   <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen?style=flat-square" alt="Contributions Welcome"></a>
 </p>
@@ -35,7 +35,7 @@ OG Image: https://github.com/ahmedhazim97/DevinOS/raw/main/assets/devinos-banner
 - [Core Components](#core-components)
 - [Engineering Constitution](#engineering-constitution)
 - [Priority Hierarchy](#priority-hierarchy)
-- [23 Core Skills](#23-core-skills)
+- [24 Skills](#23-core-skills)
 - [21 Immutable Rules](#21-immutable-rules)
 - [Self-Improving Knowledge Engine](#self-improving-knowledge-engine)
 - [Repository Structure](#repository-structure)
@@ -77,10 +77,13 @@ Unlike generic prompt libraries, DevinOS is:
 
 ```bash
 # Clone DevinOS
-git clone https://github.com/ahmedhazim97/DevinOS.git
+git clone https://github.com/Devin-IQ/DevinOS.git
+
+# Enter your project folder
+cd your-project
 
 # Copy the brain into your project
-cp -r DevinOS/.agents ./
+cp -r ../DevinOS/.agents ./
 
 # Done. Devin will auto-discover and use the skills and rules.
 ```
@@ -91,17 +94,17 @@ Installs directly into your IDE's global Rules & Skills folders — no project s
 
 **Windows (Windsurf / Cursor):**
 ```powershell
-irm https://raw.githubusercontent.com/ahmedhazim97/DevinOS/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/Devin-IQ/DevinOS/main/install.ps1 | iex
 ```
 
 **Mac / Linux (Windsurf / Cursor / Claude Code):**
 ```bash
-curl -sL https://raw.githubusercontent.com/ahmedhazim97/DevinOS/main/install.sh | bash
+curl -sL https://raw.githubusercontent.com/Devin-IQ/DevinOS/main/install.sh | bash
 ```
 
 The installer auto-detects your IDE and copies:
 - **21 Rules** → Global Rules folder
-- **23 Skills** → Global Skills folder
+- **25 Skills** → Global Skills folder
 
 > Restart your IDE to activate.
 
@@ -114,7 +117,7 @@ DevinOS Brain Structure
 |
 |-- ENGINEERING_CONSTITUTION.md    # The Supreme Law
 |-- .agents/
-|   |-- skills/                    # 23+ actionable capabilities
+|   |-- skills/                    # 25 actionable capabilities
 |   |-- rules/                     # 21+ immutable principles
 |   |-- workflows/                 # End-to-end processes
 |   |-- playbooks/                 # Step-by-step guides
@@ -166,9 +169,9 @@ No feature, optimization, or shortcut may violate this hierarchy.
 
 ---
 
-## 23 Core Skills
+## 25 Skills
 
-Every skill includes: Description, Purpose, Trigger, Context, Workflow, Examples (good & bad), Anti-patterns, Verification Checklist, and References.
+Every skill includes frontmatter with `name` and `description`, then Description, Purpose, Trigger, Context, Workflow, Examples, Anti-patterns, Verification Checklist, and References.
 
 ### Core Engineering
 | Skill | Category | Purpose |
@@ -194,6 +197,8 @@ Every skill includes: Description, Purpose, Trigger, Context, Workflow, Examples
 | [API Design](.agents/skills/api-design/SKILL.md) | Backend | Build robust, consistent, developer-friendly APIs |
 | [Frontend Engineering](.agents/skills/frontend/SKILL.md) | Frontend | Responsive, accessible, performant UIs |
 | [Backend Engineering](.agents/skills/backend/SKILL.md) | Backend | Reliable, scalable, secure server-side systems |
+| [UI/UX Pro Max](.agents/skills/ui-ux-pro-max/SKILL.md) | Frontend Design | Advanced UI/UX design intelligence, palettes, typography, accessibility, charts, and design systems |
+| [Design Resources Library](.agents/skills/design-resources-library/SKILL.md) | Frontend Design | Curated design systems, component libraries, and UI resources |
 
 ### AI & Operations
 | Skill | Category | Purpose |
@@ -304,7 +309,7 @@ DevinOS/
 ├── .gitignore                    # Cross-platform ignore rules
 │
 ├── .agents/
-│   ├── skills/                   # 23+ core skills
+│   ├── skills/                   # 24 skills
 │   ├── rules/                    # 21 foundational rules
 │   ├── workflows/                # Reusable workflows
 │   ├── playbooks/                # Step-by-step guides
@@ -382,3 +387,5 @@ DevinOS, Devin AI, AI coding agent, engineering operating system, software engin
   <strong>Build with purpose. Verify with rigor. Improve continuously.</strong><br>
   <em>Made for Devin. Built by the community.</em>
 </p>
+
+

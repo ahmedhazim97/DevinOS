@@ -19,3 +19,4 @@
 - [ ] Does it meet WCAG 2.1 AA?
 - [ ] Are Core Web Vitals optimized?
 - [ ] Are errors handled gracefully?
+

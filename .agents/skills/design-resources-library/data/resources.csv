@@ -1,0 +1,119 @@
+Category,Resource,URL,Use Case
+UI Graphics,UI Design Daily,https://uidesigndaily.com/,Daily UI inspiration and components
+UI Graphics,Undraw,https://undraw.co/,Open-source illustrations
+UI Graphics,Drawkit,https://www.drawkit.io/,Illustrations and icons
+UI Graphics,Manypixels,https://www.manypixels.co/gallery/,Free illustrations gallery
+UI Graphics,Humaaans,https://www.humaaans.com/,Mix-and-match human illustrations
+UI Graphics,Open Doodles,https://www.opendoodles.com/,Hand-drawn illustrations
+UI Graphics,Open Peeps,https://www.openpeeps.com/,Hand-drawn people illustrations
+UI Graphics,Blush,https://blush.design/,Customizable illustrations
+UI Graphics,Hero Patterns,http://www.heropatterns.com/,SVG background patterns
+UI Graphics,Pixeltrue Illustrations,https://www.pixeltrue.com/illustrations,Free illustrations
+UI Graphics,fffuel,https://www.fffuel.co,SVG generators and backgrounds
+UI Graphics,Creatica,https://creatica.app/backgrounds,AI-generated backgrounds
+Fonts,Google Fonts,https://fonts.google.com/,Free web fonts
+Fonts,Fontshare,https://www.fontshare.com/,Quality free fonts
+Fonts,Font Squirrel,https://www.fontsquirrel.com/,Commercial-use free fonts
+Fonts,FontPair,https://fontpair.co/,Font pairing suggestions
+Fonts,Fontjoy,https://fontjoy.com/,AI font pairing
+Fonts,Google Webfonts Helper,https://google-webfonts-helper.herokuapp.com/fonts,Self-host Google Fonts
+Colors,Coolors,https://coolors.co/,Palette generator
+Colors,UI Colors,https://uicolors.app/create,Tailwind palette generator
+Colors,Color Hunt,https://colorhunt.co/,Curated palettes
+Colors,Happy Hues,https://www.happyhues.co/,Color palettes with context
+Colors,Adobe Color,https://color.adobe.com/create,Color wheel and palette tools
+Colors,Material Color Tool,https://material.io/resources/color/,Material Design palettes
+Colors,ColorSpace,https://mycolor.space/,Palette generator from one color
+Colors,Web Gradients,https://webgradients.com/,CSS gradients
+Colors,Gradient Hunt,https://gradienthunt.com/,Gradient palettes
+Icons,Lucide,https://lucide.dev/,Modern consistent icons (used by shadcn)
+Icons,Heroicons,https://heroicons.dev/,SVG icons by Tailwind Labs
+Icons,Phosphor Icons,https://phosphoricons.com/,Flexible icon family
+Icons,Feather Icons,https://feathericons.com/,Minimal clean icons
+Icons,Tabler Icons,https://tabler-icons.io/,Large free icon set
+Icons,Radix Icons,https://www.radix-ui.com/icons,Crisp 15x15 icons
+Icons,Material Design Icons,https://materialdesignicons.com/,Material-style icons
+Icons,Simple Icons,https://simpleicons.org/,Brand SVG icons
+Icons,Font Awesome,https://fontawesome.com/,Comprehensive icon library
+Icons,Iconify,https://iconify.design/,Universal icon framework
+Logos,SVG Porn,https://svgporn.com/,SVG brand logos
+Logos,World Vector Logo,https://worldvectorlogo.com/,Brand logos
+Logos,Vector Logo Zone,https://www.vectorlogo.zone/,SVG logos
+Mockups,Placeit,https://placeit.net/,Product mockups
+Mockups,Smartmockups,https://smartmockups.com/,Easy mockup generator
+Mockups,Mockup World,https://mockupworld.co/,Free mockups
+Templates,HTML5 UP,https://html5up.net/,Free HTML templates
+Templates,Tailwind Templates,https://tailwindtemplates.io/,Tailwind templates
+Templates,ThemeWagon,https://themewagon.com/,Free HTML templates
+Templates,Start Bootstrap,https://startbootstrap.com/,Bootstrap templates
+CSS Frameworks,Tailwind CSS,https://tailwindcss.com/,Utility-first CSS framework
+CSS Frameworks,Bootstrap,https://getbootstrap.com/,Popular CSS framework
+CSS Frameworks,Bulma,https://bulma.io/,Modern CSS framework
+CSS Frameworks,Open Props,https://open-props.style/,CSS custom properties
+UI Components,shadcn/ui,https://ui.shadcn.com/,Copy-paste accessible components
+UI Components,Flowbite,https://flowbite.com/,Tailwind components
+UI Components,HyperUI,https://www.hyperui.dev/,Free Tailwind components
+UI Components,Tailwind UI,https://tailwindui.com/,Official Tailwind components
+UI Components,daisyUI,https://daisyui.com/,Tailwind component classes
+UI Components,Float UI,https://floatui.com/,Tailwind components
+React Libraries,shadcn/ui,https://ui.shadcn.com/,Component registry
+React Libraries,Material UI,https://mui.com/material-ui/,Material Design for React
+React Libraries,Ant Design,https://ant.design/,Enterprise React library
+React Libraries,Chakra UI,https://chakra-ui.com/,Accessible React components
+React Libraries,Mantine,https://mantine.dev/,Full React components + hooks
+React Libraries,HeroUI,https://www.heroui.com/,Modern Next.js UI library
+React Libraries,React Aria,https://react-spectrum.adobe.com/react-aria/index.html,Accessible primitives
+React Libraries,Radix UI,https://www.radix-ui.com/,Headless accessible primitives
+React Libraries,React Spectrum,https://react-spectrum.adobe.com/react-spectrum/index.html,Adobe accessible components
+React Libraries,Blueprint,https://blueprintjs.com/,Palantir React toolkit
+React Libraries,Elastic UI,https://elastic.github.io/eui/,Elastic design system
+React Libraries,React Bootstrap,https://react-bootstrap.github.io/,Bootstrap for React
+Vue Libraries,Element Plus,https://element-plus.org/,Vue 3 component library
+Vue Libraries,Naive UI,https://www.naiveui.com/,Vue 3 component library
+Vue Libraries,Ant Design Vue,https://www.antdv.com/,Ant Design for Vue
+Vue Libraries,Vue Material,https://vuematerial.io/,Material Design for Vue
+Vue Libraries,Vuetify,https://vuetifyjs.com/,Material Design for Vue
+Angular Libraries,Angular Material,https://material.angular.io/,Material Design for Angular
+Angular Libraries,NG-ZORRO,https://ng.ant.design/,Ant Design for Angular
+Angular Libraries,NGX Bootstrap,https://valor-software.com/ngx-bootstrap/,Bootstrap for Angular
+Svelte Libraries,Svelte Material UI,https://sveltematerialui.com/,Material for Svelte
+Svelte Libraries,Flowbite Svelte,https://flowbite-svelte.com/,Tailwind for Svelte
+Design Systems,Material Design,https://material.io/,Google design system
+Design Systems,Ant Design,https://ant.design/,Enterprise design system
+Design Systems,Carbon Design System,https://www.carbondesignsystem.com/,IBM design system
+Design Systems,Fluent UI,https://developer.microsoft.com/en-us/fluentui/,Microsoft design system
+Design Systems,Polaris,https://polaris.shopify.com/,Shopify design system
+Design Systems,Primer,https://primer.style/,GitHub design system
+Design Systems,Spectrum,https://spectrum.adobe.com/,Adobe design system
+Design Systems,Apple Human Interface,https://developer.apple.com/design/human-interface-guidelines/,Apple design guidelines
+Design Systems,Material Design 3,https://m3.material.io/,Latest Material Design
+Design Inspiration,Dribbble,https://dribbble.com/,Design community
+Design Inspiration,Behance,https://www.behance.net/,Creative portfolios
+Design Inspiration,Awwwards,https://www.awwwards.com/,Website awards
+Design Inspiration,Land Book,https://land-book.com/,Landing page inspiration
+Design Inspiration,Page Collective,https://pagecollective.com/,Landing page gallery
+Design Inspiration,Minimal Gallery,https://minimal.gallery/,Minimal web design
+Charts,Recharts,http://recharts.org/en-US/,React charts
+Charts,Chart.js,https://www.chartjs.org/,Canvas charts
+Charts,D3.js,https://d3js.org/,Data visualization
+Charts,Apache ECharts,https://echarts.apache.org/,Powerful charts
+Charts,Victory,https://formidable.com/open-source/victory/,React chart components
+Charts,MUI X Charts,https://mui.com/x/react-charts/,MUI charts
+Charts,Ant Design Charts,https://charts.ant.design/,Ant charts
+Animations,Framer Motion,https://www.framer.com/motion/,React animations
+Animations,GSAP,https://greensock.com/gsap/,Professional web animation
+Animations,Lottie,https://lottiefiles.com/,JSON animations
+Animations,React Spring,https://www.react-spring.io/,React spring animations
+AI Tools,AI Colors,https://aicolors.co/,AI color palette generator
+AI Tools,Galileo AI,https://www.usegalileo.ai/,AI UI design
+AI Tools,Uizard,https://uizard.io/,AI UI design tool
+AI Tools,Magician for Figma,https://magician.design/,AI Figma plugin
+Stock Photos,Unsplash,https://unsplash.com/,Free stock photos
+Stock Photos,Pexels,https://www.pexels.com/,Free stock photos
+Stock Photos,Pixabay,https://pixabay.com/,Free stock images
+Image Compression,TinyPNG,https://tinypng.com/,PNG/JPG compression
+Image Compression,Squoosh,https://squoosh.app/,Browser image compression
+Accessibility,WebAIM Contrast Checker,https://webaim.org/resources/contrastchecker/,WCAG contrast checker
+Accessibility,Stark,https://www.getstark.co/,Accessibility plugin
+Accessibility,axe DevTools,https://www.deque.com/axe/devtools/,Accessibility testing
+Accessibility,whocanuse,https://whocanuse.com/,Color blindness simulator

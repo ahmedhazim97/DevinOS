@@ -20,3 +20,4 @@
 - [ ] Are inputs validated?
 - [ ] Are responses structured?
 - [ ] Are errors handled gracefully?
+

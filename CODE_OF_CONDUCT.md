@@ -24,3 +24,4 @@ Instances of abusive behavior may be reported to the maintainers. All complaints
 ## Scope
 
 This code of conduct applies within all project spaces, including issues, pull requests, discussions, and external channels when representing DevinOS.
+

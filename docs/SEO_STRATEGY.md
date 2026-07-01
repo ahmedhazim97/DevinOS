@@ -1,4 +1,4 @@
-# DevinOS SEO Strategy
+﻿# DevinOS SEO Strategy
 
 > How to make DevinOS the #1 search result for AI engineering knowledge worldwide.
 
@@ -76,7 +76,7 @@
 
 3. **Description:**
    ```
-   DevinOS: The Ultimate Engineering Operating System for Devin & AI Coding Agents. 22+ skills, 20+ rules, workflows, playbooks, templates, and a self-improving knowledge engine. Open source.
+   DevinOS: The Ultimate Engineering Operating System for Devin & AI Coding Agents. 24+ skills, 20+ rules, workflows, playbooks, templates, and a self-improving knowledge engine. Open source.
    ```
 
 4. **Website:** Link to GitHub Pages when ready (or keep GitHub repo)
@@ -165,7 +165,7 @@ CONTRIBUTING.md        -> Community signal (target: "contribute to DevinOS")
 
 ### Twitter/X
 - Handle: @DevinOS (claim if available)
-- Bio: "The Ultimate Engineering Operating System for Devin & AI Coding Agents | Open Source | 22+ Skills | 20+ Rules"
+- Bio: "The Ultimate Engineering Operating System for Devin & AI Coding Agents | Open Source | 24+ skills | 20+ Rules"
 - Pin: Launch tweet thread
 - Hashtags: #DevinOS #AICoding #Engineering #OpenSource #DevinAI
 
@@ -340,19 +340,19 @@ For when DevinOS gets a website (GitHub Pages or custom domain):
 ### Open Graph Tags
 ```html
 <meta property="og:title" content="DevinOS - The Ultimate Engineering Operating System for AI Agents">
-<meta property="og:description" content="22+ skills, 20+ rules, workflows, playbooks, and a self-improving knowledge engine. Open source.">
-<meta property="og:image" content="https://github.com/ahmedhazim97/DevinOS/raw/main/assets/devinos-banner.png">
-<meta property="og:url" content="https://github.com/ahmedhazim97/DevinOS">
+<meta property="og:description" content="24+ skills, 20+ rules, workflows, playbooks, and a self-improving knowledge engine. Open source.">
+<meta property="og:image" content="https://github.com/Devin-IQ/DevinOS/raw/main/assets/devinos-banner.png">
+<meta property="og:url" content="https://github.com/Devin-IQ/DevinOS">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="DevinOS">
 <meta name="twitter:description" content="The engineering brain upgrade for Devin and AI coding agents.">
-<meta name="twitter:image" content="https://github.com/ahmedhazim97/DevinOS/raw/main/assets/devinos-banner.png">
+<meta name="twitter:image" content="https://github.com/Devin-IQ/DevinOS/raw/main/assets/devinos-banner.png">
 ```
 
 ### Meta Description
 ```html
-<meta name="description" content="DevinOS: The Ultimate Engineering Operating System for Devin & AI Coding Agents. 22+ production-ready skills, 20+ immutable rules, workflows, playbooks, templates, and a self-improving knowledge engine. Open source.">
+<meta name="description" content="DevinOS: The Ultimate Engineering Operating System for Devin & AI Coding Agents. 24 production-ready skills, 21 immutable rules, workflows, playbooks, templates, and a self-improving knowledge engine. Open source.">
 ```
 
 ---
@@ -386,7 +386,7 @@ For when DevinOS gets a website (GitHub Pages or custom domain):
 
 ---
 
-**[START BUILDING] ->** [github.com/ahmedhazim97/DevinOS](https://github.com/ahmedhazim97/DevinOS)
+**[START BUILDING] ->** [github.com/Devin-IQ/DevinOS](https://github.com/Devin-IQ/DevinOS)
 
 **[JOIN COMMUNITY] ->** (Discord/Forum link coming with v1.0)
 
@@ -443,3 +443,5 @@ For when DevinOS gets a website (GitHub Pages or custom domain):
 ---
 
 **EOF** (but the journey continues...)
+
+

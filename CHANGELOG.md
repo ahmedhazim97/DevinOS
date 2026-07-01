@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - README with vision and roadmap
 - .gitignore for cross-platform development
 - ENGINEERING_CONSTITUTION.md - the supreme law of DevinOS
-- 20 foundational rules in `.agents/rules/`
+- 21 foundational rules in `.agents/rules/`
 - 20 core skills in `.agents/skills/`
 - Directory scaffolding for all planned components
+

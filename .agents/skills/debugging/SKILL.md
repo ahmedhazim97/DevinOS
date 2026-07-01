@@ -1,5 +1,9 @@
-﻿# Skill: Structured Debugging
+﻿---
+name: debugging
+description: "A systematic, evidence-based approach to finding and fixing bugs."
+---
 
+# Skill: Structured Debugging
 > Category: Core Engineering
 > Priority: Critical
 
@@ -80,3 +84,8 @@ Fix: Added try-catch to swallow the error.
 ## References
 
 - [Debug It! by Paul Butcher](https://pragprog.com/titles/pbdp/debug-it/)
+
+
+---
+
+

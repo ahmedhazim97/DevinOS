@@ -1,5 +1,9 @@
-﻿# Skill: Git Workflow
+﻿---
+name: git
+description: "Professional version control practices for clean, collaborative development."
+---
 
+# Skill: Git Workflow
 > Category: Core Engineering
 > Priority: High
 
@@ -91,3 +95,8 @@ really final
 
 - [Conventional Commits](https://www.conventionalcommits.org/)
 - [Git Best Practices](https://sethrobertson.github.io/GitBestPractices/)
+
+
+---
+
+

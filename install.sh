@@ -1,12 +1,15 @@
-#!/usr/bin/env bash
+﻿#!/usr/bin/env bash
 # DevinOS Auto-Installer for Mac/Linux
 # Supports: Windsurf, Cursor, Claude Code
-# Usage: curl -sL https://raw.githubusercontent.com/ahmedhazim97/DevinOS/main/install.sh | bash
+# Usage: curl -sL https://raw.githubusercontent.com/Devin-IQ/DevinOS/main/install.sh | bash
 
 set -e
 
-REPO_URL="https://raw.githubusercontent.com/ahmedhazim97/DevinOS/main/.agents"
+REPO="Devin-IQ/DevinOS"
+REPO_URL="https://github.com/$REPO"
+ARCHIVE_URL="https://github.com/$REPO/archive/refs/heads/main.tar.gz"
 TMP_DIR="$(mktemp -d /tmp/devinos-install-XXXXXX)"
+AGENTS_SOURCE=""
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
@@ -23,25 +26,65 @@ success() { echo -e "${GREEN}  ✓ $1${NC}"; }
 info()    { echo -e "${YELLOW}  → $1${NC}"; }
 error()   { echo -e "${RED}  ✗ $1${NC}"; }
 
-download() {
-    local url="$1"
-    local out="$2"
-    curl -fsSL "$url" -o "$out" 2>/dev/null || wget -q "$url" -O "$out" 2>/dev/null || return 1
+rules() {
+    echo ai api architecture communication database debugging deployment documentation engineering git learning mcp memory monitoring performance planning quality review security testing ux
+}
+
+skills() {
+    echo ai-engineering api-design architecture backend ci-cd code-review database debugging docker documentation frontend git incident-response knowledge-distillation mcp performance planning quality-audit refactoring root-cause-analysis security testing verification ui-ux-pro-max design-resources-library
+}
+
+prepare_agents() {
+    local archive="$TMP_DIR/devinos.tar.gz"
+    info "Downloading $REPO"
+    curl -fsSL "$ARCHIVE_URL" -o "$archive" 2>/dev/null || wget -q "$ARCHIVE_URL" -O "$archive"
+    tar -xzf "$archive" -C "$TMP_DIR"
+    local root
+    root="$(find "$TMP_DIR" -maxdepth 1 -type d -name 'DevinOS-*' | head -n 1)"
+    if [ -z "$root" ]; then
+        error "Failed to locate extracted DevinOS archive"
+        exit 1
+    fi
+    AGENTS_SOURCE="$root/.agents"
+    if [ ! -d "$AGENTS_SOURCE" ]; then
+        error "Archive does not contain .agents"
+        exit 1
+    fi
+}
+
+copy_skill() {
+    local skill="$1"
+    local skills_dir="$2"
+    local src="$AGENTS_SOURCE/skills/$skill"
+    local dst="$skills_dir/$skill"
+    if [ ! -d "$src" ]; then
+        error "Missing skill: $skill"
+        return
+    fi
+    rm -rf "$dst"
+    cp -R "$src" "$dst"
+    if [ -f "$dst/SKILL.md" ] && [ ! -f "$dst/skill.json" ]; then
+        local description
+        description="$(grep -m 1 '^description:' "$dst/SKILL.md" | sed 's/^description:[[:space:]]*//' | sed 's/^"//' | sed 's/"$//')"
+        [ -z "$description" ] && description="DevinOS skill: $skill"
+        printf '{"name":"%s","displayName":"%s","description":"%s","version":"1.0.0","author":"Devin-IQ","platforms":["windsurf"]}\n' "$skill" "$skill" "$description" > "$dst/skill.json"
+    fi
+    success "Skill: $skill"
 }
 
 install_windsurf() {
     header "Installing for Windsurf"
     local base="$HOME/.codeium/windsurf"
     local memories="$base/memories"
+    local rules_dir="$base/rules"
     local skills_dir="$base/skills"
-    mkdir -p "$memories" "$skills_dir"
+    mkdir -p "$memories" "$rules_dir" "$skills_dir"
 
-    # Rules → global_rules.md
     local rules_file="$memories/global_rules.md"
     {
         echo "# DevinOS Global Rules"
         echo ""
-        echo "> Source: https://github.com/ahmedhazim97/DevinOS"
+        echo "> Source: $REPO_URL"
         echo "> Date: $(date +%Y-%m-%d)"
         echo "> Total Rules: 21"
         echo ""
@@ -49,38 +92,21 @@ install_windsurf() {
         echo ""
     } > "$rules_file"
 
-    local rules=(ai api architecture communication database debugging deployment documentation engineering git learning mcp memory monitoring performance planning quality review security testing ux)
-    for r in "${rules[@]}"; do
-        local tmp="$TMP_DIR/rules/$r.md"
-        if download "$REPO_URL/rules/$r.md" "$tmp"; then
-            cat "$tmp" >> "$rules_file"
+    for r in $(rules); do
+        local src="$AGENTS_SOURCE/rules/$r.md"
+        if [ -f "$src" ]; then
+            cp "$src" "$rules_dir/$r.md"
+            cat "$src" >> "$rules_file"
             echo "" >> "$rules_file"
             echo "---" >> "$rules_file"
             echo "" >> "$rules_file"
             success "Rule: $r"
         else
-            error "Failed: $r"
+            error "Missing rule: $r"
         fi
     done
 
-    # Skills
-    local skills=(ai-engineering api-design architecture backend ci-cd code-review database debugging docker documentation frontend git incident-response knowledge-distillation mcp performance planning quality-audit refactoring root-cause-analysis security testing verification)
-    for s in "${skills[@]}"; do
-        local dst="$skills_dir/$s"
-        mkdir -p "$dst"
-        local tmp="$TMP_DIR/skills/$s/SKILL.md"
-        mkdir -p "$(dirname "$tmp")"
-        if download "$REPO_URL/skills/$s/SKILL.md" "$tmp"; then
-            cp "$tmp" "$dst/SKILL.md"
-            local title
-            title=$(head -1 "$tmp" | sed 's/# Skill: //')
-            printf '{"name":"%s","displayName":"%s","description":"DevinOS skill: %s","version":"1.0.0","author":"ahmedhazim97","platforms":["windsurf"]}\n' "$s" "$title" "$title" > "$dst/skill.json"
-            success "Skill: $s"
-        else
-            error "Failed: $s"
-        fi
-    done
-
+    for s in $(skills); do copy_skill "$s" "$skills_dir"; done
     echo -e "${GREEN}\n🎉 Windsurf installation complete! Restart Windsurf to activate.${NC}"
 }
 
@@ -90,117 +116,59 @@ install_cursor() {
     local rules_dir="$cursor_dir/rules"
     local skills_dir="$cursor_dir/skills"
 
-    # macOS alternative path
-    if [[ "$OSTYPE" == "darwin"* ]]; then
-        if [ -d "$HOME/Library/Application Support/Cursor" ]; then
-            cursor_dir="$HOME/Library/Application Support/Cursor/User"
-            rules_dir="$cursor_dir/rules"
-            skills_dir="$cursor_dir/skills"
-        fi
+    if [[ "$OSTYPE" == "darwin"* ]] && [ -d "$HOME/Library/Application Support/Cursor" ]; then
+        cursor_dir="$HOME/Library/Application Support/Cursor/User"
+        rules_dir="$cursor_dir/rules"
+        skills_dir="$cursor_dir/skills"
     fi
 
     mkdir -p "$rules_dir" "$skills_dir"
-
-    local rules=(ai api architecture communication database debugging deployment documentation engineering git learning mcp memory monitoring performance planning quality review security testing ux)
-    for r in "${rules[@]}"; do
-        local tmp="$TMP_DIR/rules/$r.md"
-        if download "$REPO_URL/rules/$r.md" "$tmp"; then
-            cp "$tmp" "$rules_dir/$r.md"
-            success "Rule: $r"
-        else
-            error "Failed: $r"
-        fi
-    done
-
-    # Global .cursorrules
     {
         echo "# DevinOS Rules"
         echo ""
-        echo "> Source: https://github.com/ahmedhazim97/DevinOS"
+        echo "> Source: $REPO_URL"
         echo ""
     } > "$HOME/.cursorrules"
-    for r in "${rules[@]}"; do
-        local tmp="$TMP_DIR/rules/$r.md"
-        [ -f "$tmp" ] && cat "$tmp" >> "$HOME/.cursorrules" && echo "" >> "$HOME/.cursorrules" && echo "---" >> "$HOME/.cursorrules" && echo "" >> "$HOME/.cursorrules"
-    done
-    success "Global .cursorrules written"
 
-    local skills=(ai-engineering api-design architecture backend ci-cd code-review database debugging docker documentation frontend git incident-response knowledge-distillation mcp performance planning quality-audit refactoring root-cause-analysis security testing verification)
-    for s in "${skills[@]}"; do
-        local dst="$skills_dir/$s"
-        mkdir -p "$dst"
-        local tmp="$TMP_DIR/skills/$s/SKILL.md"
-        mkdir -p "$(dirname "$tmp")"
-        if download "$REPO_URL/skills/$s/SKILL.md" "$tmp"; then
-            cp "$tmp" "$dst/SKILL.md"
-            success "Skill: $s"
+    for r in $(rules); do
+        local src="$AGENTS_SOURCE/rules/$r.md"
+        if [ -f "$src" ]; then
+            cp "$src" "$rules_dir/$r.md"
+            cat "$src" >> "$HOME/.cursorrules"
+            echo "" >> "$HOME/.cursorrules"
+            echo "---" >> "$HOME/.cursorrules"
+            echo "" >> "$HOME/.cursorrules"
+            success "Rule: $r"
         else
-            error "Failed: $s"
+            error "Missing rule: $r"
         fi
     done
 
+    for s in $(skills); do copy_skill "$s" "$skills_dir"; done
     echo -e "${GREEN}\n🎉 Cursor installation complete! Restart Cursor to activate.${NC}"
 }
 
 install_claude() {
     header "Installing for Claude Code"
-    local base="$HOME/.claude"
-    local skills_dir="$base/skills"
+    local skills_dir="$HOME/.claude/skills"
     mkdir -p "$skills_dir"
-
-    local skills=(ai-engineering api-design architecture backend ci-cd code-review database debugging docker documentation frontend git incident-response knowledge-distillation mcp performance planning quality-audit refactoring root-cause-analysis security testing verification)
-    for s in "${skills[@]}"; do
-        local dst="$skills_dir/$s"
-        mkdir -p "$dst"
-        local tmp="$TMP_DIR/skills/$s/SKILL.md"
-        mkdir -p "$(dirname "$tmp")"
-        if download "$REPO_URL/skills/$s/SKILL.md" "$tmp"; then
-            cp "$tmp" "$dst/SKILL.md"
-            success "Skill: $s"
-        else
-            error "Failed: $s"
-        fi
-    done
-
+    for s in $(skills); do copy_skill "$s" "$skills_dir"; done
     echo -e "${GREEN}\n🎉 Claude Code installation complete!${NC}"
 }
 
 install_local() {
     header "Installing locally (.agents/)"
     local agents_dir="./.agents"
-    local rules_dir="$agents_dir/rules"
-    local skills_dir="$agents_dir/skills"
-    mkdir -p "$rules_dir" "$skills_dir"
-
-    local rules=(ai api architecture communication database debugging deployment documentation engineering git learning mcp memory monitoring performance planning quality review security testing ux)
-    for r in "${rules[@]}"; do
-        if download "$REPO_URL/rules/$r.md" "$rules_dir/$r.md"; then
-            success "Rule: $r"
-        else
-            error "Failed: $r"
-        fi
-    done
-
-    local skills=(ai-engineering api-design architecture backend ci-cd code-review database debugging docker documentation frontend git incident-response knowledge-distillation mcp performance planning quality-audit refactoring root-cause-analysis security testing verification)
-    for s in "${skills[@]}"; do
-        local dst="$skills_dir/$s"
-        mkdir -p "$dst"
-        if download "$REPO_URL/skills/$s/SKILL.md" "$dst/SKILL.md"; then
-            success "Skill: $s"
-        else
-            error "Failed: $s"
-        fi
-    done
-
+    mkdir -p "$agents_dir"
+    cp -R "$AGENTS_SOURCE/rules" "$agents_dir/"
+    cp -R "$AGENTS_SOURCE/skills" "$agents_dir/"
     echo -e "${GREEN}\n🎉 Local .agents/ folder created! Devin will auto-discover it.${NC}"
 }
 
-# ========== MAIN ==========
 header "DevinOS Installer"
-info "Repo: ahmedhazim97/DevinOS"
+info "Repo: $REPO"
 info "Temp: $TMP_DIR"
-
-mkdir -p "$TMP_DIR/rules" "$TMP_DIR/skills"
+prepare_agents
 
 HAS_WINDSURF=0
 HAS_CURSOR=0
@@ -224,3 +192,4 @@ fi
 
 rm -rf "$TMP_DIR"
 echo -e "${GREEN}\n✅ Done!${NC}"
+

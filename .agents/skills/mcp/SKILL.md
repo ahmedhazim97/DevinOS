@@ -1,5 +1,9 @@
-﻿# Skill: MCP (Model Context Protocol) Builder
+﻿---
+name: mcp
+description: "Build and maintain Model Context Protocol servers and tools."
+---
 
+# Skill: MCP (Model Context Protocol) Builder
 > Category: AI Engineering
 > Priority: High
 
@@ -96,3 +100,8 @@ const tool = {
 ## References
 
 - [MCP Specification](https://modelcontextprotocol.io/)
+
+
+---
+
+

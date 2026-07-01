@@ -1,0 +1,44 @@
+Component,Category,Best Library,Alternative Libraries,Use Case
+Button,Actions,shadcn/ui,Ant Design; Material UI,Primary/secondary actions; CTAs
+Button Group,Actions,Material UI,Ant Design; shadcn/ui,Grouped related actions
+Icon,Actions,shadcn/ui + Lucide,Ant Design; Material UI,Visual affordances; navigation
+Badge,Data Display,shadcn/ui,Ant Design; Material UI,Status indicators; counts; labels
+Card,Data Display,shadcn/ui,Ant Design; Material UI,Content containers; dashboards
+Table,Data Display,Ant Design,Material UI DataGrid; shadcn/ui,Data-heavy admin; sorting; pagination
+List,Data Display,Material UI,Ant Design; shadcn/ui,Simple item collections
+Timeline,Data Display,Ant Design,Material UI,Event history; activity feeds
+Statistic,Data Display,Ant Design,Material UI,KPI numbers; metrics
+Avatar,Data Display,shadcn/ui,Ant Design; Material UI,User/profile pictures
+Chip,Data Display,Material UI,shadcn/ui; Ant Design,Tags; filters; compact labels
+Input,Forms,shadcn/ui,Material UI; Ant Design,Text input fields
+Textarea,Forms,shadcn/ui,Material UI; Ant Design,Multi-line text
+Select,Forms,shadcn/ui,Ant Design; Material UI,Dropdown selection
+Checkbox,Forms,shadcn/ui,Material UI; Ant Design,Multi-select toggles
+Radio,Forms,shadcn/ui,Ant Design; Material UI,Single-choice options
+Switch,Forms,shadcn/ui,Material UI; Ant Design,Boolean toggles
+Slider,Forms,shadcn/ui,Material UI; Ant Design,Numeric range selection
+Date Picker,Forms,Ant Design,Material UI,Date/time selection
+Form,Forms,shadcn/ui + React Hook Form,Ant Design; Material UI,Form validation and layout
+Menu,Navigation,shadcn/ui,Ant Design; Material UI,Primary navigation
+Breadcrumb,Navigation,shadcn/ui,Ant Design; Material UI,Hierarchical path
+Pagination,Navigation,shadcn/ui,Ant Design; Material UI,Page navigation
+Tabs,Navigation,shadcn/ui,Ant Design; Material UI,Content switching within a page
+Drawer,Navigation,shadcn/ui,Material UI; Ant Design,Side panel navigation
+Stepper,Navigation,shadcn/ui,Material UI; Ant Design,Multi-step workflows
+Dialog,Feedback,shadcn/ui,Material UI; Ant Design,Modal overlays
+Alert,Feedback,shadcn/ui,Ant Design; Material UI,Important messages
+Toast/Snackbar,Feedback,shadcn/ui Sonner,Material UI; Ant Design,Non-blocking notifications
+Progress,Feedback,shadcn/ui,Ant Design; Material UI,Loading indicators
+Skeleton,Feedback,shadcn/ui,Ant Design; Material UI,Content loading placeholders
+Tooltip,Feedback,shadcn/ui,Material UI; Ant Design,Contextual hints
+Popover,Feedback,shadcn/ui,Material UI; Ant Design,Detailed contextual content
+Accordion,Layout,shadcn/ui,Material UI; Ant Design,Collapsible sections
+Resizable,Layout,shadcn/ui,Material UI,Resizable panels
+ScrollArea,Layout,shadcn/ui,Material UI,Custom scrollbars
+Separator,Layout,shadcn/ui,Material UI; Ant Design,Visual dividers
+Carousel,Layout,shadcn/ui,Material UI,Image/content slideshows
+Command Palette,Productivity,shadcn/ui Command,None,Keyboard-driven search/actions
+Chart,Data Viz,shadcn/ui Chart,Ant Design Charts; MUI X Charts,Charts and graphs
+Calendar,Productivity,shadcn/ui,Ant Design; Material UI,Date display/selection
+File Upload,Forms,Ant Design,Material UI,File attachments
+Image,Data Display,shadcn/ui,Ant Design; Material UI,Image display with loading states

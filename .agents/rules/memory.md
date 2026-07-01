@@ -18,3 +18,4 @@
 - [ ] Is the lesson generalizable?
 - [ ] Is it linked to relevant skills/rules?
 - [ ] Are anti-patterns documented?
+

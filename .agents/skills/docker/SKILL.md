@@ -1,5 +1,9 @@
-﻿# Skill: Docker & Containerization
+﻿---
+name: docker
+description: "Build, optimize, and manage containerized applications."
+---
 
+# Skill: Docker & Containerization
 > Category: DevOps
 > Priority: High
 
@@ -94,3 +98,8 @@ CMD npm start
 
 - [Docker Best Practices](https://docs.docker.com/develop/dev-best-practices/)
 - [OWASP Container Security](https://owasp.org/www-project-container-security-verification-standard/)
+
+
+---
+
+

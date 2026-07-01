@@ -31,3 +31,4 @@ When adding a skill that touches security:
 - [ ] Does it avoid hardcoded secrets?
 - [ ] Does it follow OWASP guidelines?
 - [ ] Is it documented with security considerations?
+

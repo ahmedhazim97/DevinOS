@@ -1,5 +1,9 @@
-﻿# Skill: Database Design & Review
+﻿---
+name: database
+description: "Design, optimize, and review database schemas and queries."
+---
 
+# Skill: Database Design & Review
 > Category: Backend Engineering
 > Priority: High
 
@@ -93,3 +97,8 @@ CREATE TABLE orders (
 
 - [Use The Index, Luke](https://use-the-index-luke.com/)
 - [SQL Performance Explained](https://sql-performance-explained.com/)
+
+
+---
+
+

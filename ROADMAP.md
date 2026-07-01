@@ -1,4 +1,4 @@
-# DevinOS Roadmap
+﻿# DevinOS Roadmap
 
 > The definitive path to v1.0 and beyond. Every version is a milestone toward building the world's most powerful engineering brain for AI coding agents.
 
@@ -21,8 +21,8 @@
 **Deliverables:**
 - [x] Repository structure with `.agents/` hierarchy
 - [x] `ENGINEERING_CONSTITUTION.md` - 10 immutable articles
-- [x] 20 foundational rules in `.agents/rules/`
-- [x] 23 core skills in `.agents/skills/` with full documentation
+- [x] 21 foundational rules in `.agents/rules/`
+- [x] 25 Skills in `.agents/skills/` with full documentation
 - [x] Quality Audit skill + rule + validator script (pre-merge gate system)
 - [x] `CONTRIBUTING.md` with quality gates and PR process
 - [x] `CODE_OF_CONDUCT.md` - community standards
@@ -431,7 +431,7 @@
   - Quick navigation to related skills
 - [ ] JetBrains plugin
 - [ ] GitHub Action
-  - `uses: ahmedhazim97/DevinOS@v1`
+  - `uses: Devin-IQ/DevinOS@v1`
   - Validates PRs against DevinOS rules
   - Suggests relevant skills based on changed files
 
@@ -564,3 +564,4 @@
 **Current Version: v0.1** | **Next Milestone: v0.2** | **Target v1.0: March 2027**
 
 *Build with purpose. Verify with rigor. Improve continuously.*
+

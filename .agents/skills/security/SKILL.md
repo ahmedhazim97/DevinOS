@@ -1,5 +1,9 @@
-﻿# Skill: Security Review
+﻿---
+name: security
+description: "Systematic evaluation of code and architecture for security vulnerabilities."
+---
 
+# Skill: Security Review
 > Category: Core Engineering
 > Priority: Critical
 
@@ -84,3 +88,8 @@ It uses HTTPS so it is secure.
 
 - [OWASP Top 10](https://owasp.org/www-project-top-ten/)
 - [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/)
+
+
+---
+
+

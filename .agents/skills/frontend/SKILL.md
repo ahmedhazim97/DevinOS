@@ -1,5 +1,9 @@
-﻿# Skill: Frontend Engineering
+﻿---
+name: frontend
+description: "Build responsive, accessible, and performant user interfaces."
+---
 
+# Skill: Frontend Engineering
 > Category: Frontend
 > Priority: High
 
@@ -107,3 +111,8 @@ function MyButton(props) {
 
 - [Web Content Accessibility Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
 - [Core Web Vitals](https://web.dev/vitals/)
+
+
+---
+
+

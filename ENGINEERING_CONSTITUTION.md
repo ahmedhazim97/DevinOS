@@ -147,3 +147,4 @@ No amendment may violate Article I.
 This constitution is the foundation of DevinOS. Every file in this repository is subordinate to it.
 
 **Build with purpose. Verify with rigor. Improve continuously.**
+

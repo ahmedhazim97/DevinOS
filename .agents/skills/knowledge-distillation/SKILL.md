@@ -1,5 +1,9 @@
-﻿# Skill: Knowledge Distillation
+﻿---
+name: knowledge-distillation
+description: "Extract generalizable lessons from project work and convert them into reusable skills."
+---
 
+# Skill: Knowledge Distillation
 > Category: Meta-Learning
 > Priority: High
 
@@ -74,3 +78,8 @@ Project done. Nothing special.
 ## References
 
 - [Working Effectively with Legacy Code by Michael Feathers](https://www.oreilly.com/library/view/working-effectively-with/0131177052/)
+
+
+---
+
+

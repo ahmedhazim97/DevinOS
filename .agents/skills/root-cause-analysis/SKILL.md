@@ -1,5 +1,9 @@
-﻿# Skill: Root Cause Analysis
+﻿---
+name: root-cause-analysis
+description: "Determine the fundamental cause of a problem, not just the symptom."
+---
 
+# Skill: Root Cause Analysis
 > Category: Core Engineering
 > Priority: High
 
@@ -73,3 +77,8 @@ Prevention: Add test for connection leak, add connection pool alert.
 
 - [Root Cause Analysis Handbook](https://www.asq.org/quality-resources/root-cause-analysis)
 - [Toyota Production System - 5 Whys](https://en.wikipedia.org/wiki/Five_whys)
+
+
+---
+
+

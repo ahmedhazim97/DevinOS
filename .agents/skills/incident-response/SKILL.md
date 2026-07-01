@@ -1,5 +1,9 @@
-﻿# Skill: Incident Response
+﻿---
+name: incident-response
+description: "Systematic response to production incidents to minimize impact and prevent recurrence."
+---
 
+# Skill: Incident Response
 > Category: Operations
 > Priority: High
 
@@ -92,3 +96,8 @@ Use this skill when:
 
 - [Google SRE - Incident Response](https://sre.google/sre-book/managing-incidents/)
 - [PagerDuty Incident Response](https://response.pagerduty.com/)
+
+
+---
+
+

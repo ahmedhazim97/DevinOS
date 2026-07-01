@@ -18,3 +18,4 @@
 - [ ] Was knowledge extracted after the last project?
 - [ ] Is it generalized?
 - [ ] Are skills/rules updated accordingly?
+
