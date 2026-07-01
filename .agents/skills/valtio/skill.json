@@ -1,0 +1,11 @@
+{
+    "version":  "1.0.0",
+    "name":  "valtio",
+    "description":  "\u003cimg src=\"logo.svg\" alt=\"valtio\"\u003e",
+    "platforms":  [
+                      "windsurf"
+                  ],
+    "author":  "Devin-IQ",
+    "displayName":  "Valtio",
+    "license":  "MIT"
+}

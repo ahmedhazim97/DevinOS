@@ -3,7 +3,7 @@ name: design-resources-library
 description: "Curated design systems, component libraries, and UI resources for building professional interfaces. Companion to ui-ux-pro-max for implementation guidance."
 ---
 
-# Design Resources Library
+# Skill: Design Resources Library
 
 Curated collection of production-ready UI libraries, component systems, design resources, and implementation guidance. This skill works as a **team member** with `ui-ux-pro-max`:
 

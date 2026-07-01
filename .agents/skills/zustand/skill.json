@@ -1,0 +1,11 @@
+{
+    "version":  "1.0.0",
+    "name":  "zustand",
+    "description":  "\u003cp align=\"center\"\u003e",
+    "platforms":  [
+                      "windsurf"
+                  ],
+    "author":  "Devin-IQ",
+    "displayName":  "Zustand",
+    "license":  "MIT"
+}

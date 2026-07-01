@@ -22,7 +22,7 @@
 - [x] Repository structure with `.agents/` hierarchy
 - [x] `ENGINEERING_CONSTITUTION.md` - 10 immutable articles
 - [x] 21 foundational rules in `.agents/rules/`
-- [x] 27 Skills in `.agents/skills/` with full documentation
+- [x] 40 Skills in `.agents/skills/` with full documentation
 - [x] Quality Audit skill + rule + validator script (pre-merge gate system)
 - [x] `CONTRIBUTING.md` with quality gates and PR process
 - [x] `CODE_OF_CONDUCT.md` - community standards

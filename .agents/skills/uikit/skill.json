@@ -1,0 +1,11 @@
+{
+    "version":  "1.0.0",
+    "name":  "uikit",
+    "description":  "\u003cp align=\"center\"\u003e",
+    "platforms":  [
+                      "windsurf"
+                  ],
+    "author":  "Devin-IQ",
+    "displayName":  "Uikit",
+    "license":  "MIT"
+}

@@ -1,0 +1,11 @@
+{
+    "version":  "1.0.0",
+    "name":  "jotai",
+    "description":  "Use jotai from the pmndrs ecosystem.",
+    "platforms":  [
+                      "windsurf"
+                  ],
+    "author":  "Devin-IQ",
+    "displayName":  "Jotai",
+    "license":  "MIT"
+}

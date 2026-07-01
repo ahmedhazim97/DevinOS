@@ -1,0 +1,11 @@
+{
+    "version":  "1.0.0",
+    "name":  "prai",
+    "description":  "\u003ch1 align=\"center\"\u003eprai 🤖\u003c/h1\u003e",
+    "platforms":  [
+                      "windsurf"
+                  ],
+    "author":  "Devin-IQ",
+    "displayName":  null,
+    "license":  "MIT"
+}

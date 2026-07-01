@@ -1,0 +1,11 @@
+{
+    "version":  "1.0.0",
+    "name":  "react-spring",
+    "description":  "\u003cp align=\"center\"\u003e",
+    "platforms":  [
+                      "windsurf"
+                  ],
+    "author":  "Devin-IQ",
+    "displayName":  "React Spring",
+    "license":  "MIT"
+}

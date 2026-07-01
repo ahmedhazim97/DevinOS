@@ -1,0 +1,69 @@
+name: Sync Pmndrs Ecosystem
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # Daily at 00:00 UTC
+  workflow_dispatch:       # Manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout DevinOS
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Clone all pmndrs repositories
+        run: |
+          mkdir -p /tmp/pmndrs
+          for repo in react-three-fiber react-three-drei react-spring zustand jotai valtio react-three-a11y react-postprocessing uikit xr docs prai viverse leva; do
+            git clone --depth 1 "https://github.com/pmndrs/${repo}.git" "/tmp/pmndrs/${repo}"
+          done
+
+      - name: Sync data into skills
+        run: |
+          for repo in react-three-fiber react-three-drei react-spring zustand jotai valtio react-three-a11y react-postprocessing uikit xr docs prai viverse leva; do
+            skill=".agents/skills/${repo}"
+            if [ -d "/tmp/pmndrs/${repo}" ] && [ -d "${skill}" ]; then
+              mkdir -p "${skill}/data"
+              cp "/tmp/pmndrs/${repo}/README.md" "${skill}/data/readme.md" || true
+              cp "/tmp/pmndrs/${repo}/LICENSE" "${skill}/data/LICENSE" || true
+              rm -rf "${skill}/data/docs"
+              cp -R "/tmp/pmndrs/${repo}/docs" "${skill}/data/docs" || true
+            fi
+          done
+
+      - name: Validate all pmndrs skills
+        run: |
+          for repo in react-three-fiber react-three-drei react-spring zustand jotai valtio react-three-a11y react-postprocessing uikit xr docs prai viverse leva; do
+            echo "Validating ${repo}..."
+            python scripts/validate-asset.py ".agents/skills/${repo}/SKILL.md"
+          done
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git add .agents/skills
+          git status --short
+          if [ -n "$(git status --short)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push if changed
+        if: steps.git-check.outputs.changed == 'true'
+        run: |
+          git config user.name "devinos-bot"
+          git config user.email "devinos-bot@users.noreply.github.com"
+          git commit -m "sync: update pmndrs ecosystem data"
+          git push origin main

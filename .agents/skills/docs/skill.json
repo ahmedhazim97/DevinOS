@@ -1,0 +1,11 @@
+{
+    "version":  "1.0.0",
+    "name":  "docs",
+    "description":  "[![](https://img.shields.io/badge/docs--playwright-171c23.svg?style=flat\u0026colorA=000000\u0026colorB=000000\u0026logo=chromatic\u0026logoColor=ffffff)](https://www.chromatic.com/library?appId=696fd126f0e504f96615dec9\u0026branch=main)",
+    "platforms":  [
+                      "windsurf"
+                  ],
+    "author":  "Devin-IQ",
+    "displayName":  null,
+    "license":  "MIT"
+}

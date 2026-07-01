@@ -1,0 +1,11 @@
+{
+    "version":  "1.0.0",
+    "name":  "react-postprocessing",
+    "description":  "react-postprocessing",
+    "platforms":  [
+                      "windsurf"
+                  ],
+    "author":  "Devin-IQ",
+    "displayName":  "React Postprocessing",
+    "license":  "MIT"
+}

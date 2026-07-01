@@ -1,7 +1,7 @@
 ﻿<!-- SEO Meta Tags for GitHub & Social Media -->
 <!--
 Title: DevinOS - The Ultimate Engineering Operating System for Devin & AI Coding Agents
-Description: DevinOS is the world's first open-source Engineering Operating System for AI coding agents. 27 production-ready skills, 21 immutable rules, workflows, playbooks, templates, and a self-improving knowledge engine. Free for personal and commercial use.
+Description: DevinOS is the world's first open-source Engineering Operating System for AI coding agents. 40 production-ready skills, 21 immutable rules, workflows, playbooks, templates, and a self-improving knowledge engine. Free for personal and commercial use.
 Keywords: DevinOS, Devin AI, AI coding agent, engineering operating system, software engineering rules, AI prompt engineering, MCP server, Model Context Protocol, Devin skills, AI software development, automated code review, AI debugging, knowledge distillation, self-improving AI, LLM engineering, secure coding, CI/CD automation, Docker best practices, open source AI tools, AI agent framework
 Author: Ahmed Hazim
 License: MIT
@@ -35,7 +35,7 @@ OG Image: https://github.com/Devin-IQ/DevinOS/raw/main/assets/devinos-banner.png
 - [Core Components](#core-components)
 - [Engineering Constitution](#engineering-constitution)
 - [Priority Hierarchy](#priority-hierarchy)
-- [27 Skills](#27-skills)
+- [40 Skills](#40-skills)
 - [21 Immutable Rules](#21-immutable-rules)
 - [Self-Improving Knowledge Engine](#self-improving-knowledge-engine)
 - [Repository Structure](#repository-structure)
@@ -104,7 +104,7 @@ curl -sL https://raw.githubusercontent.com/Devin-IQ/DevinOS/main/install.sh | ba
 
 The installer auto-detects your IDE and copies:
 - **21 Rules** → Global Rules folder
-- **27 Skills** → Global Skills folder
+- **40 Skills** → Global Skills folder
 
 > Restart your IDE to activate.
 
@@ -117,7 +117,7 @@ DevinOS Brain Structure
 |
 |-- ENGINEERING_CONSTITUTION.md    # The Supreme Law
 |-- .agents/
-|   |-- skills/                    # 27 actionable capabilities
+|   |-- skills/                    # 40 actionable capabilities
 |   |-- rules/                     # 21+ immutable principles
 |   |-- workflows/                 # End-to-end processes
 |   |-- playbooks/                 # Step-by-step guides
@@ -169,7 +169,7 @@ No feature, optimization, or shortcut may violate this hierarchy.
 
 ---
 
-## 27 Skills
+## 40 Skills
 
 Every skill includes frontmatter with `name` and `description`, then Description, Purpose, Trigger, Context, Workflow, Examples, Anti-patterns, Verification Checklist, and References.
 
@@ -212,6 +212,25 @@ Every skill includes frontmatter with `name` and `description`, then Description
 | [Quality Audit](.agents/skills/quality-audit/SKILL.md) | Meta | Rigorously evaluate assets before acceptance |
 | [Incident Response](.agents/skills/incident-response/SKILL.md) | Ops | Systematic response to production incidents |
 | [Root Cause Analysis](.agents/skills/root-cause-analysis/SKILL.md) | Core | Determine fundamental causes, not symptoms |
+
+### Pmndrs Ecosystem
+
+| Skill | Category | Purpose |
+|-------|----------|---------|
+| [React Three Fiber](.agents/skills/react-three-fiber/SKILL.md) | Frontend Engineering | Build 3D scenes in React with @react-three/fiber |
+| [React Three Drei](.agents/skills/react-three-drei/SKILL.md) | Frontend Engineering | Helpers and abstractions for @react-three/fiber |
+| [React Three A11y](.agents/skills/react-three-a11y/SKILL.md) | Frontend Engineering | Accessibility for React Three Fiber |
+| [React Postprocessing](.agents/skills/react-postprocessing/SKILL.md) | Frontend Engineering | Postprocessing effects for React Three Fiber |
+| [React Spring](.agents/skills/react-spring/SKILL.md) | Frontend Engineering | Spring physics animation for React |
+| [Zustand](.agents/skills/zustand/SKILL.md) | Frontend Engineering | Bearbones state management for React |
+| [Jotai](.agents/skills/jotai/SKILL.md) | Frontend Engineering | Primitive and flexible state management |
+| [Valtio](.agents/skills/valtio/SKILL.md) | Frontend Engineering | Proxy state management for React and Vanilla |
+| [UI Kit](.agents/skills/uikit/SKILL.md) | Frontend Engineering | UI components for React Three Fiber |
+| [XR](.agents/skills/xr/SKILL.md) | Frontend Engineering | VR/AR for React Three Fiber |
+| [Leva](.agents/skills/leva/SKILL.md) | Frontend Engineering | GUI controls for React |
+| [Prai](.agents/skills/prai/SKILL.md) | Frontend Engineering | AI helpers from pmndrs |
+| [Viverse](.agents/skills/viverse/SKILL.md) | Frontend Engineering | Web-based metaverse tools |
+| [Docs](.agents/skills/docs/SKILL.md) | Documentation | pmndrs documentation infrastructure |
 
 ---
 
@@ -312,7 +331,7 @@ DevinOS/
 ├── .gitignore                    # Cross-platform ignore rules
 │
 ├── .agents/
-│   ├── skills/                   # 27 skills
+│   ├── skills/                   # 40 skills
 │   ├── rules/                    # 21 foundational rules
 │   ├── workflows/                # Reusable workflows
 │   ├── playbooks/                # Step-by-step guides

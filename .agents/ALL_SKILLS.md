@@ -1,7 +1,12 @@
-﻿# DevinOS — All Global Skills (27)
+# DevinOS - All Global Skills (40)
+
+
+---
+name: ai-engineering
+description: "Build reliable systems that leverage AI while maintaining correctness and transparency."
+---
 
 # Skill: AI Engineering
-
 > Category: AI Engineering
 > Priority: High
 
@@ -94,8 +99,14 @@ def review(code):
 
 ---
 
-# Skill: API Design
 
+
+---
+name: api-design
+description: "Design robust, consistent, and developer-friendly APIs."
+---
+
+# Skill: API Design
 > Category: Backend Engineering
 > Priority: High
 
@@ -182,8 +193,14 @@ GET /api/users/123/orders/getAllPendingOrders
 
 ---
 
-# Skill: Architecture Review
 
+
+---
+name: architecture
+description: "Evaluate and improve software architecture decisions to ensure scalability, maintainability, and correctness."
+---
+
+# Skill: Architecture Review
 > Category: Core Engineering
 > Priority: Critical
 
@@ -271,8 +288,14 @@ Let us use microservices because they are modern.
 
 ---
 
-# Skill: Backend Engineering
 
+
+---
+name: backend
+description: "Build reliable, scalable, and secure server-side systems."
+---
+
+# Skill: Backend Engineering
 > Category: Backend
 > Priority: High
 
@@ -371,8 +394,14 @@ function createOrder(req, res) {
 
 ---
 
-# Skill: CI/CD Pipeline Design
 
+
+---
+name: ci-cd
+description: "Design and maintain automated continuous integration and delivery pipelines."
+---
+
+# Skill: CI/CD Pipeline Design
 > Category: DevOps
 > Priority: High
 
@@ -469,8 +498,14 @@ script:
 
 ---
 
-# Skill: Code Review
 
+
+---
+name: code-review
+description: "Evaluate code changes for correctness, security, maintainability, and alignment with team standards."
+---
+
+# Skill: Code Review
 > Category: Core Engineering
 > Priority: Critical
 
@@ -551,8 +586,14 @@ This is wrong. Fix it.
 
 ---
 
-# Skill: Database Design & Review
 
+
+---
+name: database
+description: "Design, optimize, and review database schemas and queries."
+---
+
+# Skill: Database Design & Review
 > Category: Backend Engineering
 > Priority: High
 
@@ -650,8 +691,14 @@ CREATE TABLE orders (
 
 ---
 
-# Skill: Structured Debugging
 
+
+---
+name: debugging
+description: "A systematic, evidence-based approach to finding and fixing bugs."
+---
+
+# Skill: Structured Debugging
 > Category: Core Engineering
 > Priority: Critical
 
@@ -736,8 +783,241 @@ Fix: Added try-catch to swallow the error.
 
 ---
 
-# Skill: Docker & Containerization
 
+
+---
+name: design-resources-library
+description: "Curated design systems, component libraries, and UI resources for building professional interfaces. Companion to ui-ux-pro-max for implementation guidance."
+---
+
+# Skill: Design Resources Library
+
+Curated collection of production-ready UI libraries, component systems, design resources, and implementation guidance. This skill works as a **team member** with `ui-ux-pro-max`:
+
+- **ui-ux-pro-max**: decides *what* to design (style, palette, typography, UX rules).
+- **design-resources-library**: decides *how* to build it (which library, which component, which resource).
+
+## When to Use
+
+Use this skill when the task involves:
+- Choosing a UI library or component system for a project
+- Implementing specific components (buttons, tables, forms, charts, navigation)
+- Finding design resources: icons, fonts, illustrations, colors, mockups
+- Selecting a design system or style guide for an enterprise project
+- Comparing libraries to pick the best fit for a stack
+
+## Workflow with ui-ux-pro-max
+
+```
+1. ui-ux-pro-max: decide product type, style, color palette, typography
+2. design-resources-library: pick the best library/stack and components
+3. Combine: implement the design using the chosen library
+```
+
+## Component Selection Guide
+
+### Actions
+| Component | Best Library | Use Case |
+|-----------|-------------|----------|
+| Button | shadcn/ui | Primary/secondary CTAs; Tailwind customization |
+| Button Group | Material UI | Grouped related actions |
+| Icon | shadcn/ui + Lucide | Consistent iconography |
+
+### Data Display
+| Component | Best Library | Use Case |
+|-----------|-------------|----------|
+| Table | Ant Design | Data-heavy admin with sorting/filtering |
+| Card | shadcn/ui | Content containers; dashboards |
+| Badge | shadcn/ui | Status indicators; counts |
+| Statistic | Ant Design | KPI numbers and metrics |
+
+### Forms
+| Component | Best Library | Use Case |
+|-----------|-------------|----------|
+| Input/Textarea | shadcn/ui | Standard form fields |
+| Select | shadcn/ui | Dropdown selection |
+| Date Picker | Ant Design | Date/time selection |
+| Form (validation) | shadcn/ui + React Hook Form | Complete forms with validation |
+| File Upload | Ant Design | File attachments |
+
+### Navigation
+| Component | Best Library | Use Case |
+|-----------|-------------|----------|
+| Menu | shadcn/ui | Primary navigation |
+| Tabs | shadcn/ui | Content switching |
+| Breadcrumb | shadcn/ui | Hierarchical path |
+| Drawer | shadcn/ui | Side panel navigation |
+| Stepper | shadcn/ui | Multi-step workflows |
+
+### Feedback
+| Component | Best Library | Use Case |
+|-----------|-------------|----------|
+| Dialog/Modal | shadcn/ui | Overlay dialogs |
+| Toast | shadcn/ui Sonner | Non-blocking notifications |
+| Alert | shadcn/ui | Important messages |
+| Progress | shadcn/ui | Loading indicators |
+| Skeleton | shadcn/ui | Content loading placeholders |
+
+### Layout
+| Component | Best Library | Use Case |
+|-----------|-------------|----------|
+| Grid/Layout | Material UI | Complex responsive layouts |
+| Card | shadcn/ui | Content containers |
+| Accordion | shadcn/ui | Collapsible sections |
+| Resizable | shadcn/ui | Resizable panels |
+
+## Library Comparison
+
+| Library | Best For | Stack | Style |
+|---------|----------|-------|-------|
+| shadcn/ui | Modern accessible apps; Tailwind-first | React/Next.js | Customizable minimal |
+| Ant Design | Enterprise dashboards; data-heavy apps | React | Enterprise polished |
+| Material UI | Google Material Design; rapid prototyping | React | Material Design |
+| Chakra UI | Developer-friendly; accessible defaults | React | Clean minimal |
+| Mantine | Full-featured apps with hooks | React | Modern functional |
+| HeroUI | Next.js apps with animations | React/Next.js | Modern Tailwind |
+| Radix UI | Custom headless primitives | React | Unstyled accessible |
+| daisyUI | Tailwind class-based components | HTML/React/Vue | Tailwind |
+
+## Design System Selection
+
+| Project Type | Recommended Design System |
+|--------------|---------------------------|
+| Enterprise admin | Ant Design / Carbon Design System |
+| Modern SaaS | shadcn/ui / HeroUI / Primer |
+| Google-style app | Material UI / Material Design 3 |
+| Apple ecosystem | Apple Human Interface Guidelines |
+| Shopify-style | Polaris |
+| Microsoft-style | Fluent UI |
+| IBM-style | Carbon Design System |
+| Adobe-style | Spectrum |
+
+## Resource Categories
+
+See `data/resources.csv` for a curated list across:
+- UI Graphics & Illustrations
+- Fonts & Typography Tools
+- Color Tools & Palette Generators
+- Icons & Logos
+- Mockups & Templates
+- CSS Frameworks
+- UI Component Libraries
+- React / Vue / Angular / Svelte Libraries
+- Design Systems & Style Guides
+- Design Inspiration
+- Charts & Animations
+- AI Design Tools
+- Stock Photos & Image Compression
+- Accessibility Tools
+
+## Quick Resource Picks
+
+### Icons
+- **Lucide**: default for shadcn/ui; consistent modern icons
+- **Heroicons**: Tailwind Labs; clean SVG
+- **Phosphor Icons**: flexible weights and styles
+- **Tabler Icons**: large free icon set
+- **Material Design Icons**: Material-style icons
+- **Iconify**: universal icon framework
+
+### Fonts
+- **Google Fonts**: free web fonts
+- **Fontshare**: quality free fonts
+- **FontPair**: font pairing suggestions
+- **Fontjoy**: AI font pairing
+
+### Colors
+- **Coolors**: palette generator
+- **UI Colors**: Tailwind palette generator
+- **Happy Hues**: palettes with context
+- **Adobe Color**: color wheel and palette tools
+- **Material Color Tool**: Material Design palettes
+
+### Illustrations
+- **Undraw**: open-source illustrations
+- **Drawkit**: illustrations and icons
+- **Manypixels**: free illustrations gallery
+- **Humaaans**: mix-and-match human illustrations
+- **Open Doodles**: hand-drawn illustrations
+- **Blush**: customizable illustrations
+
+### Design Inspiration
+- **Dribbble**: design community
+- **Behance**: creative portfolios
+- **Awwwards**: website awards
+- **Land Book**: landing page inspiration
+- **Page Collective**: landing page gallery
+
+## Integration with ui-ux-pro-max
+
+When both skills are active, follow this sequence:
+
+1. **Start with ui-ux-pro-max** to define:
+   - Product type and audience
+   - Style (minimalism, glassmorphism, brutalism, etc.)
+   - Color palette and typography
+   - Layout and responsive behavior
+   - Accessibility and UX priorities
+
+2. **Then use design-resources-library** to choose:
+   - Component library matching the stack
+   - Specific components for each UI element
+   - Best resources for icons, fonts, and illustrations
+   - Design system if enterprise consistency is needed
+
+3. **Implement** using the combination of design rules and library components.
+
+## Examples
+
+### Good Workflow
+
+User: "Build a SaaS analytics dashboard with Next.js."
+
+Response:
+1. Use ui-ux-pro-max to choose: dark mode, minimalism, blue/amber palette, Inter typography.
+2. Use design-resources-library to choose: shadcn/ui for Next.js, shadcn/ui Chart for charts, shadcn/ui Table for data, Lucide icons.
+3. Implement with Tailwind CSS and shadcn/ui components.
+
+### Bad Workflow
+
+User: "Build a SaaS analytics dashboard with Next.js."
+
+Bad response: mix Material UI with shadcn/ui in the same project without a clear reason. Stick to one library per project.
+
+## Anti-patterns
+
+- Mixing multiple UI libraries in one project without clear ownership
+- Choosing a library that doesn't match the team's stack
+- Using heavy enterprise libraries for simple landing pages
+- Ignoring accessibility requirements of chosen components
+- Hardcoding hex colors instead of using the library's theme tokens
+- Not checking license compatibility of resources
+
+## Verification
+
+- [ ] Is the chosen library compatible with the project's stack?
+- [ ] Does the library support the required accessibility standards?
+- [ ] Are the selected components sufficient for the design without mixing libraries?
+- [ ] Are all resources (icons, fonts, illustrations) licensed appropriately?
+- [ ] Does the implementation follow ui-ux-pro-max design rules?
+
+## References
+
+- `data/components.csv` — component selection guide
+- `data/design-systems.csv` — library comparison
+- `data/resources.csv` — categorized design resources
+- `ui-ux-pro-max` skill — design rules, styles, palettes, UX guidelines
+- shadcn/ui: https://ui.shadcn.com
+- Ant Design: https://ant.design
+- Material UI: https://mui.com/material-ui
+- Brad Traversy Design Resources: https://github.com/bradtraversy/design-resources-for-developers
+
+---
+name: docker
+description: "Build, optimize, and manage containerized applications."
+---
+
+# Skill: Docker & Containerization
 > Category: DevOps
 > Priority: High
 
@@ -836,8 +1116,129 @@ CMD npm start
 
 ---
 
-# Skill: Documentation
 
+
+# Skill: Docs
+
+> Category: Documentation
+> Priority: High
+
+---
+
+## Description
+
+$ curl -sL https://raw.githubusercontent.com/pmndrs/docs/refs/heads/main/preview.sh | \ This skill provides the essential guidance, workflow, anti-patterns, and verification checklist needed to use Docs correctly within the pmndrs ecosystem and within DevinOS projects.
+
+## Purpose
+
+Reduce implementation risk and accelerate development by applying the correct patterns, configuration, and integration steps for Docs. The goal is to produce code that is performant, maintainable, and aligned with the official documentation.
+
+## Trigger
+
+Use this skill when:
+
+- Building a feature that depends on Docs.
+- Deciding whether Docs is the right tool for the current architecture.
+- Reviewing, debugging, or refactoring code that uses Docs.
+- Integrating Docs with other pmndrs libraries or React patterns.
+- Setting up a new project or adding the library to an existing project.
+- Evaluating performance, accessibility, or SSR implications of Docs.
+
+## Context
+
+- Project framework, version, and build tooling.
+- Target devices and performance budgets (desktop, mobile, VR/AR).
+- Related libraries already in use (React, Three.js, state managers, animation libraries).
+- Client-only versus SSR constraints.
+- Existing component structure and coding standards.
+- Need for TypeScript types, tests, and documentation.
+- License and compatibility requirements.
+
+## Workflow
+
+1. Confirm the problem or feature that requires Docs.
+2. Review the official documentation and the data files in this skill.
+3. Install the library using the recommended package manager and version.
+4. Configure the library according to the project setup and constraints.
+5. Build a minimal working example that proves the integration.
+6. Expand the example into production-ready components with error handling.
+7. Run the verification checklist, including performance and accessibility checks.
+8. Document decisions, trade-offs, and any deviations from the official docs.
+9. Clean up temporary code, remove unused imports, and ensure proper disposal.
+
+## Examples
+
+### Good: Minimal usage
+
+`js
+// See data/readme.md and data/docs/ for exact API details.
+import * as Lib from 'docs'
+
+// Initialize the library according to its documented pattern.
+const instance = Lib.createSetup()
+
+// Use it within a React component or module.
+`
+
+### Bad: Unverified copy-paste
+
+`js
+// Do not copy examples without confirming they match your project version and setup.
+const instance = Lib.createSetup({ wrongOption: true })
+`
+
+## Anti-patterns
+
+- Using Docs without understanding its primary use case and trade-offs.
+- Combining it with incompatible libraries or conflicting state patterns.
+- Skipping cleanup, ignoring SSR constraints, or leaking resources on unmount.
+- Ignoring performance implications on low-end or mobile devices.
+- Copying examples from documentation without adapting them to the project.
+- Hardcoding configuration that should be environment-specific or shared.
+- Neglecting error handling, loading states, and fallback behavior.
+
+## Common Mistakes
+
+- Installing the wrong version or missing peer dependencies.
+- Forgetting to wrap client-only code in the appropriate lifecycle hooks.
+- Creating new instances inside render loops or event handlers without memoization.
+- Not testing on target devices or with reduced-motion preferences enabled.
+- Mixing multiple solutions from the same domain without clear ownership.
+
+## Verification
+
+- [ ] The library is installed with correct version and peer dependencies.
+- [ ] Usage matches the official documentation and data files in this skill.
+- [ ] A minimal working example has been implemented and verified.
+- [ ] Performance is acceptable on target devices.
+- [ ] SSR and client-only constraints are respected.
+- [ ] Cleanup and disposal are handled correctly.
+- [ ] Error handling and loading states are in place.
+- [ ] Cross-skill references are used when relevant (Frontend, Performance, React Three Drei).
+- [ ] Documentation is updated with decisions and trade-offs.
+
+## Cross Skill References
+
+- **Frontend Engineering:** React lifecycle, component structure, responsive design.
+- **Performance Optimization:** Profiling, budgets, and optimization.
+- **React Three Drei:** When building 3D scenes with pmndrs tools.
+- **Scrollytelling:** When scroll-driven experiences need 3D or animation.
+- **Documentation:** Recording decisions, ADRs, and performance results.
+- **Quality Audit:** Validating this skill and any assets produced with it.
+
+## References
+
+- Repository: https://github.com/pmndrs/docs
+- data/readme.md â€” latest README from Docs
+- data/docs/ â€” latest documentation from Docs
+- LICENSE â€” license of Docs
+
+---
+name: documentation
+description: "Write clear, accurate, and useful documentation."
+---
+
+# Skill: Documentation
 > Category: Core Engineering
 > Priority: High
 
@@ -935,8 +1336,14 @@ POST /api/users - creates user
 
 ---
 
-# Skill: Frontend Engineering
 
+
+---
+name: frontend
+description: "Build responsive, accessible, and performant user interfaces."
+---
+
+# Skill: Frontend Engineering
 > Category: Frontend
 > Priority: High
 
@@ -1048,8 +1455,14 @@ function MyButton(props) {
 
 ---
 
-# Skill: Git Workflow
 
+
+---
+name: git
+description: "Professional version control practices for clean, collaborative development."
+---
+
+# Skill: Git Workflow
 > Category: Core Engineering
 > Priority: High
 
@@ -1145,8 +1558,14 @@ really final
 
 ---
 
-# Skill: Incident Response
 
+
+---
+name: incident-response
+description: "Systematic response to production incidents to minimize impact and prevent recurrence."
+---
+
+# Skill: Incident Response
 > Category: Operations
 > Priority: High
 
@@ -1243,8 +1662,129 @@ Use this skill when:
 
 ---
 
-# Skill: Knowledge Distillation
 
+
+# Skill: Jotai
+
+> Category: Frontend Engineering
+> Priority: High
+
+---
+
+## Description
+
+![Jotai (light mode)](./img/jotai-header-light.png#gh-light-mode-only) This skill provides the essential guidance, workflow, anti-patterns, and verification checklist needed to use Jotai correctly within the pmndrs ecosystem and within DevinOS projects.
+
+## Purpose
+
+Reduce implementation risk and accelerate development by applying the correct patterns, configuration, and integration steps for Jotai. The goal is to produce code that is performant, maintainable, and aligned with the official documentation.
+
+## Trigger
+
+Use this skill when:
+
+- Building a feature that depends on Jotai.
+- Deciding whether Jotai is the right tool for the current architecture.
+- Reviewing, debugging, or refactoring code that uses Jotai.
+- Integrating Jotai with other pmndrs libraries or React patterns.
+- Setting up a new project or adding the library to an existing project.
+- Evaluating performance, accessibility, or SSR implications of Jotai.
+
+## Context
+
+- Project framework, version, and build tooling.
+- Target devices and performance budgets (desktop, mobile, VR/AR).
+- Related libraries already in use (React, Three.js, state managers, animation libraries).
+- Client-only versus SSR constraints.
+- Existing component structure and coding standards.
+- Need for TypeScript types, tests, and documentation.
+- License and compatibility requirements.
+
+## Workflow
+
+1. Confirm the problem or feature that requires Jotai.
+2. Review the official documentation and the data files in this skill.
+3. Install the library using the recommended package manager and version.
+4. Configure the library according to the project setup and constraints.
+5. Build a minimal working example that proves the integration.
+6. Expand the example into production-ready components with error handling.
+7. Run the verification checklist, including performance and accessibility checks.
+8. Document decisions, trade-offs, and any deviations from the official docs.
+9. Clean up temporary code, remove unused imports, and ensure proper disposal.
+
+## Examples
+
+### Good: Minimal usage
+
+`js
+// See data/readme.md and data/docs/ for exact API details.
+import * as Lib from 'jotai'
+
+// Initialize the library according to its documented pattern.
+const instance = Lib.createSetup()
+
+// Use it within a React component or module.
+`
+
+### Bad: Unverified copy-paste
+
+`js
+// Do not copy examples without confirming they match your project version and setup.
+const instance = Lib.createSetup({ wrongOption: true })
+`
+
+## Anti-patterns
+
+- Using Jotai without understanding its primary use case and trade-offs.
+- Combining it with incompatible libraries or conflicting state patterns.
+- Skipping cleanup, ignoring SSR constraints, or leaking resources on unmount.
+- Ignoring performance implications on low-end or mobile devices.
+- Copying examples from documentation without adapting them to the project.
+- Hardcoding configuration that should be environment-specific or shared.
+- Neglecting error handling, loading states, and fallback behavior.
+
+## Common Mistakes
+
+- Installing the wrong version or missing peer dependencies.
+- Forgetting to wrap client-only code in the appropriate lifecycle hooks.
+- Creating new instances inside render loops or event handlers without memoization.
+- Not testing on target devices or with reduced-motion preferences enabled.
+- Mixing multiple solutions from the same domain without clear ownership.
+
+## Verification
+
+- [ ] The library is installed with correct version and peer dependencies.
+- [ ] Usage matches the official documentation and data files in this skill.
+- [ ] A minimal working example has been implemented and verified.
+- [ ] Performance is acceptable on target devices.
+- [ ] SSR and client-only constraints are respected.
+- [ ] Cleanup and disposal are handled correctly.
+- [ ] Error handling and loading states are in place.
+- [ ] Cross-skill references are used when relevant (Frontend, Performance, React Three Drei).
+- [ ] Documentation is updated with decisions and trade-offs.
+
+## Cross Skill References
+
+- **Frontend Engineering:** React lifecycle, component structure, responsive design.
+- **Performance Optimization:** Profiling, budgets, and optimization.
+- **React Three Drei:** When building 3D scenes with pmndrs tools.
+- **Scrollytelling:** When scroll-driven experiences need 3D or animation.
+- **Documentation:** Recording decisions, ADRs, and performance results.
+- **Quality Audit:** Validating this skill and any assets produced with it.
+
+## References
+
+- Repository: https://github.com/pmndrs/jotai
+- data/readme.md â€” latest README from Jotai
+- data/docs/ â€” latest documentation from Jotai
+- LICENSE â€” license of Jotai
+
+---
+name: knowledge-distillation
+description: "Extract generalizable lessons from project work and convert them into reusable skills."
+---
+
+# Skill: Knowledge Distillation
 > Category: Meta-Learning
 > Priority: High
 
@@ -1323,8 +1863,129 @@ Project done. Nothing special.
 
 ---
 
-# Skill: MCP (Model Context Protocol) Builder
 
+
+# Skill: Leva
+
+> Category: Frontend Engineering
+> Priority: High
+
+---
+
+## Description
+
+<a href=""><img src="https://raw.githubusercontent.com/pmndrs/leva/master/hero.png" /></a> This skill provides the essential guidance, workflow, anti-patterns, and verification checklist needed to use Leva correctly within the pmndrs ecosystem and within DevinOS projects.
+
+## Purpose
+
+Reduce implementation risk and accelerate development by applying the correct patterns, configuration, and integration steps for Leva. The goal is to produce code that is performant, maintainable, and aligned with the official documentation.
+
+## Trigger
+
+Use this skill when:
+
+- Building a feature that depends on Leva.
+- Deciding whether Leva is the right tool for the current architecture.
+- Reviewing, debugging, or refactoring code that uses Leva.
+- Integrating Leva with other pmndrs libraries or React patterns.
+- Setting up a new project or adding the library to an existing project.
+- Evaluating performance, accessibility, or SSR implications of Leva.
+
+## Context
+
+- Project framework, version, and build tooling.
+- Target devices and performance budgets (desktop, mobile, VR/AR).
+- Related libraries already in use (React, Three.js, state managers, animation libraries).
+- Client-only versus SSR constraints.
+- Existing component structure and coding standards.
+- Need for TypeScript types, tests, and documentation.
+- License and compatibility requirements.
+
+## Workflow
+
+1. Confirm the problem or feature that requires Leva.
+2. Review the official documentation and the data files in this skill.
+3. Install the library using the recommended package manager and version.
+4. Configure the library according to the project setup and constraints.
+5. Build a minimal working example that proves the integration.
+6. Expand the example into production-ready components with error handling.
+7. Run the verification checklist, including performance and accessibility checks.
+8. Document decisions, trade-offs, and any deviations from the official docs.
+9. Clean up temporary code, remove unused imports, and ensure proper disposal.
+
+## Examples
+
+### Good: Minimal usage
+
+`js
+// See data/readme.md and data/docs/ for exact API details.
+import * as Lib from 'leva'
+
+// Initialize the library according to its documented pattern.
+const instance = Lib.createSetup()
+
+// Use it within a React component or module.
+`
+
+### Bad: Unverified copy-paste
+
+`js
+// Do not copy examples without confirming they match your project version and setup.
+const instance = Lib.createSetup({ wrongOption: true })
+`
+
+## Anti-patterns
+
+- Using Leva without understanding its primary use case and trade-offs.
+- Combining it with incompatible libraries or conflicting state patterns.
+- Skipping cleanup, ignoring SSR constraints, or leaking resources on unmount.
+- Ignoring performance implications on low-end or mobile devices.
+- Copying examples from documentation without adapting them to the project.
+- Hardcoding configuration that should be environment-specific or shared.
+- Neglecting error handling, loading states, and fallback behavior.
+
+## Common Mistakes
+
+- Installing the wrong version or missing peer dependencies.
+- Forgetting to wrap client-only code in the appropriate lifecycle hooks.
+- Creating new instances inside render loops or event handlers without memoization.
+- Not testing on target devices or with reduced-motion preferences enabled.
+- Mixing multiple solutions from the same domain without clear ownership.
+
+## Verification
+
+- [ ] The library is installed with correct version and peer dependencies.
+- [ ] Usage matches the official documentation and data files in this skill.
+- [ ] A minimal working example has been implemented and verified.
+- [ ] Performance is acceptable on target devices.
+- [ ] SSR and client-only constraints are respected.
+- [ ] Cleanup and disposal are handled correctly.
+- [ ] Error handling and loading states are in place.
+- [ ] Cross-skill references are used when relevant (Frontend, Performance, React Three Drei).
+- [ ] Documentation is updated with decisions and trade-offs.
+
+## Cross Skill References
+
+- **Frontend Engineering:** React lifecycle, component structure, responsive design.
+- **Performance Optimization:** Profiling, budgets, and optimization.
+- **React Three Drei:** When building 3D scenes with pmndrs tools.
+- **Scrollytelling:** When scroll-driven experiences need 3D or animation.
+- **Documentation:** Recording decisions, ADRs, and performance results.
+- **Quality Audit:** Validating this skill and any assets produced with it.
+
+## References
+
+- Repository: https://github.com/pmndrs/leva
+- data/readme.md â€” latest README from Leva
+- data/docs/ â€” latest documentation from Leva
+- LICENSE â€” license of Leva
+
+---
+name: mcp
+description: "Build and maintain Model Context Protocol servers and tools."
+---
+
+# Skill: MCP (Model Context Protocol) Builder
 > Category: AI Engineering
 > Priority: High
 
@@ -1425,8 +2086,14 @@ const tool = {
 
 ---
 
-# Skill: Performance Optimization
 
+
+---
+name: performance
+description: "Measure, analyze, and improve system performance with evidence."
+---
+
+# Skill: Performance Optimization
 > Category: Core Engineering
 > Priority: High
 
@@ -1519,8 +2186,14 @@ The API is slow. Let us add Redis caching everywhere.
 
 ---
 
-# Skill: Planning
 
+
+---
+name: planning
+description: "Systematic approach to breaking down complex engineering tasks into small, verifiable, and sequenced steps."
+---
+
+# Skill: Planning
 > Category: Core Engineering
 > Priority: Critical
 
@@ -1608,8 +2281,129 @@ Step 1: Build the feature (3 days)
 
 ---
 
-# Skill: Quality Audit
 
+
+# Skill: Prai
+
+> Category: Frontend Engineering
+> Priority: High
+
+---
+
+## Description
+
+<h1 align="center">prai 🤖</h1> This skill provides the essential guidance, workflow, anti-patterns, and verification checklist needed to use Prai correctly within the pmndrs ecosystem and within DevinOS projects.
+
+## Purpose
+
+Reduce implementation risk and accelerate development by applying the correct patterns, configuration, and integration steps for Prai. The goal is to produce code that is performant, maintainable, and aligned with the official documentation.
+
+## Trigger
+
+Use this skill when:
+
+- Building a feature that depends on Prai.
+- Deciding whether Prai is the right tool for the current architecture.
+- Reviewing, debugging, or refactoring code that uses Prai.
+- Integrating Prai with other pmndrs libraries or React patterns.
+- Setting up a new project or adding the library to an existing project.
+- Evaluating performance, accessibility, or SSR implications of Prai.
+
+## Context
+
+- Project framework, version, and build tooling.
+- Target devices and performance budgets (desktop, mobile, VR/AR).
+- Related libraries already in use (React, Three.js, state managers, animation libraries).
+- Client-only versus SSR constraints.
+- Existing component structure and coding standards.
+- Need for TypeScript types, tests, and documentation.
+- License and compatibility requirements.
+
+## Workflow
+
+1. Confirm the problem or feature that requires Prai.
+2. Review the official documentation and the data files in this skill.
+3. Install the library using the recommended package manager and version.
+4. Configure the library according to the project setup and constraints.
+5. Build a minimal working example that proves the integration.
+6. Expand the example into production-ready components with error handling.
+7. Run the verification checklist, including performance and accessibility checks.
+8. Document decisions, trade-offs, and any deviations from the official docs.
+9. Clean up temporary code, remove unused imports, and ensure proper disposal.
+
+## Examples
+
+### Good: Minimal usage
+
+`js
+// See data/readme.md and data/docs/ for exact API details.
+import * as Lib from 'prai'
+
+// Initialize the library according to its documented pattern.
+const instance = Lib.createSetup()
+
+// Use it within a React component or module.
+`
+
+### Bad: Unverified copy-paste
+
+`js
+// Do not copy examples without confirming they match your project version and setup.
+const instance = Lib.createSetup({ wrongOption: true })
+`
+
+## Anti-patterns
+
+- Using Prai without understanding its primary use case and trade-offs.
+- Combining it with incompatible libraries or conflicting state patterns.
+- Skipping cleanup, ignoring SSR constraints, or leaking resources on unmount.
+- Ignoring performance implications on low-end or mobile devices.
+- Copying examples from documentation without adapting them to the project.
+- Hardcoding configuration that should be environment-specific or shared.
+- Neglecting error handling, loading states, and fallback behavior.
+
+## Common Mistakes
+
+- Installing the wrong version or missing peer dependencies.
+- Forgetting to wrap client-only code in the appropriate lifecycle hooks.
+- Creating new instances inside render loops or event handlers without memoization.
+- Not testing on target devices or with reduced-motion preferences enabled.
+- Mixing multiple solutions from the same domain without clear ownership.
+
+## Verification
+
+- [ ] The library is installed with correct version and peer dependencies.
+- [ ] Usage matches the official documentation and data files in this skill.
+- [ ] A minimal working example has been implemented and verified.
+- [ ] Performance is acceptable on target devices.
+- [ ] SSR and client-only constraints are respected.
+- [ ] Cleanup and disposal are handled correctly.
+- [ ] Error handling and loading states are in place.
+- [ ] Cross-skill references are used when relevant (Frontend, Performance, React Three Drei).
+- [ ] Documentation is updated with decisions and trade-offs.
+
+## Cross Skill References
+
+- **Frontend Engineering:** React lifecycle, component structure, responsive design.
+- **Performance Optimization:** Profiling, budgets, and optimization.
+- **React Three Drei:** When building 3D scenes with pmndrs tools.
+- **Scrollytelling:** When scroll-driven experiences need 3D or animation.
+- **Documentation:** Recording decisions, ADRs, and performance results.
+- **Quality Audit:** Validating this skill and any assets produced with it.
+
+## References
+
+- Repository: https://github.com/pmndrs/prai
+- data/readme.md â€” latest README from Prai
+- data/docs/ â€” latest documentation from Prai
+- LICENSE â€” license of Prai
+
+---
+name: quality-audit
+description: "Rigorously evaluate any DevinOS asset (skill, rule, workflow, playbook, template, prompt, or memory) against production-quality standards before acceptance."
+---
+
+# Skill: Quality Audit
 > Category: Meta-Learning
 > Priority: Critical
 
@@ -1967,8 +2761,620 @@ Just fix the examples and it should be fine.
 
 ---
 
-# Skill: Refactoring
 
+
+# Skill: React Postprocessing
+
+> Category: Frontend Engineering
+> Priority: High
+
+---
+
+## Description
+
+`react-postprocessing` is a This skill provides the essential guidance, workflow, anti-patterns, and verification checklist needed to use React Postprocessing correctly within the pmndrs ecosystem and within DevinOS projects.
+
+## Purpose
+
+Reduce implementation risk and accelerate development by applying the correct patterns, configuration, and integration steps for React Postprocessing. The goal is to produce code that is performant, maintainable, and aligned with the official documentation.
+
+## Trigger
+
+Use this skill when:
+
+- Building a feature that depends on React Postprocessing.
+- Deciding whether React Postprocessing is the right tool for the current architecture.
+- Reviewing, debugging, or refactoring code that uses React Postprocessing.
+- Integrating React Postprocessing with other pmndrs libraries or React patterns.
+- Setting up a new project or adding the library to an existing project.
+- Evaluating performance, accessibility, or SSR implications of React Postprocessing.
+
+## Context
+
+- Project framework, version, and build tooling.
+- Target devices and performance budgets (desktop, mobile, VR/AR).
+- Related libraries already in use (React, Three.js, state managers, animation libraries).
+- Client-only versus SSR constraints.
+- Existing component structure and coding standards.
+- Need for TypeScript types, tests, and documentation.
+- License and compatibility requirements.
+
+## Workflow
+
+1. Confirm the problem or feature that requires React Postprocessing.
+2. Review the official documentation and the data files in this skill.
+3. Install the library using the recommended package manager and version.
+4. Configure the library according to the project setup and constraints.
+5. Build a minimal working example that proves the integration.
+6. Expand the example into production-ready components with error handling.
+7. Run the verification checklist, including performance and accessibility checks.
+8. Document decisions, trade-offs, and any deviations from the official docs.
+9. Clean up temporary code, remove unused imports, and ensure proper disposal.
+
+## Examples
+
+### Good: Minimal usage
+
+`js
+// See data/readme.md and data/docs/ for exact API details.
+import * as Lib from 'react-postprocessing'
+
+// Initialize the library according to its documented pattern.
+const instance = Lib.createSetup()
+
+// Use it within a React component or module.
+`
+
+### Bad: Unverified copy-paste
+
+`js
+// Do not copy examples without confirming they match your project version and setup.
+const instance = Lib.createSetup({ wrongOption: true })
+`
+
+## Anti-patterns
+
+- Using React Postprocessing without understanding its primary use case and trade-offs.
+- Combining it with incompatible libraries or conflicting state patterns.
+- Skipping cleanup, ignoring SSR constraints, or leaking resources on unmount.
+- Ignoring performance implications on low-end or mobile devices.
+- Copying examples from documentation without adapting them to the project.
+- Hardcoding configuration that should be environment-specific or shared.
+- Neglecting error handling, loading states, and fallback behavior.
+
+## Common Mistakes
+
+- Installing the wrong version or missing peer dependencies.
+- Forgetting to wrap client-only code in the appropriate lifecycle hooks.
+- Creating new instances inside render loops or event handlers without memoization.
+- Not testing on target devices or with reduced-motion preferences enabled.
+- Mixing multiple solutions from the same domain without clear ownership.
+
+## Verification
+
+- [ ] The library is installed with correct version and peer dependencies.
+- [ ] Usage matches the official documentation and data files in this skill.
+- [ ] A minimal working example has been implemented and verified.
+- [ ] Performance is acceptable on target devices.
+- [ ] SSR and client-only constraints are respected.
+- [ ] Cleanup and disposal are handled correctly.
+- [ ] Error handling and loading states are in place.
+- [ ] Cross-skill references are used when relevant (Frontend, Performance, React Three Drei).
+- [ ] Documentation is updated with decisions and trade-offs.
+
+## Cross Skill References
+
+- **Frontend Engineering:** React lifecycle, component structure, responsive design.
+- **Performance Optimization:** Profiling, budgets, and optimization.
+- **React Three Drei:** When building 3D scenes with pmndrs tools.
+- **Scrollytelling:** When scroll-driven experiences need 3D or animation.
+- **Documentation:** Recording decisions, ADRs, and performance results.
+- **Quality Audit:** Validating this skill and any assets produced with it.
+
+## References
+
+- Repository: https://github.com/pmndrs/react-postprocessing
+- data/readme.md â€” latest README from React Postprocessing
+- data/docs/ â€” latest documentation from React Postprocessing
+- LICENSE â€” license of React Postprocessing
+
+# Skill: React Spring
+
+> Category: Frontend Engineering
+> Priority: High
+
+---
+
+## Description
+
+<h1 align="center">react-spring</h1> This skill provides the essential guidance, workflow, anti-patterns, and verification checklist needed to use React Spring correctly within the pmndrs ecosystem and within DevinOS projects.
+
+## Purpose
+
+Reduce implementation risk and accelerate development by applying the correct patterns, configuration, and integration steps for React Spring. The goal is to produce code that is performant, maintainable, and aligned with the official documentation.
+
+## Trigger
+
+Use this skill when:
+
+- Building a feature that depends on React Spring.
+- Deciding whether React Spring is the right tool for the current architecture.
+- Reviewing, debugging, or refactoring code that uses React Spring.
+- Integrating React Spring with other pmndrs libraries or React patterns.
+- Setting up a new project or adding the library to an existing project.
+- Evaluating performance, accessibility, or SSR implications of React Spring.
+
+## Context
+
+- Project framework, version, and build tooling.
+- Target devices and performance budgets (desktop, mobile, VR/AR).
+- Related libraries already in use (React, Three.js, state managers, animation libraries).
+- Client-only versus SSR constraints.
+- Existing component structure and coding standards.
+- Need for TypeScript types, tests, and documentation.
+- License and compatibility requirements.
+
+## Workflow
+
+1. Confirm the problem or feature that requires React Spring.
+2. Review the official documentation and the data files in this skill.
+3. Install the library using the recommended package manager and version.
+4. Configure the library according to the project setup and constraints.
+5. Build a minimal working example that proves the integration.
+6. Expand the example into production-ready components with error handling.
+7. Run the verification checklist, including performance and accessibility checks.
+8. Document decisions, trade-offs, and any deviations from the official docs.
+9. Clean up temporary code, remove unused imports, and ensure proper disposal.
+
+## Examples
+
+### Good: Minimal usage
+
+`js
+// See data/readme.md and data/docs/ for exact API details.
+import * as Lib from 'react-spring'
+
+// Initialize the library according to its documented pattern.
+const instance = Lib.createSetup()
+
+// Use it within a React component or module.
+`
+
+### Bad: Unverified copy-paste
+
+`js
+// Do not copy examples without confirming they match your project version and setup.
+const instance = Lib.createSetup({ wrongOption: true })
+`
+
+## Anti-patterns
+
+- Using React Spring without understanding its primary use case and trade-offs.
+- Combining it with incompatible libraries or conflicting state patterns.
+- Skipping cleanup, ignoring SSR constraints, or leaking resources on unmount.
+- Ignoring performance implications on low-end or mobile devices.
+- Copying examples from documentation without adapting them to the project.
+- Hardcoding configuration that should be environment-specific or shared.
+- Neglecting error handling, loading states, and fallback behavior.
+
+## Common Mistakes
+
+- Installing the wrong version or missing peer dependencies.
+- Forgetting to wrap client-only code in the appropriate lifecycle hooks.
+- Creating new instances inside render loops or event handlers without memoization.
+- Not testing on target devices or with reduced-motion preferences enabled.
+- Mixing multiple solutions from the same domain without clear ownership.
+
+## Verification
+
+- [ ] The library is installed with correct version and peer dependencies.
+- [ ] Usage matches the official documentation and data files in this skill.
+- [ ] A minimal working example has been implemented and verified.
+- [ ] Performance is acceptable on target devices.
+- [ ] SSR and client-only constraints are respected.
+- [ ] Cleanup and disposal are handled correctly.
+- [ ] Error handling and loading states are in place.
+- [ ] Cross-skill references are used when relevant (Frontend, Performance, React Three Drei).
+- [ ] Documentation is updated with decisions and trade-offs.
+
+## Cross Skill References
+
+- **Frontend Engineering:** React lifecycle, component structure, responsive design.
+- **Performance Optimization:** Profiling, budgets, and optimization.
+- **React Three Drei:** When building 3D scenes with pmndrs tools.
+- **Scrollytelling:** When scroll-driven experiences need 3D or animation.
+- **Documentation:** Recording decisions, ADRs, and performance results.
+- **Quality Audit:** Validating this skill and any assets produced with it.
+
+## References
+
+- Repository: https://github.com/pmndrs/react-spring
+- data/readme.md â€” latest README from React Spring
+- data/docs/ â€” latest documentation from React Spring
+- LICENSE â€” license of React Spring
+
+# Skill: React Three A11y
+
+> Category: Frontend Engineering
+> Priority: High
+
+---
+
+## Description
+
+<h1>@react-three/a11y</h1> This skill provides the essential guidance, workflow, anti-patterns, and verification checklist needed to use React Three A11y correctly within the pmndrs ecosystem and within DevinOS projects.
+
+## Purpose
+
+Reduce implementation risk and accelerate development by applying the correct patterns, configuration, and integration steps for React Three A11y. The goal is to produce code that is performant, maintainable, and aligned with the official documentation.
+
+## Trigger
+
+Use this skill when:
+
+- Building a feature that depends on React Three A11y.
+- Deciding whether React Three A11y is the right tool for the current architecture.
+- Reviewing, debugging, or refactoring code that uses React Three A11y.
+- Integrating React Three A11y with other pmndrs libraries or React patterns.
+- Setting up a new project or adding the library to an existing project.
+- Evaluating performance, accessibility, or SSR implications of React Three A11y.
+
+## Context
+
+- Project framework, version, and build tooling.
+- Target devices and performance budgets (desktop, mobile, VR/AR).
+- Related libraries already in use (React, Three.js, state managers, animation libraries).
+- Client-only versus SSR constraints.
+- Existing component structure and coding standards.
+- Need for TypeScript types, tests, and documentation.
+- License and compatibility requirements.
+
+## Workflow
+
+1. Confirm the problem or feature that requires React Three A11y.
+2. Review the official documentation and the data files in this skill.
+3. Install the library using the recommended package manager and version.
+4. Configure the library according to the project setup and constraints.
+5. Build a minimal working example that proves the integration.
+6. Expand the example into production-ready components with error handling.
+7. Run the verification checklist, including performance and accessibility checks.
+8. Document decisions, trade-offs, and any deviations from the official docs.
+9. Clean up temporary code, remove unused imports, and ensure proper disposal.
+
+## Examples
+
+### Good: Minimal usage
+
+`js
+// See data/readme.md and data/docs/ for exact API details.
+import * as Lib from 'react-three-a11y'
+
+// Initialize the library according to its documented pattern.
+const instance = Lib.createSetup()
+
+// Use it within a React component or module.
+`
+
+### Bad: Unverified copy-paste
+
+`js
+// Do not copy examples without confirming they match your project version and setup.
+const instance = Lib.createSetup({ wrongOption: true })
+`
+
+## Anti-patterns
+
+- Using React Three A11y without understanding its primary use case and trade-offs.
+- Combining it with incompatible libraries or conflicting state patterns.
+- Skipping cleanup, ignoring SSR constraints, or leaking resources on unmount.
+- Ignoring performance implications on low-end or mobile devices.
+- Copying examples from documentation without adapting them to the project.
+- Hardcoding configuration that should be environment-specific or shared.
+- Neglecting error handling, loading states, and fallback behavior.
+
+## Common Mistakes
+
+- Installing the wrong version or missing peer dependencies.
+- Forgetting to wrap client-only code in the appropriate lifecycle hooks.
+- Creating new instances inside render loops or event handlers without memoization.
+- Not testing on target devices or with reduced-motion preferences enabled.
+- Mixing multiple solutions from the same domain without clear ownership.
+
+## Verification
+
+- [ ] The library is installed with correct version and peer dependencies.
+- [ ] Usage matches the official documentation and data files in this skill.
+- [ ] A minimal working example has been implemented and verified.
+- [ ] Performance is acceptable on target devices.
+- [ ] SSR and client-only constraints are respected.
+- [ ] Cleanup and disposal are handled correctly.
+- [ ] Error handling and loading states are in place.
+- [ ] Cross-skill references are used when relevant (Frontend, Performance, React Three Drei).
+- [ ] Documentation is updated with decisions and trade-offs.
+
+## Cross Skill References
+
+- **Frontend Engineering:** React lifecycle, component structure, responsive design.
+- **Performance Optimization:** Profiling, budgets, and optimization.
+- **React Three Drei:** When building 3D scenes with pmndrs tools.
+- **Scrollytelling:** When scroll-driven experiences need 3D or animation.
+- **Documentation:** Recording decisions, ADRs, and performance results.
+- **Quality Audit:** Validating this skill and any assets produced with it.
+
+## References
+
+- Repository: https://github.com/pmndrs/react-three-a11y
+- data/readme.md â€” latest README from React Three A11y
+- data/docs/ â€” latest documentation from React Three A11y
+- LICENSE â€” license of React Three A11y
+
+# Skill: React Three Drei
+
+> Category: Frontend Engineering
+> Priority: High
+
+---
+
+## Description
+
+Use `@react-three/drei` helpers and ready-made abstractions with `@react-three/fiber` to build interactive 3D scenes in React. This skill covers when to reach for drei, how to choose the right component category, and how to keep scenes performant, accessible, and maintainable.
+
+## Purpose
+
+Reduce the time and complexity of building 3D React applications by using the correct drei component for cameras, controls, loading, gizmos, shapes, shaders, and staging. Prevent common mistakes like bundle bloat, SSR breakage, and memory leaks.
+
+## Trigger
+
+Use this skill when:
+
+- Building a 3D scene or experience with React Three Fiber.
+- Needing a ready-made camera, control, loader, gizmo, shape, or shader.
+- Integrating 3D content with scrollytelling, dashboards, or product configurators.
+- Deciding whether to use a drei abstraction or write a custom Three.js solution.
+- Reviewing a React Three Fiber project for performance and correctness.
+
+## Context
+
+- React / Next.js project with `@react-three/fiber` installed.
+- `@react-three/drei` installed via `npm install @react-three/drei`.
+- Target device performance (desktop vs mobile, low-end GPU).
+- SSR requirements and client-only lifecycle constraints.
+- Need for React Native support (`@react-three/drei/native`).
+- Cross-skill needs: Frontend, Performance, Scrollytelling, UI/UX Pro Max.
+
+## Workflow
+
+1. **Install dependencies.** Add `@react-three/fiber` and `@react-three/drei` to the project.
+2. **Set up the Canvas.** Wrap the 3D scene in `<Canvas>` from `@react-three/fiber`.
+3. **Choose the camera.** Use `PerspectiveCamera`, `OrthographicCamera`, or `CubeCamera` from drei instead of raw Three.js cameras.
+4. **Add controls.** Pick `OrbitControls`, `ScrollControls`, `PresentationControls`, or `CameraControls` based on interaction needs.
+5. **Load assets.** Use `useGLTF`, `useTexture`, `useVideoTexture`, or `Environment` for models, textures, and lighting.
+6. **Build the scene.** Add shapes, abstractions, gizmos, or shaders as needed. Keep component usage intentional.
+7. **Optimize performance.** Limit draw calls, use `instancedMesh`, lazy-load heavy assets, and cap pixel ratio on mobile.
+8. **Implement cleanup.** Dispose helpers, controls, and event listeners on unmount.
+9. **Verify.** Run the verification checklist before declaring the feature complete.
+
+## Examples
+
+### Good: Minimal scene with camera and controls
+
+```jsx
+import { Canvas } from '@react-three/fiber'
+import { PerspectiveCamera, OrbitControls } from '@react-three/drei'
+
+export default function Scene() {
+  return (
+    <Canvas>
+      <PerspectiveCamera makeDefault position={[0, 0, 5]} />
+      <OrbitControls />
+      <ambientLight intensity={0.5} />
+      <mesh>
+        <boxGeometry />
+        <meshStandardMaterial color="orange" />
+      </mesh>
+    </Canvas>
+  )
+}
+```
+
+### Good: Loading a model with error handling
+
+```jsx
+import { useGLTF } from '@react-three/drei'
+
+function Model({ url }) {
+  const { scene } = useGLTF(url)
+  return <primitive object={scene} />
+}
+
+useGLTF.preload('/model.glb')
+```
+
+### Bad: Importing the full drei bundle
+
+```jsx
+// Do not do this. It breaks tree-shaking and inflates the bundle.
+import * as Drei from '@react-three/drei'
+```
+
+## Anti-patterns
+
+- Importing the entire drei namespace instead of named imports.
+- Using web-only components (`Html`, `Loader`) in a React Native project.
+- Creating new Three.js objects inside the render loop every frame.
+- Running drei components during SSR without client-only guards.
+- Loading heavy assets synchronously without preloading or lazy loading.
+- Ignoring cleanup for controls, textures, and event listeners.
+- Combining multiple UI/UX design systems without clear ownership.
+
+## Common Mistakes
+
+- Forgetting `makeDefault` on `PerspectiveCamera` so the camera is ignored.
+- Using `OrbitControls` without limiting target or damping, causing jerky UX.
+- Loading textures in every component instance instead of sharing or preloading.
+- Neglecting `prefers-reduced-motion` for animated 3D content.
+- Not testing on real mobile devices with lower GPU limits.
+
+## Performance Rules
+
+- Use named imports to keep tree-shaking effective.
+- Preload critical assets with `useGLTF.preload`, `useTexture.preload`, etc.
+- Use `instancedMesh` for many repeated objects.
+- Cap device pixel ratio on mobile with `dpr={[1, 2]}` on `Canvas`.
+- Lazy-load heavy sections with dynamic imports and `Suspense`.
+- Avoid unnecessary re-renders; keep stable references for Three.js objects.
+
+## Verification
+
+- [ ] `@react-three/fiber` and `@react-three/drei` are installed.
+- [ ] Named imports are used instead of the full namespace.
+- [ ] Camera and controls are configured correctly.
+- [ ] Assets are preloaded or lazy-loaded.
+- [ ] Components are client-only and SSR-safe.
+- [ ] Cleanup is implemented on unmount.
+- [ ] Performance is verified on target devices.
+- [ ] Reduced-motion and accessibility fallbacks are considered.
+- [ ] Cross-skill references are used when relevant (Scrollytelling, Performance, Frontend).
+
+## Cross Skill References
+
+- **Frontend Engineering:** React lifecycle, component structure, responsive design.
+- **Scrollytelling:** Scroll-driven 3D camera choreography and pinning.
+- **Performance Optimization:** Profiling, draw calls, texture optimization, budgets.
+- **UI/UX Pro Max:** Motion design, animation rhythm, accessibility.
+- **Documentation:** Recording 3D decisions, ADRs, and performance results.
+- **Quality Audit:** Validating this skill and any assets produced with it.
+
+## References
+
+- `@react-three/drei` docs: https://pmndrs.github.io/drei
+- `@react-three/fiber` docs: https://docs.pmndrs.rs/react-three-fiber
+- Repository: https://github.com/pmndrs/drei
+- `data/readme.md` — latest README from pmndrs/drei
+- `data/docs/` — latest MDX documentation from pmndrs/drei
+- `LICENSE` — MIT license of pmndrs/drei
+
+# Skill: React Three Fiber
+
+> Category: Frontend Engineering
+> Priority: High
+
+---
+
+## Description
+
+<h1>@react-three/fiber</h1> This skill provides the essential guidance, workflow, anti-patterns, and verification checklist needed to use React Three Fiber correctly within the pmndrs ecosystem and within DevinOS projects.
+
+## Purpose
+
+Reduce implementation risk and accelerate development by applying the correct patterns, configuration, and integration steps for React Three Fiber. The goal is to produce code that is performant, maintainable, and aligned with the official documentation.
+
+## Trigger
+
+Use this skill when:
+
+- Building a feature that depends on React Three Fiber.
+- Deciding whether React Three Fiber is the right tool for the current architecture.
+- Reviewing, debugging, or refactoring code that uses React Three Fiber.
+- Integrating React Three Fiber with other pmndrs libraries or React patterns.
+- Setting up a new project or adding the library to an existing project.
+- Evaluating performance, accessibility, or SSR implications of React Three Fiber.
+
+## Context
+
+- Project framework, version, and build tooling.
+- Target devices and performance budgets (desktop, mobile, VR/AR).
+- Related libraries already in use (React, Three.js, state managers, animation libraries).
+- Client-only versus SSR constraints.
+- Existing component structure and coding standards.
+- Need for TypeScript types, tests, and documentation.
+- License and compatibility requirements.
+
+## Workflow
+
+1. Confirm the problem or feature that requires React Three Fiber.
+2. Review the official documentation and the data files in this skill.
+3. Install the library using the recommended package manager and version.
+4. Configure the library according to the project setup and constraints.
+5. Build a minimal working example that proves the integration.
+6. Expand the example into production-ready components with error handling.
+7. Run the verification checklist, including performance and accessibility checks.
+8. Document decisions, trade-offs, and any deviations from the official docs.
+9. Clean up temporary code, remove unused imports, and ensure proper disposal.
+
+## Examples
+
+### Good: Minimal usage
+
+`js
+// See data/readme.md and data/docs/ for exact API details.
+import * as Lib from 'react-three-fiber'
+
+// Initialize the library according to its documented pattern.
+const instance = Lib.createSetup()
+
+// Use it within a React component or module.
+`
+
+### Bad: Unverified copy-paste
+
+`js
+// Do not copy examples without confirming they match your project version and setup.
+const instance = Lib.createSetup({ wrongOption: true })
+`
+
+## Anti-patterns
+
+- Using React Three Fiber without understanding its primary use case and trade-offs.
+- Combining it with incompatible libraries or conflicting state patterns.
+- Skipping cleanup, ignoring SSR constraints, or leaking resources on unmount.
+- Ignoring performance implications on low-end or mobile devices.
+- Copying examples from documentation without adapting them to the project.
+- Hardcoding configuration that should be environment-specific or shared.
+- Neglecting error handling, loading states, and fallback behavior.
+
+## Common Mistakes
+
+- Installing the wrong version or missing peer dependencies.
+- Forgetting to wrap client-only code in the appropriate lifecycle hooks.
+- Creating new instances inside render loops or event handlers without memoization.
+- Not testing on target devices or with reduced-motion preferences enabled.
+- Mixing multiple solutions from the same domain without clear ownership.
+
+## Verification
+
+- [ ] The library is installed with correct version and peer dependencies.
+- [ ] Usage matches the official documentation and data files in this skill.
+- [ ] A minimal working example has been implemented and verified.
+- [ ] Performance is acceptable on target devices.
+- [ ] SSR and client-only constraints are respected.
+- [ ] Cleanup and disposal are handled correctly.
+- [ ] Error handling and loading states are in place.
+- [ ] Cross-skill references are used when relevant (Frontend, Performance, React Three Drei).
+- [ ] Documentation is updated with decisions and trade-offs.
+
+## Cross Skill References
+
+- **Frontend Engineering:** React lifecycle, component structure, responsive design.
+- **Performance Optimization:** Profiling, budgets, and optimization.
+- **React Three Drei:** When building 3D scenes with pmndrs tools.
+- **Scrollytelling:** When scroll-driven experiences need 3D or animation.
+- **Documentation:** Recording decisions, ADRs, and performance results.
+- **Quality Audit:** Validating this skill and any assets produced with it.
+
+## References
+
+- Repository: https://github.com/pmndrs/react-three-fiber
+- data/readme.md â€” latest README from React Three Fiber
+- data/docs/ â€” latest documentation from React Three Fiber
+- LICENSE â€” license of React Three Fiber
+
+---
+name: refactoring
+description: "Improve code structure without changing external behavior."
+---
+
+# Skill: Refactoring
 > Category: Core Engineering
 > Priority: Critical
 
@@ -2062,8 +3468,14 @@ function processOrder(order) {
 
 ---
 
-# Skill: Root Cause Analysis
 
+
+---
+name: root-cause-analysis
+description: "Determine the fundamental cause of a problem, not just the symptom."
+---
+
+# Skill: Root Cause Analysis
 > Category: Core Engineering
 > Priority: High
 
@@ -2141,351 +3553,8 @@ Prevention: Add test for connection leak, add connection pool alert.
 
 ---
 
-# Skill: Security Review
 
-> Category: Core Engineering
-> Priority: Critical
 
----
-
-## Description
-
-Systematic evaluation of code and architecture for security vulnerabilities.
-
-## Purpose
-
-Prevent security flaws from reaching production.
-
-## Trigger
-
-Use this skill when:
-- Writing authentication/authorization code
-- Handling user input
-- Processing sensitive data
-- Adding new dependencies
-- Before any production deployment
-- After a security incident
-
-## Context
-
-- Code under review
-- Threat model
-- OWASP Top 10
-- Compliance requirements (GDPR, SOC2, etc.)
-
-## Workflow
-
-1. **Identify Attack Surface** - Where can malicious input enter?
-2. **Validate Inputs** - Whitelist, sanitize, validate length and type.
-3. **Escape Outputs** - Prevent XSS, SQL injection, command injection.
-4. **Check Authentication** - Are all protected routes guarded?
-5. **Check Authorization** - Can users access others data?
-6. **Audit Dependencies** - Known vulnerabilities? (npm audit, safety)
-7. **Check Secrets** - No hardcoded keys, tokens, or passwords.
-8. **Review Error Handling** - No information leakage in errors.
-9. **Verify HTTPS** - Are all communications encrypted?
-10. **Run Security Tools** - SAST, DAST, dependency scanners.
-
-## Examples
-
-### Good
-
-```
-Security Review: New payment endpoint
-
-[x] Input: Card number validated with regex and Luhn check
-[x] Output: Response does not include raw card number
-[x] Auth: Endpoint requires valid JWT
-[x] Authz: Users can only see their own payments
-[x] Secrets: Stripe key from env var, not hardcoded
-[x] HTTPS: Strict TLS 1.2+ enforced
-[x] Errors: Generic error messages to client, details logged server-side
-[x] Audit: All payment attempts logged with user ID and timestamp
-```
-
-### Bad
-
-```
-It uses HTTPS so it is secure.
-```
-
-## Anti-patterns
-
-- Trusting client-side validation
-- Showing detailed error messages to users
-- Storing passwords in plain text
-- Not rate-limiting authentication endpoints
-
-## Verification
-
-- [ ] Are all inputs validated?
-- [ ] Are all outputs escaped?
-- [ ] Are secrets in environment variables?
-- [ ] Is authentication enforced everywhere?
-
-## References
-
-- [OWASP Top 10](https://owasp.org/www-project-top-ten/)
-- [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/)
-
-
----
-
-# Skill: Testing
-
-> Category: Core Engineering
-> Priority: Critical
-
----
-
-## Description
-
-Write comprehensive, deterministic, and maintainable tests.
-
-## Purpose
-
-Ensure correctness, prevent regressions, and document expected behavior.
-
-## Trigger
-
-Use this skill when:
-- Writing new code
-- Fixing a bug
-- Refactoring existing code
-- Adding a new feature
-- Reviewing code
-
-## Context
-
-- Code under test
-- Dependencies and external services
-- Testing framework in use
-- Coverage requirements
-
-## Workflow
-
-1. **Understand Behavior** - What should this code do?
-2. **Identify Edge Cases** - Null, empty, max values, errors.
-3. **Write Test First (TDD)** - Red, Green, Refactor.
-4. **Use Descriptive Names** - `should_return_404_when_user_not_found`
-5. **Mock External Dependencies** - Tests must be isolated.
-6. **Assert One Thing** - One concept per test.
-7. **Keep Tests Fast** - Slow tests are not run.
-8. **Maintain Tests** - Update tests when requirements change.
-
-## Test Pyramid
-
-```
-      /\
-     /  \  E2E (Few)
-    /____\ 
-   /      \  Integration (Some)
-  /________\
- /          \  Unit (Many)
-/____________\
-```
-
-## Examples
-
-### Good
-
-```typescript
-describe("UserService", () => {
-  describe("createUser", () => {
-    it("should throw ValidationError when email is invalid", () => {
-      expect(() => service.createUser({ email: "not-an-email" }))
-        .toThrow(ValidationError);
-    });
-
-    it("should hash password before storing", async () => {
-      const user = await service.createUser({ email: "a@b.com", password: "secret" });
-      expect(user.password).not.toBe("secret");
-      expect(await bcrypt.compare("secret", user.password)).toBe(true);
-    });
-  });
-});
-```
-
-### Bad
-
-```typescript
-test("user", () => {
-  const result = service.createUser(data);
-  expect(result).toBeDefined();
-});
-```
-
-## Anti-patterns
-
-- Testing implementation details instead of behavior
-- Using real databases/network in unit tests
-- Non-deterministic tests (time, random, order-dependent)
-- Missing edge cases
-
-## Verification
-
-- [ ] Do tests cover happy path and edge cases?
-- [ ] Are external dependencies mocked?
-- [ ] Are tests deterministic?
-- [ ] Do tests run quickly?
-
-## References
-
-- [Test Driven Development by Kent Beck](https://www.oreilly.com/library/view/test-driven-development/0321146530/)
-- [Google Testing Blog](https://testing.googleblog.com/)
-
-
----
-
-# Skill: Verification
-
-> Category: Core Engineering
-> Priority: Critical
-
----
-
-## Description
-
-Rigorous validation that a task is truly complete and correct.
-
-## Purpose
-
-Prevent false confidence. Never claim success without evidence.
-
-## Trigger
-
-Use this skill when:
-- Declaring a task complete
-- Preparing a pull request
-- Before merging code
-- Before deploying to production
-- After any significant change
-
-## Context
-
-- Requirements and acceptance criteria
-- Test results
-- Security checklist
-- Performance benchmarks
-- Documentation state
-
-## Workflow
-
-1. **Re-read Requirements** - Does the implementation match exactly?
-2. **Run All Tests** - Unit, integration, e2e. All must pass.
-3. **Check Linting** - No style violations.
-4. **Manual Verification** - Test the feature manually if needed.
-5. **Security Check** - Inputs validated? Secrets safe?
-6. **Performance Check** - No regressions?
-7. **Documentation Check** - README updated? API docs current?
-8. **Git Check** - Clean history? No secrets in diff?
-9. **Peer Review** - Has another person reviewed?
-10. **Sign Off** - Only then declare complete.
-
-## Examples
-
-### Good
-
-```
-Task: Add email validation to signup form
-
-Verification:
-[x] Unit tests for validator pass (12 tests)
-[x] Integration test for signup flow passes
-[x] Manual test: invalid email shows error
-[x] Manual test: valid email proceeds
-[x] No secrets in code
-[x] README updated with validation rules
-[x] Commit history clean
-[x] Reviewed by @teammate
-```
-
-### Bad
-
-```
-Task done. It works on my machine.
-```
-
-## Anti-patterns
-
-- Claiming completion without running tests
-- Skipping manual verification for UI changes
-- Ignoring lint errors
-- Not checking for secrets
-- Skipping peer review
-
-## Verification
-
-- [ ] Have all tests been run?
-- [ ] Have you manually verified the feature?
-- [ ] Is documentation updated?
-- [ ] Is the git history clean?
-
-## References
-
-- [Definition of Done by Scrum.org](https://www.scrum.org/resources/blog/done-understanding-definition-done)
-- [Checklist Manifesto by Atul Gawande](https://atulgawande.com/book/the-checklist-manifesto/)
-
-
----
-
-
-
-
----
-
-# Skill: UI/UX Pro Max
-
-> Category: Frontend Design
-> Priority: High
-> Source: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
-> Author: NextLevelBuilder
-> License: MIT
-
----
-
-## Description
-
-AI-powered design intelligence with 84 UI styles, 161 color palettes, 73 font pairings, 99 UX guidelines, and 25 chart types across 17 tech stacks.
-
-## Purpose
-
-Provide advanced UI/UX design guidance, visual systems, accessibility, typography, palette, chart, and frontend styling resources for AI coding agents.
-
-## Trigger
-
-Use this skill when:
-- Designing or improving application UI/UX
-- Creating visual systems, color palettes, typography, dashboards, or charts
-- Implementing accessible frontend interfaces
-- Reviewing UI quality, responsiveness, layout, or design consistency
-
-## Context
-
-- Original upstream project: nextlevelbuilder/ui-ux-pro-max-skill
-- Included as a DevinOS skill with original MIT attribution preserved
-- Supporting files live in `.agents/skills/ui-ux-pro-max/`
-
-## Workflow
-
-1. Identify the target interface, audience, and platform.
-2. Select appropriate visual style, palette, typography, and component patterns.
-3. Apply accessibility, responsiveness, hierarchy, and consistency checks.
-4. Use the bundled references and sub-skills for implementation guidance.
-5. Verify the final UI against UX, accessibility, and frontend quality criteria.
-
-## Verification
-
-- [ ] Is the design accessible and responsive?
-- [ ] Are visual hierarchy and spacing consistent?
-- [ ] Are colors and typography appropriate for the product?
-- [ ] Are upstream attribution and license preserved?
-
-## References
-
-- [UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
-- `.agents/skills/ui-ux-pro-max/README.md`
-- `.agents/skills/ui-ux-pro-max/LICENSE`
 # Skill: Scrollytelling
 
 > Category: Frontend Engineering
@@ -2891,228 +3960,216 @@ Do not produce:
 - [Core Web Vitals](https://web.dev/vitals/)
 - [DevinOS Engineering Constitution](/ENGINEERING_CONSTITUTION.md)
 - [DevinOS Quality Rule](/.agents/rules/quality.md)
-# Skill: Design Resources Library
 
-Curated collection of production-ready UI libraries, component systems, design resources, and implementation guidance. This skill works as a **team member** with `ui-ux-pro-max`:
+---
+name: security
+description: "Systematic evaluation of code and architecture for security vulnerabilities."
+---
 
-- **ui-ux-pro-max**: decides *what* to design (style, palette, typography, UX rules).
-- **design-resources-library**: decides *how* to build it (which library, which component, which resource).
+# Skill: Security Review
+> Category: Core Engineering
+> Priority: Critical
 
-## When to Use
+---
 
-Use this skill when the task involves:
-- Choosing a UI library or component system for a project
-- Implementing specific components (buttons, tables, forms, charts, navigation)
-- Finding design resources: icons, fonts, illustrations, colors, mockups
-- Selecting a design system or style guide for an enterprise project
-- Comparing libraries to pick the best fit for a stack
+## Description
 
-## Workflow with ui-ux-pro-max
+Systematic evaluation of code and architecture for security vulnerabilities.
 
-```
-1. ui-ux-pro-max: decide product type, style, color palette, typography
-2. design-resources-library: pick the best library/stack and components
-3. Combine: implement the design using the chosen library
-```
+## Purpose
 
-## Component Selection Guide
+Prevent security flaws from reaching production.
 
-### Actions
-| Component | Best Library | Use Case |
-|-----------|-------------|----------|
-| Button | shadcn/ui | Primary/secondary CTAs; Tailwind customization |
-| Button Group | Material UI | Grouped related actions |
-| Icon | shadcn/ui + Lucide | Consistent iconography |
+## Trigger
 
-### Data Display
-| Component | Best Library | Use Case |
-|-----------|-------------|----------|
-| Table | Ant Design | Data-heavy admin with sorting/filtering |
-| Card | shadcn/ui | Content containers; dashboards |
-| Badge | shadcn/ui | Status indicators; counts |
-| Statistic | Ant Design | KPI numbers and metrics |
+Use this skill when:
+- Writing authentication/authorization code
+- Handling user input
+- Processing sensitive data
+- Adding new dependencies
+- Before any production deployment
+- After a security incident
 
-### Forms
-| Component | Best Library | Use Case |
-|-----------|-------------|----------|
-| Input/Textarea | shadcn/ui | Standard form fields |
-| Select | shadcn/ui | Dropdown selection |
-| Date Picker | Ant Design | Date/time selection |
-| Form (validation) | shadcn/ui + React Hook Form | Complete forms with validation |
-| File Upload | Ant Design | File attachments |
+## Context
 
-### Navigation
-| Component | Best Library | Use Case |
-|-----------|-------------|----------|
-| Menu | shadcn/ui | Primary navigation |
-| Tabs | shadcn/ui | Content switching |
-| Breadcrumb | shadcn/ui | Hierarchical path |
-| Drawer | shadcn/ui | Side panel navigation |
-| Stepper | shadcn/ui | Multi-step workflows |
+- Code under review
+- Threat model
+- OWASP Top 10
+- Compliance requirements (GDPR, SOC2, etc.)
 
-### Feedback
-| Component | Best Library | Use Case |
-|-----------|-------------|----------|
-| Dialog/Modal | shadcn/ui | Overlay dialogs |
-| Toast | shadcn/ui Sonner | Non-blocking notifications |
-| Alert | shadcn/ui | Important messages |
-| Progress | shadcn/ui | Loading indicators |
-| Skeleton | shadcn/ui | Content loading placeholders |
+## Workflow
 
-### Layout
-| Component | Best Library | Use Case |
-|-----------|-------------|----------|
-| Grid/Layout | Material UI | Complex responsive layouts |
-| Card | shadcn/ui | Content containers |
-| Accordion | shadcn/ui | Collapsible sections |
-| Resizable | shadcn/ui | Resizable panels |
-
-## Library Comparison
-
-| Library | Best For | Stack | Style |
-|---------|----------|-------|-------|
-| shadcn/ui | Modern accessible apps; Tailwind-first | React/Next.js | Customizable minimal |
-| Ant Design | Enterprise dashboards; data-heavy apps | React | Enterprise polished |
-| Material UI | Google Material Design; rapid prototyping | React | Material Design |
-| Chakra UI | Developer-friendly; accessible defaults | React | Clean minimal |
-| Mantine | Full-featured apps with hooks | React | Modern functional |
-| HeroUI | Next.js apps with animations | React/Next.js | Modern Tailwind |
-| Radix UI | Custom headless primitives | React | Unstyled accessible |
-| daisyUI | Tailwind class-based components | HTML/React/Vue | Tailwind |
-
-## Design System Selection
-
-| Project Type | Recommended Design System |
-|--------------|---------------------------|
-| Enterprise admin | Ant Design / Carbon Design System |
-| Modern SaaS | shadcn/ui / HeroUI / Primer |
-| Google-style app | Material UI / Material Design 3 |
-| Apple ecosystem | Apple Human Interface Guidelines |
-| Shopify-style | Polaris |
-| Microsoft-style | Fluent UI |
-| IBM-style | Carbon Design System |
-| Adobe-style | Spectrum |
-
-## Resource Categories
-
-See `data/resources.csv` for a curated list across:
-- UI Graphics & Illustrations
-- Fonts & Typography Tools
-- Color Tools & Palette Generators
-- Icons & Logos
-- Mockups & Templates
-- CSS Frameworks
-- UI Component Libraries
-- React / Vue / Angular / Svelte Libraries
-- Design Systems & Style Guides
-- Design Inspiration
-- Charts & Animations
-- AI Design Tools
-- Stock Photos & Image Compression
-- Accessibility Tools
-
-## Quick Resource Picks
-
-### Icons
-- **Lucide**: default for shadcn/ui; consistent modern icons
-- **Heroicons**: Tailwind Labs; clean SVG
-- **Phosphor Icons**: flexible weights and styles
-- **Tabler Icons**: large free icon set
-- **Material Design Icons**: Material-style icons
-- **Iconify**: universal icon framework
-
-### Fonts
-- **Google Fonts**: free web fonts
-- **Fontshare**: quality free fonts
-- **FontPair**: font pairing suggestions
-- **Fontjoy**: AI font pairing
-
-### Colors
-- **Coolors**: palette generator
-- **UI Colors**: Tailwind palette generator
-- **Happy Hues**: palettes with context
-- **Adobe Color**: color wheel and palette tools
-- **Material Color Tool**: Material Design palettes
-
-### Illustrations
-- **Undraw**: open-source illustrations
-- **Drawkit**: illustrations and icons
-- **Manypixels**: free illustrations gallery
-- **Humaaans**: mix-and-match human illustrations
-- **Open Doodles**: hand-drawn illustrations
-- **Blush**: customizable illustrations
-
-### Design Inspiration
-- **Dribbble**: design community
-- **Behance**: creative portfolios
-- **Awwwards**: website awards
-- **Land Book**: landing page inspiration
-- **Page Collective**: landing page gallery
-
-## Integration with ui-ux-pro-max
-
-When both skills are active, follow this sequence:
-
-1. **Start with ui-ux-pro-max** to define:
-   - Product type and audience
-   - Style (minimalism, glassmorphism, brutalism, etc.)
-   - Color palette and typography
-   - Layout and responsive behavior
-   - Accessibility and UX priorities
-
-2. **Then use design-resources-library** to choose:
-   - Component library matching the stack
-   - Specific components for each UI element
-   - Best resources for icons, fonts, and illustrations
-   - Design system if enterprise consistency is needed
-
-3. **Implement** using the combination of design rules and library components.
+1. **Identify Attack Surface** - Where can malicious input enter?
+2. **Validate Inputs** - Whitelist, sanitize, validate length and type.
+3. **Escape Outputs** - Prevent XSS, SQL injection, command injection.
+4. **Check Authentication** - Are all protected routes guarded?
+5. **Check Authorization** - Can users access others data?
+6. **Audit Dependencies** - Known vulnerabilities? (npm audit, safety)
+7. **Check Secrets** - No hardcoded keys, tokens, or passwords.
+8. **Review Error Handling** - No information leakage in errors.
+9. **Verify HTTPS** - Are all communications encrypted?
+10. **Run Security Tools** - SAST, DAST, dependency scanners.
 
 ## Examples
 
-### Good Workflow
+### Good
 
-User: "Build a SaaS analytics dashboard with Next.js."
+```
+Security Review: New payment endpoint
 
-Response:
-1. Use ui-ux-pro-max to choose: dark mode, minimalism, blue/amber palette, Inter typography.
-2. Use design-resources-library to choose: shadcn/ui for Next.js, shadcn/ui Chart for charts, shadcn/ui Table for data, Lucide icons.
-3. Implement with Tailwind CSS and shadcn/ui components.
+[x] Input: Card number validated with regex and Luhn check
+[x] Output: Response does not include raw card number
+[x] Auth: Endpoint requires valid JWT
+[x] Authz: Users can only see their own payments
+[x] Secrets: Stripe key from env var, not hardcoded
+[x] HTTPS: Strict TLS 1.2+ enforced
+[x] Errors: Generic error messages to client, details logged server-side
+[x] Audit: All payment attempts logged with user ID and timestamp
+```
 
-### Bad Workflow
+### Bad
 
-User: "Build a SaaS analytics dashboard with Next.js."
-
-Bad response: mix Material UI with shadcn/ui in the same project without a clear reason. Stick to one library per project.
+```
+It uses HTTPS so it is secure.
+```
 
 ## Anti-patterns
 
-- Mixing multiple UI libraries in one project without clear ownership
-- Choosing a library that doesn't match the team's stack
-- Using heavy enterprise libraries for simple landing pages
-- Ignoring accessibility requirements of chosen components
-- Hardcoding hex colors instead of using the library's theme tokens
-- Not checking license compatibility of resources
+- Trusting client-side validation
+- Showing detailed error messages to users
+- Storing passwords in plain text
+- Not rate-limiting authentication endpoints
 
 ## Verification
 
-- [ ] Is the chosen library compatible with the project's stack?
-- [ ] Does the library support the required accessibility standards?
-- [ ] Are the selected components sufficient for the design without mixing libraries?
-- [ ] Are all resources (icons, fonts, illustrations) licensed appropriately?
-- [ ] Does the implementation follow ui-ux-pro-max design rules?
+- [ ] Are all inputs validated?
+- [ ] Are all outputs escaped?
+- [ ] Are secrets in environment variables?
+- [ ] Is authentication enforced everywhere?
 
 ## References
 
-- `data/components.csv` — component selection guide
-- `data/design-systems.csv` — library comparison
-- `data/resources.csv` — categorized design resources
-- `ui-ux-pro-max` skill — design rules, styles, palettes, UX guidelines
-- shadcn/ui: https://ui.shadcn.com
-- Ant Design: https://ant.design
-- Material UI: https://mui.com/material-ui
-- Brad Traversy Design Resources: https://github.com/bradtraversy/design-resources-for-developers
-# Skill: React Three Drei
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/)
+- [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/)
+
+
+---
+
+
+
+---
+name: testing
+description: "Write comprehensive, deterministic, and maintainable tests."
+---
+
+# Skill: Testing
+> Category: Core Engineering
+> Priority: Critical
+
+---
+
+## Description
+
+Write comprehensive, deterministic, and maintainable tests.
+
+## Purpose
+
+Ensure correctness, prevent regressions, and document expected behavior.
+
+## Trigger
+
+Use this skill when:
+- Writing new code
+- Fixing a bug
+- Refactoring existing code
+- Adding a new feature
+- Reviewing code
+
+## Context
+
+- Code under test
+- Dependencies and external services
+- Testing framework in use
+- Coverage requirements
+
+## Workflow
+
+1. **Understand Behavior** - What should this code do?
+2. **Identify Edge Cases** - Null, empty, max values, errors.
+3. **Write Test First (TDD)** - Red, Green, Refactor.
+4. **Use Descriptive Names** - `should_return_404_when_user_not_found`
+5. **Mock External Dependencies** - Tests must be isolated.
+6. **Assert One Thing** - One concept per test.
+7. **Keep Tests Fast** - Slow tests are not run.
+8. **Maintain Tests** - Update tests when requirements change.
+
+## Test Pyramid
+
+```
+      /\
+     /  \  E2E (Few)
+    /____\ 
+   /      \  Integration (Some)
+  /________\
+ /          \  Unit (Many)
+/____________\
+```
+
+## Examples
+
+### Good
+
+```typescript
+describe("UserService", () => {
+  describe("createUser", () => {
+    it("should throw ValidationError when email is invalid", () => {
+      expect(() => service.createUser({ email: "not-an-email" }))
+        .toThrow(ValidationError);
+    });
+
+    it("should hash password before storing", async () => {
+      const user = await service.createUser({ email: "a@b.com", password: "secret" });
+      expect(user.password).not.toBe("secret");
+      expect(await bcrypt.compare("secret", user.password)).toBe(true);
+    });
+  });
+});
+```
+
+### Bad
+
+```typescript
+test("user", () => {
+  const result = service.createUser(data);
+  expect(result).toBeDefined();
+});
+```
+
+## Anti-patterns
+
+- Testing implementation details instead of behavior
+- Using real databases/network in unit tests
+- Non-deterministic tests (time, random, order-dependent)
+- Missing edge cases
+
+## Verification
+
+- [ ] Do tests cover happy path and edge cases?
+- [ ] Are external dependencies mocked?
+- [ ] Are tests deterministic?
+- [ ] Do tests run quickly?
+
+## References
+
+- [Test Driven Development by Kent Beck](https://www.oreilly.com/library/view/test-driven-development/0321146530/)
+- [Google Testing Blog](https://testing.googleblog.com/)
+
+
+---
+
+
+
+# Skill: Uikit
 
 > Category: Frontend Engineering
 > Priority: High
@@ -3121,139 +4178,1347 @@ Bad response: mix Material UI with shadcn/ui in the same project without a clear
 
 ## Description
 
-Use `@react-three/drei` helpers and ready-made abstractions with `@react-three/fiber` to build interactive 3D scenes in React. This skill covers when to reach for drei, how to choose the right component category, and how to keep scenes performant, accessible, and maintainable.
+<h1 align="center">uikit</h1> This skill provides the essential guidance, workflow, anti-patterns, and verification checklist needed to use Uikit correctly within the pmndrs ecosystem and within DevinOS projects.
 
 ## Purpose
 
-Reduce the time and complexity of building 3D React applications by using the correct drei component for cameras, controls, loading, gizmos, shapes, shaders, and staging. Prevent common mistakes like bundle bloat, SSR breakage, and memory leaks.
+Reduce implementation risk and accelerate development by applying the correct patterns, configuration, and integration steps for Uikit. The goal is to produce code that is performant, maintainable, and aligned with the official documentation.
 
 ## Trigger
 
 Use this skill when:
 
-- Building a 3D scene or experience with React Three Fiber.
-- Needing a ready-made camera, control, loader, gizmo, shape, or shader.
-- Integrating 3D content with scrollytelling, dashboards, or product configurators.
-- Deciding whether to use a drei abstraction or write a custom Three.js solution.
-- Reviewing a React Three Fiber project for performance and correctness.
+- Building a feature that depends on Uikit.
+- Deciding whether Uikit is the right tool for the current architecture.
+- Reviewing, debugging, or refactoring code that uses Uikit.
+- Integrating Uikit with other pmndrs libraries or React patterns.
+- Setting up a new project or adding the library to an existing project.
+- Evaluating performance, accessibility, or SSR implications of Uikit.
 
 ## Context
 
-- React / Next.js project with `@react-three/fiber` installed.
-- `@react-three/drei` installed via `npm install @react-three/drei`.
-- Target device performance (desktop vs mobile, low-end GPU).
-- SSR requirements and client-only lifecycle constraints.
-- Need for React Native support (`@react-three/drei/native`).
-- Cross-skill needs: Frontend, Performance, Scrollytelling, UI/UX Pro Max.
+- Project framework, version, and build tooling.
+- Target devices and performance budgets (desktop, mobile, VR/AR).
+- Related libraries already in use (React, Three.js, state managers, animation libraries).
+- Client-only versus SSR constraints.
+- Existing component structure and coding standards.
+- Need for TypeScript types, tests, and documentation.
+- License and compatibility requirements.
 
 ## Workflow
 
-1. **Install dependencies.** Add `@react-three/fiber` and `@react-three/drei` to the project.
-2. **Set up the Canvas.** Wrap the 3D scene in `<Canvas>` from `@react-three/fiber`.
-3. **Choose the camera.** Use `PerspectiveCamera`, `OrthographicCamera`, or `CubeCamera` from drei instead of raw Three.js cameras.
-4. **Add controls.** Pick `OrbitControls`, `ScrollControls`, `PresentationControls`, or `CameraControls` based on interaction needs.
-5. **Load assets.** Use `useGLTF`, `useTexture`, `useVideoTexture`, or `Environment` for models, textures, and lighting.
-6. **Build the scene.** Add shapes, abstractions, gizmos, or shaders as needed. Keep component usage intentional.
-7. **Optimize performance.** Limit draw calls, use `instancedMesh`, lazy-load heavy assets, and cap pixel ratio on mobile.
-8. **Implement cleanup.** Dispose helpers, controls, and event listeners on unmount.
-9. **Verify.** Run the verification checklist before declaring the feature complete.
+1. Confirm the problem or feature that requires Uikit.
+2. Review the official documentation and the data files in this skill.
+3. Install the library using the recommended package manager and version.
+4. Configure the library according to the project setup and constraints.
+5. Build a minimal working example that proves the integration.
+6. Expand the example into production-ready components with error handling.
+7. Run the verification checklist, including performance and accessibility checks.
+8. Document decisions, trade-offs, and any deviations from the official docs.
+9. Clean up temporary code, remove unused imports, and ensure proper disposal.
 
 ## Examples
 
-### Good: Minimal scene with camera and controls
+### Good: Minimal usage
 
-```jsx
-import { Canvas } from '@react-three/fiber'
-import { PerspectiveCamera, OrbitControls } from '@react-three/drei'
+`js
+// See data/readme.md and data/docs/ for exact API details.
+import * as Lib from 'uikit'
 
-export default function Scene() {
-  return (
-    <Canvas>
-      <PerspectiveCamera makeDefault position={[0, 0, 5]} />
-      <OrbitControls />
-      <ambientLight intensity={0.5} />
-      <mesh>
-        <boxGeometry />
-        <meshStandardMaterial color="orange" />
-      </mesh>
-    </Canvas>
-  )
-}
-```
+// Initialize the library according to its documented pattern.
+const instance = Lib.createSetup()
 
-### Good: Loading a model with error handling
+// Use it within a React component or module.
+`
 
-```jsx
-import { useGLTF } from '@react-three/drei'
+### Bad: Unverified copy-paste
 
-function Model({ url }) {
-  const { scene } = useGLTF(url)
-  return <primitive object={scene} />
-}
-
-useGLTF.preload('/model.glb')
-```
-
-### Bad: Importing the full drei bundle
-
-```jsx
-// Do not do this. It breaks tree-shaking and inflates the bundle.
-import * as Drei from '@react-three/drei'
-```
+`js
+// Do not copy examples without confirming they match your project version and setup.
+const instance = Lib.createSetup({ wrongOption: true })
+`
 
 ## Anti-patterns
 
-- Importing the entire drei namespace instead of named imports.
-- Using web-only components (`Html`, `Loader`) in a React Native project.
-- Creating new Three.js objects inside the render loop every frame.
-- Running drei components during SSR without client-only guards.
-- Loading heavy assets synchronously without preloading or lazy loading.
-- Ignoring cleanup for controls, textures, and event listeners.
-- Combining multiple UI/UX design systems without clear ownership.
+- Using Uikit without understanding its primary use case and trade-offs.
+- Combining it with incompatible libraries or conflicting state patterns.
+- Skipping cleanup, ignoring SSR constraints, or leaking resources on unmount.
+- Ignoring performance implications on low-end or mobile devices.
+- Copying examples from documentation without adapting them to the project.
+- Hardcoding configuration that should be environment-specific or shared.
+- Neglecting error handling, loading states, and fallback behavior.
 
 ## Common Mistakes
 
-- Forgetting `makeDefault` on `PerspectiveCamera` so the camera is ignored.
-- Using `OrbitControls` without limiting target or damping, causing jerky UX.
-- Loading textures in every component instance instead of sharing or preloading.
-- Neglecting `prefers-reduced-motion` for animated 3D content.
-- Not testing on real mobile devices with lower GPU limits.
-
-## Performance Rules
-
-- Use named imports to keep tree-shaking effective.
-- Preload critical assets with `useGLTF.preload`, `useTexture.preload`, etc.
-- Use `instancedMesh` for many repeated objects.
-- Cap device pixel ratio on mobile with `dpr={[1, 2]}` on `Canvas`.
-- Lazy-load heavy sections with dynamic imports and `Suspense`.
-- Avoid unnecessary re-renders; keep stable references for Three.js objects.
+- Installing the wrong version or missing peer dependencies.
+- Forgetting to wrap client-only code in the appropriate lifecycle hooks.
+- Creating new instances inside render loops or event handlers without memoization.
+- Not testing on target devices or with reduced-motion preferences enabled.
+- Mixing multiple solutions from the same domain without clear ownership.
 
 ## Verification
 
-- [ ] `@react-three/fiber` and `@react-three/drei` are installed.
-- [ ] Named imports are used instead of the full namespace.
-- [ ] Camera and controls are configured correctly.
-- [ ] Assets are preloaded or lazy-loaded.
-- [ ] Components are client-only and SSR-safe.
-- [ ] Cleanup is implemented on unmount.
-- [ ] Performance is verified on target devices.
-- [ ] Reduced-motion and accessibility fallbacks are considered.
-- [ ] Cross-skill references are used when relevant (Scrollytelling, Performance, Frontend).
+- [ ] The library is installed with correct version and peer dependencies.
+- [ ] Usage matches the official documentation and data files in this skill.
+- [ ] A minimal working example has been implemented and verified.
+- [ ] Performance is acceptable on target devices.
+- [ ] SSR and client-only constraints are respected.
+- [ ] Cleanup and disposal are handled correctly.
+- [ ] Error handling and loading states are in place.
+- [ ] Cross-skill references are used when relevant (Frontend, Performance, React Three Drei).
+- [ ] Documentation is updated with decisions and trade-offs.
 
 ## Cross Skill References
 
 - **Frontend Engineering:** React lifecycle, component structure, responsive design.
-- **Scrollytelling:** Scroll-driven 3D camera choreography and pinning.
-- **Performance Optimization:** Profiling, draw calls, texture optimization, budgets.
-- **UI/UX Pro Max:** Motion design, animation rhythm, accessibility.
-- **Documentation:** Recording 3D decisions, ADRs, and performance results.
+- **Performance Optimization:** Profiling, budgets, and optimization.
+- **React Three Drei:** When building 3D scenes with pmndrs tools.
+- **Scrollytelling:** When scroll-driven experiences need 3D or animation.
+- **Documentation:** Recording decisions, ADRs, and performance results.
 - **Quality Audit:** Validating this skill and any assets produced with it.
 
 ## References
 
-- `@react-three/drei` docs: https://pmndrs.github.io/drei
-- `@react-three/fiber` docs: https://docs.pmndrs.rs/react-three-fiber
-- Repository: https://github.com/pmndrs/drei
-- `data/readme.md` — latest README from pmndrs/drei
-- `data/docs/` — latest MDX documentation from pmndrs/drei
-- `LICENSE` — MIT license of pmndrs/drei
+- Repository: https://github.com/pmndrs/uikit
+- data/readme.md â€” latest README from Uikit
+- data/docs/ â€” latest documentation from Uikit
+- LICENSE â€” license of Uikit
+
+---
+name: ui-ux-pro-max
+description: "UI/UX design intelligence for web and mobile. Includes 50+ styles, 161 color palettes, 57 font pairings, 161 product types, 99 UX guidelines, and 25 chart types across 10 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter, Tailwind, shadcn/ui, and HTML/CSS). Actions: plan, build, create, design, implement, review, fix, improve, optimize, enhance, refactor, and check UI/UX code. Projects: website, landing page, dashboard, admin panel, e-commerce, SaaS, portfolio, blog, and mobile app. Elements: button, modal, navbar, sidebar, card, table, form, and chart. Styles: glassmorphism, claymorphism, minimalism, brutalism, neumorphism, bento grid, dark mode, responsive, skeuomorphism, and flat design. Topics: color systems, accessibility, animation, layout, typography, font pairing, spacing, interaction states, shadow, and gradient. Integrations: shadcn/ui MCP for component search and examples."
+---
+
+# Skill: UI/UX Pro Max
+
+Comprehensive design guide for web and mobile applications. Contains 50+ styles, 161 color palettes, 57 font pairings, 161 product types with reasoning rules, 99 UX guidelines, and 25 chart types across 10 technology stacks. Searchable database with priority-based recommendations.
+
+## When to Apply
+
+This Skill should be used when the task involves **UI structure, visual design decisions, interaction patterns, or user experience quality control**.
+
+### Must Use
+
+This Skill must be invoked in the following situations:
+
+- Designing new pages (Landing Page, Dashboard, Admin, SaaS, Mobile App)
+- Creating or refactoring UI components (buttons, modals, forms, tables, charts, etc.)
+- Choosing color schemes, typography systems, spacing standards, or layout systems
+- Reviewing UI code for user experience, accessibility, or visual consistency
+- Implementing navigation structures, animations, or responsive behavior
+- Making product-level design decisions (style, information hierarchy, brand expression)
+- Improving perceived quality, clarity, or usability of interfaces
+
+### Recommended
+
+This Skill is recommended in the following situations:
+
+- UI looks "not professional enough" but the reason is unclear
+- Receiving feedback on usability or experience
+- Pre-launch UI quality optimization
+- Aligning cross-platform design (Web / iOS / Android)
+- Building design systems or reusable component libraries
+
+### Skip
+
+This Skill is not needed in the following situations:
+
+- Pure backend logic development
+- Only involving API or database design
+- Performance optimization unrelated to the interface
+- Infrastructure or DevOps work
+- Non-visual scripts or automation tasks
+
+**Decision criteria**: If the task will change how a feature **looks, feels, moves, or is interacted with**, this Skill should be used.
+
+## Rule Categories by Priority
+
+*For human/AI reference: follow priority 1→10 to decide which rule category to focus on first; use `--domain <Domain>` to query details when needed. Scripts do not read this table.*
+
+| Priority | Category | Impact | Domain | Key Checks (Must Have) | Anti-Patterns (Avoid) |
+|----------|----------|--------|--------|------------------------|------------------------|
+| 1 | Accessibility | CRITICAL | `ux` | Contrast 4.5:1, Alt text, Keyboard nav, Aria-labels | Removing focus rings, Icon-only buttons without labels |
+| 2 | Touch & Interaction | CRITICAL | `ux` | Min size 44×44px, 8px+ spacing, Loading feedback | Reliance on hover only, Instant state changes (0ms) |
+| 3 | Performance | HIGH | `ux` | WebP/AVIF, Lazy loading, Reserve space (CLS &lt; 0.1) | Layout thrashing, Cumulative Layout Shift |
+| 4 | Style Selection | HIGH | `style`, `product` | Match product type, Consistency, SVG icons (no emoji) | Mixing flat & skeuomorphic randomly, Emoji as icons |
+| 5 | Layout & Responsive | HIGH | `ux` | Mobile-first breakpoints, Viewport meta, No horizontal scroll | Horizontal scroll, Fixed px container widths, Disable zoom |
+| 6 | Typography & Color | MEDIUM | `typography`, `color` | Base 16px, Line-height 1.5, Semantic color tokens | Text &lt; 12px body, Gray-on-gray, Raw hex in components |
+| 7 | Animation | MEDIUM | `ux` | Duration 150–300ms, Motion conveys meaning, Spatial continuity | Decorative-only animation, Animating width/height, No reduced-motion |
+| 8 | Forms & Feedback | MEDIUM | `ux` | Visible labels, Error near field, Helper text, Progressive disclosure | Placeholder-only label, Errors only at top, Overwhelm upfront |
+| 9 | Navigation Patterns | HIGH | `ux` | Predictable back, Bottom nav ≤5, Deep linking | Overloaded nav, Broken back behavior, No deep links |
+| 10 | Charts & Data | LOW | `chart` | Legends, Tooltips, Accessible colors | Relying on color alone to convey meaning |
+
+## Quick Reference
+
+### 1. Accessibility (CRITICAL)
+
+- `color-contrast` - Minimum 4.5:1 ratio for normal text (large text 3:1); Material Design
+- `focus-states` - Visible focus rings on interactive elements (2–4px; Apple HIG, MD)
+- `alt-text` - Descriptive alt text for meaningful images
+- `aria-labels` - aria-label for icon-only buttons; accessibilityLabel in native (Apple HIG)
+- `keyboard-nav` - Tab order matches visual order; full keyboard support (Apple HIG)
+- `form-labels` - Use label with for attribute
+- `skip-links` - Skip to main content for keyboard users
+- `heading-hierarchy` - Sequential h1→h6, no level skip
+- `color-not-only` - Don't convey info by color alone (add icon/text)
+- `dynamic-type` - Support system text scaling; avoid truncation as text grows (Apple Dynamic Type, MD)
+- `reduced-motion` - Respect prefers-reduced-motion; reduce/disable animations when requested (Apple Reduced Motion API, MD)
+- `voiceover-sr` - Meaningful accessibilityLabel/accessibilityHint; logical reading order for VoiceOver/screen readers (Apple HIG, MD)
+- `escape-routes` - Provide cancel/back in modals and multi-step flows (Apple HIG)
+- `keyboard-shortcuts` - Preserve system and a11y shortcuts; offer keyboard alternatives for drag-and-drop (Apple HIG)
+
+### 2. Touch & Interaction (CRITICAL)
+
+- `touch-target-size` - Min 44×44pt (Apple) / 48×48dp (Material); extend hit area beyond visual bounds if needed
+- `touch-spacing` - Minimum 8px/8dp gap between touch targets (Apple HIG, MD)
+- `hover-vs-tap` - Use click/tap for primary interactions; don't rely on hover alone
+- `loading-buttons` - Disable button during async operations; show spinner or progress
+- `error-feedback` - Clear error messages near problem
+- `cursor-pointer` - Add cursor-pointer to clickable elements (Web)
+- `gesture-conflicts` - Avoid horizontal swipe on main content; prefer vertical scroll
+- `tap-delay` - Use touch-action: manipulation to reduce 300ms delay (Web)
+- `standard-gestures` - Use platform standard gestures consistently; don't redefine (e.g. swipe-back, pinch-zoom) (Apple HIG)
+- `system-gestures` - Don't block system gestures (Control Center, back swipe, etc.) (Apple HIG)
+- `press-feedback` - Visual feedback on press (ripple/highlight; MD state layers)
+- `haptic-feedback` - Use haptic for confirmations and important actions; avoid overuse (Apple HIG)
+- `gesture-alternative` - Don't rely on gesture-only interactions; always provide visible controls for critical actions
+- `safe-area-awareness` - Keep primary touch targets away from notch, Dynamic Island, gesture bar and screen edges
+- `no-precision-required` - Avoid requiring pixel-perfect taps on small icons or thin edges
+- `swipe-clarity` - Swipe actions must show clear affordance or hint (chevron, label, tutorial)
+- `drag-threshold` - Use a movement threshold before starting drag to avoid accidental drags
+
+### 3. Performance (HIGH)
+
+- `image-optimization` - Use WebP/AVIF, responsive images (srcset/sizes), lazy load non-critical assets
+- `image-dimension` - Declare width/height or use aspect-ratio to prevent layout shift (Core Web Vitals: CLS)
+- `font-loading` - Use font-display: swap/optional to avoid invisible text (FOIT); reserve space to reduce layout shift (MD)
+- `font-preload` - Preload only critical fonts; avoid overusing preload on every variant
+- `critical-css` - Prioritize above-the-fold CSS (inline critical CSS or early-loaded stylesheet)
+- `lazy-loading` - Lazy load non-hero components via dynamic import / route-level splitting
+- `bundle-splitting` - Split code by route/feature (React Suspense / Next.js dynamic) to reduce initial load and TTI
+- `third-party-scripts` - Load third-party scripts async/defer; audit and remove unnecessary ones (MD)
+- `reduce-reflows` - Avoid frequent layout reads/writes; batch DOM reads then writes
+- `content-jumping` - Reserve space for async content to avoid layout jumps (Core Web Vitals: CLS)
+- `lazy-load-below-fold` - Use loading="lazy" for below-the-fold images and heavy media
+- `virtualize-lists` - Virtualize lists with 50+ items to improve memory efficiency and scroll performance
+- `main-thread-budget` - Keep per-frame work under ~16ms for 60fps; move heavy tasks off main thread (HIG, MD)
+- `progressive-loading` - Use skeleton screens / shimmer instead of long blocking spinners for >1s operations (Apple HIG)
+- `input-latency` - Keep input latency under ~100ms for taps/scrolls (Material responsiveness standard)
+- `tap-feedback-speed` - Provide visual feedback within 100ms of tap (Apple HIG)
+- `debounce-throttle` - Use debounce/throttle for high-frequency events (scroll, resize, input)
+- `offline-support` - Provide offline state messaging and basic fallback (PWA / mobile)
+- `network-fallback` - Offer degraded modes for slow networks (lower-res images, fewer animations)
+
+### 4. Style Selection (HIGH)
+
+- `style-match` - Match style to product type (use `--design-system` for recommendations)
+- `consistency` - Use same style across all pages
+- `no-emoji-icons` - Use SVG icons (Heroicons, Lucide), not emojis
+- `color-palette-from-product` - Choose palette from product/industry (search `--domain color`)
+- `effects-match-style` - Shadows, blur, radius aligned with chosen style (glass / flat / clay etc.)
+- `platform-adaptive` - Respect platform idioms (iOS HIG vs Material): navigation, controls, typography, motion
+- `state-clarity` - Make hover/pressed/disabled states visually distinct while staying on-style (Material state layers)
+- `elevation-consistent` - Use a consistent elevation/shadow scale for cards, sheets, modals; avoid random shadow values
+- `dark-mode-pairing` - Design light/dark variants together to keep brand, contrast, and style consistent
+- `icon-style-consistent` - Use one icon set/visual language (stroke width, corner radius) across the product
+- `system-controls` - Prefer native/system controls over fully custom ones; only customize when branding requires it (Apple HIG)
+- `blur-purpose` - Use blur to indicate background dismissal (modals, sheets), not as decoration (Apple HIG)
+- `primary-action` - Each screen should have only one primary CTA; secondary actions visually subordinate (Apple HIG)
+
+### 5. Layout & Responsive (HIGH)
+
+- `viewport-meta` - width=device-width initial-scale=1 (never disable zoom)
+- `mobile-first` - Design mobile-first, then scale up to tablet and desktop
+- `breakpoint-consistency` - Use systematic breakpoints (e.g. 375 / 768 / 1024 / 1440)
+- `readable-font-size` - Minimum 16px body text on mobile (avoids iOS auto-zoom)
+- `line-length-control` - Mobile 35–60 chars per line; desktop 60–75 chars
+- `horizontal-scroll` - No horizontal scroll on mobile; ensure content fits viewport width
+- `spacing-scale` - Use 4pt/8dp incremental spacing system (Material Design)
+- `touch-density` - Keep component spacing comfortable for touch: not cramped, not causing mis-taps
+- `container-width` - Consistent max-width on desktop (max-w-6xl / 7xl)
+- `z-index-management` - Define layered z-index scale (e.g. 0 / 10 / 20 / 40 / 100 / 1000)
+- `fixed-element-offset` - Fixed navbar/bottom bar must reserve safe padding for underlying content
+- `scroll-behavior` - Avoid nested scroll regions that interfere with the main scroll experience
+- `viewport-units` - Prefer min-h-dvh over 100vh on mobile
+- `orientation-support` - Keep layout readable and operable in landscape mode
+- `content-priority` - Show core content first on mobile; fold or hide secondary content
+- `visual-hierarchy` - Establish hierarchy via size, spacing, contrast — not color alone
+
+### 6. Typography & Color (MEDIUM)
+
+- `line-height` - Use 1.5-1.75 for body text
+- `line-length` - Limit to 65-75 characters per line
+- `font-pairing` - Match heading/body font personalities
+- `font-scale` - Consistent type scale (e.g. 12 14 16 18 24 32)
+- `contrast-readability` - Darker text on light backgrounds (e.g. slate-900 on white)
+- `text-styles-system` - Use platform type system: iOS 11 Dynamic Type styles / Material 5 type roles (display, headline, title, body, label) (HIG, MD)
+- `weight-hierarchy` - Use font-weight to reinforce hierarchy: Bold headings (600–700), Regular body (400), Medium labels (500) (MD)
+- `color-semantic` - Define semantic color tokens (primary, secondary, error, surface, on-surface) not raw hex in components (Material color system)
+- `color-dark-mode` - Dark mode uses desaturated / lighter tonal variants, not inverted colors; test contrast separately (HIG, MD)
+- `color-accessible-pairs` - Foreground/background pairs must meet 4.5:1 (AA) or 7:1 (AAA); use tools to verify (WCAG, MD)
+- `color-not-decorative-only` - Functional color (error red, success green) must include icon/text; avoid color-only meaning (HIG, MD)
+- `truncation-strategy` - Prefer wrapping over truncation; when truncating use ellipsis and provide full text via tooltip/expand (Apple HIG)
+- `letter-spacing` - Respect default letter-spacing per platform; avoid tight tracking on body text (HIG, MD)
+- `number-tabular` - Use tabular/monospaced figures for data columns, prices, and timers to prevent layout shift
+- `whitespace-balance` - Use whitespace intentionally to group related items and separate sections; avoid visual clutter (Apple HIG)
+
+### 7. Animation (MEDIUM)
+
+- `duration-timing` - Use 150–300ms for micro-interactions; complex transitions ≤400ms; avoid >500ms (MD)
+- `transform-performance` - Use transform/opacity only; avoid animating width/height/top/left
+- `loading-states` - Show skeleton or progress indicator when loading exceeds 300ms
+- `excessive-motion` - Animate 1-2 key elements per view max
+- `easing` - Use ease-out for entering, ease-in for exiting; avoid linear for UI transitions
+- `motion-meaning` - Every animation must express a cause-effect relationship, not just be decorative (Apple HIG)
+- `state-transition` - State changes (hover / active / expanded / collapsed / modal) should animate smoothly, not snap
+- `continuity` - Page/screen transitions should maintain spatial continuity (shared element, directional slide) (Apple HIG)
+- `parallax-subtle` - Use parallax sparingly; must respect reduced-motion and not cause disorientation (Apple HIG)
+- `spring-physics` - Prefer spring/physics-based curves over linear or cubic-bezier for natural feel (Apple HIG fluid animations)
+- `exit-faster-than-enter` - Exit animations shorter than enter (~60–70% of enter duration) to feel responsive (MD motion)
+- `stagger-sequence` - Stagger list/grid item entrance by 30–50ms per item; avoid all-at-once or too-slow reveals (MD)
+- `shared-element-transition` - Use shared element / hero transitions for visual continuity between screens (MD, HIG)
+- `interruptible` - Animations must be interruptible; user tap/gesture cancels in-progress animation immediately (Apple HIG)
+- `no-blocking-animation` - Never block user input during an animation; UI must stay interactive (Apple HIG)
+- `fade-crossfade` - Use crossfade for content replacement within the same container (MD)
+- `scale-feedback` - Subtle scale (0.95–1.05) on press for tappable cards/buttons; restore on release (HIG, MD)
+- `gesture-feedback` - Drag, swipe, and pinch must provide real-time visual response tracking the finger (MD Motion)
+- `hierarchy-motion` - Use translate/scale direction to express hierarchy: enter from below = deeper, exit upward = back (MD)
+- `motion-consistency` - Unify duration/easing tokens globally; all animations share the same rhythm and feel
+- `opacity-threshold` - Fading elements should not linger below opacity 0.2; either fade fully or remain visible
+- `modal-motion` - Modals/sheets should animate from their trigger source (scale+fade or slide-in) for spatial context (HIG, MD)
+- `navigation-direction` - Forward navigation animates left/up; backward animates right/down — keep direction logically consistent (HIG)
+- `layout-shift-avoid` - Animations must not cause layout reflow or CLS; use transform for position changes
+
+### 8. Forms & Feedback (MEDIUM)
+
+- `input-labels` - Visible label per input (not placeholder-only)
+- `error-placement` - Show error below the related field
+- `submit-feedback` - Loading then success/error state on submit
+- `required-indicators` - Mark required fields (e.g. asterisk)
+- `empty-states` - Helpful message and action when no content
+- `toast-dismiss` - Auto-dismiss toasts in 3-5s
+- `confirmation-dialogs` - Confirm before destructive actions
+- `input-helper-text` - Provide persistent helper text below complex inputs, not just placeholder (Material Design)
+- `disabled-states` - Disabled elements use reduced opacity (0.38–0.5) + cursor change + semantic attribute (MD)
+- `progressive-disclosure` - Reveal complex options progressively; don't overwhelm users upfront (Apple HIG)
+- `inline-validation` - Validate on blur (not keystroke); show error only after user finishes input (MD)
+- `input-type-keyboard` - Use semantic input types (email, tel, number) to trigger the correct mobile keyboard (HIG, MD)
+- `password-toggle` - Provide show/hide toggle for password fields (MD)
+- `autofill-support` - Use autocomplete / textContentType attributes so the system can autofill (HIG, MD)
+- `undo-support` - Allow undo for destructive or bulk actions (e.g. "Undo delete" toast) (Apple HIG)
+- `success-feedback` - Confirm completed actions with brief visual feedback (checkmark, toast, color flash) (MD)
+- `error-recovery` - Error messages must include a clear recovery path (retry, edit, help link) (HIG, MD)
+- `multi-step-progress` - Multi-step flows show step indicator or progress bar; allow back navigation (MD)
+- `form-autosave` - Long forms should auto-save drafts to prevent data loss on accidental dismissal (Apple HIG)
+- `sheet-dismiss-confirm` - Confirm before dismissing a sheet/modal with unsaved changes (Apple HIG)
+- `error-clarity` - Error messages must state cause + how to fix (not just "Invalid input") (HIG, MD)
+- `field-grouping` - Group related fields logically (fieldset/legend or visual grouping) (MD)
+- `read-only-distinction` - Read-only state should be visually and semantically different from disabled (MD)
+- `focus-management` - After submit error, auto-focus the first invalid field (WCAG, MD)
+- `error-summary` - For multiple errors, show summary at top with anchor links to each field (WCAG)
+- `touch-friendly-input` - Mobile input height ≥44px to meet touch target requirements (Apple HIG)
+- `destructive-emphasis` - Destructive actions use semantic danger color (red) and are visually separated from primary actions (HIG, MD)
+- `toast-accessibility` - Toasts must not steal focus; use aria-live="polite" for screen reader announcement (WCAG)
+- `aria-live-errors` - Form errors use aria-live region or role="alert" to notify screen readers (WCAG)
+- `contrast-feedback` - Error and success state colors must meet 4.5:1 contrast ratio (WCAG, MD)
+- `timeout-feedback` - Request timeout must show clear feedback with retry option (MD)
+
+### 9. Navigation Patterns (HIGH)
+
+- `bottom-nav-limit` - Bottom navigation max 5 items; use labels with icons (Material Design)
+- `drawer-usage` - Use drawer/sidebar for secondary navigation, not primary actions (Material Design)
+- `back-behavior` - Back navigation must be predictable and consistent; preserve scroll/state (Apple HIG, MD)
+- `deep-linking` - All key screens must be reachable via deep link / URL for sharing and notifications (Apple HIG, MD)
+- `tab-bar-ios` - iOS: use bottom Tab Bar for top-level navigation (Apple HIG)
+- `top-app-bar-android` - Android: use Top App Bar with navigation icon for primary structure (Material Design)
+- `nav-label-icon` - Navigation items must have both icon and text label; icon-only nav harms discoverability (MD)
+- `nav-state-active` - Current location must be visually highlighted (color, weight, indicator) in navigation (HIG, MD)
+- `nav-hierarchy` - Primary nav (tabs/bottom bar) vs secondary nav (drawer/settings) must be clearly separated (MD)
+- `modal-escape` - Modals and sheets must offer a clear close/dismiss affordance; swipe-down to dismiss on mobile (Apple HIG)
+- `search-accessible` - Search must be easily reachable (top bar or tab); provide recent/suggested queries (MD)
+- `breadcrumb-web` - Web: use breadcrumbs for 3+ level deep hierarchies to aid orientation (MD)
+- `state-preservation` - Navigating back must restore previous scroll position, filter state, and input (HIG, MD)
+- `gesture-nav-support` - Support system gesture navigation (iOS swipe-back, Android predictive back) without conflict (HIG, MD)
+- `tab-badge` - Use badges on nav items sparingly to indicate unread/pending; clear after user visits (HIG, MD)
+- `overflow-menu` - When actions exceed available space, use overflow/more menu instead of cramming (MD)
+- `bottom-nav-top-level` - Bottom nav is for top-level screens only; never nest sub-navigation inside it (MD)
+- `adaptive-navigation` - Large screens (≥1024px) prefer sidebar; small screens use bottom/top nav (Material Adaptive)
+- `back-stack-integrity` - Never silently reset the navigation stack or unexpectedly jump to home (HIG, MD)
+- `navigation-consistency` - Navigation placement must stay the same across all pages; don't change by page type
+- `avoid-mixed-patterns` - Don't mix Tab + Sidebar + Bottom Nav at the same hierarchy level
+- `modal-vs-navigation` - Modals must not be used for primary navigation flows; they break the user's path (HIG)
+- `focus-on-route-change` - After page transition, move focus to main content region for screen reader users (WCAG)
+- `persistent-nav` - Core navigation must remain reachable from deep pages; don't hide it entirely in sub-flows (HIG, MD)
+- `destructive-nav-separation` - Dangerous actions (delete account, logout) must be visually and spatially separated from normal nav items (HIG, MD)
+- `empty-nav-state` - When a nav destination is unavailable, explain why instead of silently hiding it (MD)
+
+### 10. Charts & Data (LOW)
+
+- `chart-type` - Match chart type to data type (trend → line, comparison → bar, proportion → pie/donut)
+- `color-guidance` - Use accessible color palettes; avoid red/green only pairs for colorblind users (WCAG, MD)
+- `data-table` - Provide table alternative for accessibility; charts alone are not screen-reader friendly (WCAG)
+- `pattern-texture` - Supplement color with patterns, textures, or shapes so data is distinguishable without color (WCAG, MD)
+- `legend-visible` - Always show legend; position near the chart, not detached below a scroll fold (MD)
+- `tooltip-on-interact` - Provide tooltips/data labels on hover (Web) or tap (mobile) showing exact values (HIG, MD)
+- `axis-labels` - Label axes with units and readable scale; avoid truncated or rotated labels on mobile
+- `responsive-chart` - Charts must reflow or simplify on small screens (e.g. horizontal bar instead of vertical, fewer ticks)
+- `empty-data-state` - Show meaningful empty state when no data exists ("No data yet" + guidance), not a blank chart (MD)
+- `loading-chart` - Use skeleton or shimmer placeholder while chart data loads; don't show an empty axis frame
+- `animation-optional` - Chart entrance animations must respect prefers-reduced-motion; data should be readable immediately (HIG)
+- `large-dataset` - For 1000+ data points, aggregate or sample; provide drill-down for detail instead of rendering all (MD)
+- `number-formatting` - Use locale-aware formatting for numbers, dates, currencies on axes and labels (HIG, MD)
+- `touch-target-chart` - Interactive chart elements (points, segments) must have ≥44pt tap area or expand on touch (Apple HIG)
+- `no-pie-overuse` - Avoid pie/donut for >5 categories; switch to bar chart for clarity
+- `contrast-data` - Data lines/bars vs background ≥3:1; data text labels ≥4.5:1 (WCAG)
+- `legend-interactive` - Legends should be clickable to toggle series visibility (MD)
+- `direct-labeling` - For small datasets, label values directly on the chart to reduce eye travel
+- `tooltip-keyboard` - Tooltip content must be keyboard-reachable and not rely on hover alone (WCAG)
+- `sortable-table` - Data tables must support sorting with aria-sort indicating current sort state (WCAG)
+- `axis-readability` - Axis ticks must not be cramped; maintain readable spacing, auto-skip on small screens
+- `data-density` - Limit information density per chart to avoid cognitive overload; split into multiple charts if needed
+- `trend-emphasis` - Emphasize data trends over decoration; avoid heavy gradients/shadows that obscure the data
+- `gridline-subtle` - Grid lines should be low-contrast (e.g. gray-200) so they don't compete with data
+- `focusable-elements` - Interactive chart elements (points, bars, slices) must be keyboard-navigable (WCAG)
+- `screen-reader-summary` - Provide a text summary or aria-label describing the chart's key insight for screen readers (WCAG)
+- `error-state-chart` - Data load failure must show error message with retry action, not a broken/empty chart
+- `export-option` - For data-heavy products, offer CSV/image export of chart data
+- `drill-down-consistency` - Drill-down interactions must maintain a clear back-path and hierarchy breadcrumb
+- `time-scale-clarity` - Time series charts must clearly label time granularity (day/week/month) and allow switching
+
+## How to Use
+
+Search specific domains using the CLI tool below.
+
+---
+
+## Prerequisites
+
+Check if Python is installed:
+
+```bash
+python3 --version || python --version
+```
+
+If Python is not installed, install it based on user's OS:
+
+**macOS:**
+```bash
+brew install python3
+```
+
+**Ubuntu/Debian:**
+```bash
+sudo apt update && sudo apt install python3
+```
+
+**Windows:**
+```powershell
+winget install Python.Python.3.12
+```
+
+> **Note:** On Windows, use `python` instead of `python3` to run scripts (e.g., `python scripts/search.py` instead of `python3 scripts/search.py`).
+
+---
+
+## How to Use This Skill
+
+Use this skill when the user requests any of the following:
+
+| Scenario | Trigger Examples | Start From |
+|----------|-----------------|------------|
+| **New project / page** | "Build a landing page", "Build a dashboard" | Step 1 → Step 2 (design system) |
+| **New component** | "Create a pricing card", "Add a modal" | Step 3 (domain search: style, ux) |
+| **Choose style / color / font** | "What style fits a fintech app?", "Recommend a color palette" | Step 2 (design system) |
+| **Review existing UI** | "Review this page for UX issues", "Check accessibility" | Quick Reference checklist above |
+| **Fix a UI bug** | "Button hover is broken", "Layout shifts on load" | Quick Reference → relevant section |
+| **Improve / optimize** | "Make this faster", "Improve mobile experience" | Step 3 (domain search: ux, react) |
+| **Implement dark mode** | "Add dark mode support" | Step 3 (domain: style "dark mode") |
+| **Add charts / data viz** | "Add an analytics dashboard chart" | Step 3 (domain: chart) |
+| **Stack best practices** | "React performance tips"、"SwiftUI navigation" | Step 4 (stack search) |
+
+Follow this workflow:
+
+### Step 1: Analyze User Requirements
+
+Extract key information from user request:
+- **Product type**: Entertainment (social, video, music, gaming), Tool (scanner, editor, converter), Productivity (task manager, notes, calendar), or hybrid
+- **Target audience**: C-end consumer users; consider age group, usage context (commute, leisure, work)
+- **Style keywords**: playful, vibrant, minimal, dark mode, content-first, immersive, etc.
+- **Stack**: Match the project's framework. The engine ships guidance for many stacks (see [Available Stacks](#available-stacks) below) — pass the matching `--stack` (e.g. `nextjs`, `react`, `shadcn`, `vue`, `svelte`, `astro`, `swiftui`, `flutter`, `react-native`).
+
+### Step 2: Generate Design System (REQUIRED)
+
+**Always start with `--design-system`** to get comprehensive recommendations with reasoning:
+
+```bash
+python3 skills/ui-ux-pro-max/scripts/search.py "<product_type> <industry> <keywords>" --design-system [-p "Project Name"]
+```
+
+This command:
+1. Searches domains in parallel (product, style, color, landing, typography)
+2. Applies reasoning rules from `ui-reasoning.csv` to select best matches
+3. Returns complete design system: pattern, style, colors, typography, effects
+4. Includes anti-patterns to avoid
+
+**Example:**
+```bash
+python3 skills/ui-ux-pro-max/scripts/search.py "beauty spa wellness service" --design-system -p "Serenity Spa"
+```
+
+### Step 2b: Persist Design System (Master + Overrides Pattern)
+
+To save the design system for **hierarchical retrieval across sessions**, add `--persist`:
+
+```bash
+python3 skills/ui-ux-pro-max/scripts/search.py "<query>" --design-system --persist -p "Project Name"
+```
+
+This creates:
+- `design-system/MASTER.md` — Global Source of Truth with all design rules
+- `design-system/pages/` — Folder for page-specific overrides
+
+**With page-specific override:**
+```bash
+python3 skills/ui-ux-pro-max/scripts/search.py "<query>" --design-system --persist -p "Project Name" --page "dashboard"
+```
+
+This also creates:
+- `design-system/pages/dashboard.md` — Page-specific deviations from Master
+
+**How hierarchical retrieval works:**
+1. When building a specific page (e.g., "Checkout"), first check `design-system/pages/checkout.md`
+2. If the page file exists, its rules **override** the Master file
+3. If not, use `design-system/MASTER.md` exclusively
+
+**Context-aware retrieval prompt:**
+```
+I am building the [Page Name] page. Please read design-system/MASTER.md.
+Also check if design-system/pages/[page-name].md exists.
+If the page file exists, prioritize its rules.
+If not, use the Master rules exclusively.
+Now, generate the code...
+```
+
+### Step 3: Supplement with Detailed Searches (as needed)
+
+After getting the design system, use domain searches to get additional details:
+
+```bash
+python3 skills/ui-ux-pro-max/scripts/search.py "<keyword>" --domain <domain> [-n <max_results>]
+```
+
+**When to use detailed searches:**
+
+| Need | Domain | Example |
+|------|--------|---------|
+| Product type patterns | `product` | `--domain product "entertainment social"` |
+| More style options | `style` | `--domain style "glassmorphism dark"` |
+| Color palettes | `color` | `--domain color "entertainment vibrant"` |
+| Font pairings | `typography` | `--domain typography "playful modern"` |
+| Chart recommendations | `chart` | `--domain chart "real-time dashboard"` |
+| UX best practices | `ux` | `--domain ux "animation accessibility"` |
+| Alternative fonts | `typography` | `--domain typography "elegant luxury"` |
+| Individual Google Fonts | `google-fonts` | `--domain google-fonts "sans serif popular variable"` |
+| Landing structure | `landing` | `--domain landing "hero social-proof"` |
+| React Native perf | `react` | `--domain react "rerender memo list"` |
+| App interface a11y | `web` | `--domain web "accessibilityLabel touch safe-areas"` |
+| AI prompt / CSS keywords | `prompt` | `--domain prompt "minimalism"` |
+
+### Step 4: Stack Guidelines (match your framework)
+
+Get implementation-specific best practices for the stack you're building in.
+Pass the `--stack` that matches the project's framework:
+
+```bash
+python3 skills/ui-ux-pro-max/scripts/search.py "<keyword>" --stack <your-stack>
+# e.g. --stack nextjs | react | shadcn | vue | svelte | astro | swiftui | flutter | react-native
+```
+
+---
+
+## Search Reference
+
+### Available Domains
+
+| Domain | Use For | Example Keywords |
+|--------|---------|------------------|
+| `product` | Product type recommendations | SaaS, e-commerce, portfolio, healthcare, beauty, service |
+| `style` | UI styles, colors, effects | glassmorphism, minimalism, dark mode, brutalism |
+| `typography` | Font pairings, Google Fonts | elegant, playful, professional, modern |
+| `color` | Color palettes by product type | saas, ecommerce, healthcare, beauty, fintech, service |
+| `landing` | Page structure, CTA strategies | hero, hero-centric, testimonial, pricing, social-proof |
+| `chart` | Chart types, library recommendations | trend, comparison, timeline, funnel, pie |
+| `ux` | Best practices, anti-patterns | animation, accessibility, z-index, loading |
+| `google-fonts` | Individual Google Fonts lookup | sans serif, monospace, japanese, variable font, popular |
+| `react` | React/Next.js performance | waterfall, bundle, suspense, memo, rerender, cache |
+| `web` | App interface guidelines (iOS/Android/React Native) | accessibilityLabel, touch targets, safe areas, Dynamic Type |
+| `prompt` | AI prompts, CSS keywords | (style name) |
+
+### Available Stacks
+
+Run `ls <skill>/data/stacks/` to see the live set. Shipped stacks:
+
+| Stack | Focus |
+|-------|-------|
+| `react` | Components, hooks, render performance |
+| `nextjs` | App Router, RSC, Server Actions, rendering |
+| `vue` | Components, Composition API, reactivity |
+| `nuxtjs` | Nuxt app patterns, SSR data fetching |
+| `nuxt-ui` | Nuxt UI component patterns |
+| `svelte` | Components, stores, transitions |
+| `astro` | Islands, content, partial hydration |
+| `shadcn` | shadcn/ui primitives, composition |
+| `html-tailwind` | Tailwind utility patterns |
+| `angular` | Components, signals, services |
+| `laravel` | Blade / server-rendered UI patterns |
+| `swiftui` | Views, state, navigation (iOS/macOS) |
+| `flutter` | Widgets, state, navigation |
+| `jetpack-compose` | Composables, state, navigation (Android) |
+| `react-native` | Components, Navigation, Lists |
+| `threejs` | 3D scenes, materials, performance |
+
+---
+
+## Example Workflow
+
+**User request:** "Make an AI search homepage."
+
+### Step 1: Analyze Requirements
+- Product type: Tool (AI search engine)
+- Target audience: C-end users looking for fast, intelligent search
+- Style keywords: modern, minimal, content-first, dark mode
+- Stack: Next.js (a homepage is a web surface; use a web `--stack`)
+
+### Step 2: Generate Design System (REQUIRED)
+
+```bash
+python3 skills/ui-ux-pro-max/scripts/search.py "AI search tool modern minimal" --design-system -p "AI Search"
+```
+
+**Output:** Complete design system with pattern, style, colors, typography, effects, and anti-patterns.
+
+### Step 3: Supplement with Detailed Searches (as needed)
+
+```bash
+# Get style options for a modern tool product
+python3 skills/ui-ux-pro-max/scripts/search.py "minimalism dark mode" --domain style
+
+# Get UX best practices for search interaction and loading
+python3 skills/ui-ux-pro-max/scripts/search.py "search loading animation" --domain ux
+```
+
+### Step 4: Stack Guidelines
+
+```bash
+python3 skills/ui-ux-pro-max/scripts/search.py "list performance navigation" --stack nextjs
+```
+
+**Then:** Synthesize design system + detailed searches and implement the design.
+
+---
+
+## Output Formats
+
+The `--design-system` flag supports two output formats:
+
+```bash
+# ASCII box (default) - best for terminal display
+python3 skills/ui-ux-pro-max/scripts/search.py "fintech crypto" --design-system
+
+# Markdown - best for documentation
+python3 skills/ui-ux-pro-max/scripts/search.py "fintech crypto" --design-system -f markdown
+```
+
+---
+
+## Tips for Better Results
+
+### Query Strategy
+
+- Use **multi-dimensional keywords** — combine product + industry + tone + density: `"entertainment social vibrant content-dense"` not just `"app"`
+- Try different keywords for the same need: `"playful neon"` → `"vibrant dark"` → `"content-first minimal"`
+- Use `--design-system` first for full recommendations, then `--domain` to deep-dive any dimension you're unsure about
+- Add the `--stack` that matches the project's framework for implementation-specific guidance
+
+### Common Sticking Points
+
+| Problem | What to Do |
+|---------|------------|
+| Can't decide on style/color | Re-run `--design-system` with different keywords |
+| Dark mode contrast issues | Quick Reference §6: `color-dark-mode` + `color-accessible-pairs` |
+| Animations feel unnatural | Quick Reference §7: `spring-physics` + `easing` + `exit-faster-than-enter` |
+| Form UX is poor | Quick Reference §8: `inline-validation` + `error-clarity` + `focus-management` |
+| Navigation feels confusing | Quick Reference §9: `nav-hierarchy` + `bottom-nav-limit` + `back-behavior` |
+| Layout breaks on small screens | Quick Reference §5: `mobile-first` + `breakpoint-consistency` |
+| Performance / jank | Quick Reference §3: `virtualize-lists` + `main-thread-budget` + `debounce-throttle` |
+
+### Pre-Delivery Checklist
+
+- Run `--domain ux "animation accessibility z-index loading"` as a UX validation pass before implementation
+- Run through Quick Reference **§1–§3** (CRITICAL + HIGH) as a final review
+- Test on 375px (small phone) and landscape orientation
+- Verify behavior with **reduced-motion** enabled and **Dynamic Type** at largest size
+- Check dark mode contrast independently (don't assume light mode values work)
+- Confirm all touch targets ≥44pt and no content hidden behind safe areas
+
+---
+
+## Common Rules for Professional UI
+
+These are frequently overlooked issues that make UI look unprofessional:
+Scope notice: The rules below are for App UI (iOS/Android/React Native/Flutter), not desktop-web interaction patterns.
+
+### Icons & Visual Elements
+
+| Rule | Standard | Avoid | Why It Matters |
+|------|----------|--------|----------------|
+| **No Emoji as Structural Icons** | Use vector-based icons (e.g., Lucide, react-native-vector-icons, @expo/vector-icons). | Using emojis (🎨 🚀 ⚙️) for navigation, settings, or system controls. | Emojis are font-dependent, inconsistent across platforms, and cannot be controlled via design tokens. |
+| **Vector-Only Assets** | Use SVG or platform vector icons that scale cleanly and support theming. | Raster PNG icons that blur or pixelate. | Ensures scalability, crisp rendering, and dark/light mode adaptability. |
+| **Stable Interaction States** | Use color, opacity, or elevation transitions for press states without changing layout bounds. | Layout-shifting transforms that move surrounding content or trigger visual jitter. | Prevents unstable interactions and preserves smooth motion/perceived quality on mobile. |
+| **Correct Brand Logos** | Use official brand assets and follow their usage guidelines (spacing, color, clear space). | Guessing logo paths, recoloring unofficially, or modifying proportions. | Prevents brand misuse and ensures legal/platform compliance. |
+| **Consistent Icon Sizing** | Define icon sizes as design tokens (e.g., icon-sm, icon-md = 24pt, icon-lg). | Mixing arbitrary values like 20pt / 24pt / 28pt randomly. | Maintains rhythm and visual hierarchy across the interface. |
+| **Stroke Consistency** | Use a consistent stroke width within the same visual layer (e.g., 1.5px or 2px). | Mixing thick and thin stroke styles arbitrarily. | Inconsistent strokes reduce perceived polish and cohesion. |
+| **Filled vs Outline Discipline** | Use one icon style per hierarchy level. | Mixing filled and outline icons at the same hierarchy level. | Maintains semantic clarity and stylistic coherence. |
+| **Touch Target Minimum** | Minimum 44×44pt interactive area (use hitSlop if icon is smaller). | Small icons without expanded tap area. | Meets accessibility and platform usability standards. |
+| **Icon Alignment** | Align icons to text baseline and maintain consistent padding. | Misaligned icons or inconsistent spacing around them. | Prevents subtle visual imbalance that reduces perceived quality. |
+| **Icon Contrast** | Follow WCAG contrast standards: 4.5:1 for small elements, 3:1 minimum for larger UI glyphs. | Low-contrast icons that blend into the background. | Ensures accessibility in both light and dark modes. |
+
+
+### Interaction (App)
+
+| Rule | Do | Don't |
+|------|----|----- |
+| **Tap feedback** | Provide clear pressed feedback (ripple/opacity/elevation) within 80-150ms | No visual response on tap |
+| **Animation timing** | Keep micro-interactions around 150-300ms with platform-native easing | Instant transitions or slow animations (>500ms) |
+| **Accessibility focus** | Ensure screen reader focus order matches visual order and labels are descriptive | Unlabeled controls or confusing focus traversal |
+| **Disabled state clarity** | Use disabled semantics (`disabled`/native disabled props), reduced emphasis, and no tap action | Controls that look tappable but do nothing |
+| **Touch target minimum** | Keep tap areas >=44x44pt (iOS) or >=48x48dp (Android), expand hit area when icon is smaller | Tiny tap targets or icon-only hit areas without padding |
+| **Gesture conflict prevention** | Keep one primary gesture per region and avoid nested tap/drag conflicts | Overlapping gestures causing accidental actions |
+| **Semantic native controls** | Prefer native interactive primitives (`Button`, `Pressable`, platform equivalents) with proper accessibility roles | Generic containers used as primary controls without semantics |
+
+### Light/Dark Mode Contrast
+
+| Rule | Do | Don't |
+|------|----|----- |
+| **Surface readability (light)** | Keep cards/surfaces clearly separated from background with sufficient opacity/elevation | Overly transparent surfaces that blur hierarchy |
+| **Text contrast (light)** | Maintain body text contrast >=4.5:1 against light surfaces | Low-contrast gray body text |
+| **Text contrast (dark)** | Maintain primary text contrast >=4.5:1 and secondary text >=3:1 on dark surfaces | Dark mode text that blends into background |
+| **Border and divider visibility** | Ensure separators are visible in both themes (not just light mode) | Theme-specific borders disappearing in one mode |
+| **State contrast parity** | Keep pressed/focused/disabled states equally distinguishable in light and dark themes | Defining interaction states for one theme only |
+| **Token-driven theming** | Use semantic color tokens mapped per theme across app surfaces/text/icons | Hardcoded per-screen hex values |
+| **Scrim and modal legibility** | Use a modal scrim strong enough to isolate foreground content (typically 40-60% black) | Weak scrim that leaves background visually competing |
+
+### Layout & Spacing
+
+| Rule | Do | Don't |
+|------|----|----- |
+| **Safe-area compliance** | Respect top/bottom safe areas for all fixed headers, tab bars, and CTA bars | Placing fixed UI under notch, status bar, or gesture area |
+| **System bar clearance** | Add spacing for status/navigation bars and gesture home indicator | Let tappable content collide with OS chrome |
+| **Consistent content width** | Keep predictable content width per device class (phone/tablet) | Mixing arbitrary widths between screens |
+| **8dp spacing rhythm** | Use a consistent 4/8dp spacing system for padding/gaps/section spacing | Random spacing increments with no rhythm |
+| **Readable text measure** | Keep long-form text readable on large devices (avoid edge-to-edge paragraphs on tablets) | Full-width long text that hurts readability |
+| **Section spacing hierarchy** | Define clear vertical rhythm tiers (e.g., 16/24/32/48) by hierarchy | Similar UI levels with inconsistent spacing |
+| **Adaptive gutters by breakpoint** | Increase horizontal insets on larger widths and in landscape | Same narrow gutter on all device sizes/orientations |
+| **Scroll and fixed element coexistence** | Add bottom/top content insets so lists are not hidden behind fixed bars | Scroll content obscured by sticky headers/footers |
+
+---
+
+## Pre-Delivery Checklist
+
+Before delivering UI code, verify these items:
+Scope notice: This checklist is for App UI (iOS/Android/React Native/Flutter).
+
+### Visual Quality
+- [ ] No emojis used as icons (use SVG instead)
+- [ ] All icons come from a consistent icon family and style
+- [ ] Official brand assets are used with correct proportions and clear space
+- [ ] Pressed-state visuals do not shift layout bounds or cause jitter
+- [ ] Semantic theme tokens are used consistently (no ad-hoc per-screen hardcoded colors)
+
+### Interaction
+- [ ] All tappable elements provide clear pressed feedback (ripple/opacity/elevation)
+- [ ] Touch targets meet minimum size (>=44x44pt iOS, >=48x48dp Android)
+- [ ] Micro-interaction timing stays in the 150-300ms range with native-feeling easing
+- [ ] Disabled states are visually clear and non-interactive
+- [ ] Screen reader focus order matches visual order, and interactive labels are descriptive
+- [ ] Gesture regions avoid nested/conflicting interactions (tap/drag/back-swipe conflicts)
+
+### Light/Dark Mode
+- [ ] Primary text contrast >=4.5:1 in both light and dark mode
+- [ ] Secondary text contrast >=3:1 in both light and dark mode
+- [ ] Dividers/borders and interaction states are distinguishable in both modes
+- [ ] Modal/drawer scrim opacity is strong enough to preserve foreground legibility (typically 40-60% black)
+- [ ] Both themes are tested before delivery (not inferred from a single theme)
+
+### Layout
+- [ ] Safe areas are respected for headers, tab bars, and bottom CTA bars
+- [ ] Scroll content is not hidden behind fixed/sticky bars
+- [ ] Verified on small phone, large phone, and tablet (portrait + landscape)
+- [ ] Horizontal insets/gutters adapt correctly by device size and orientation
+- [ ] 4/8dp spacing rhythm is maintained across component, section, and page levels
+- [ ] Long-form text measure remains readable on larger devices (no edge-to-edge paragraphs)
+
+### Accessibility
+- [ ] All meaningful images/icons have accessibility labels
+- [ ] Form fields have labels, hints, and clear error messages
+- [ ] Color is not the only indicator
+- [ ] Reduced motion and dynamic text size are supported without layout breakage
+- [ ] Accessibility traits/roles/states (selected, disabled, expanded) are announced correctly
+
+# Skill: Valtio
+
+> Category: Frontend Engineering
+> Priority: High
+
+---
+
+## Description
+
+<code>npm install valtio</code> makes proxy-state simple This skill provides the essential guidance, workflow, anti-patterns, and verification checklist needed to use Valtio correctly within the pmndrs ecosystem and within DevinOS projects.
+
+## Purpose
+
+Reduce implementation risk and accelerate development by applying the correct patterns, configuration, and integration steps for Valtio. The goal is to produce code that is performant, maintainable, and aligned with the official documentation.
+
+## Trigger
+
+Use this skill when:
+
+- Building a feature that depends on Valtio.
+- Deciding whether Valtio is the right tool for the current architecture.
+- Reviewing, debugging, or refactoring code that uses Valtio.
+- Integrating Valtio with other pmndrs libraries or React patterns.
+- Setting up a new project or adding the library to an existing project.
+- Evaluating performance, accessibility, or SSR implications of Valtio.
+
+## Context
+
+- Project framework, version, and build tooling.
+- Target devices and performance budgets (desktop, mobile, VR/AR).
+- Related libraries already in use (React, Three.js, state managers, animation libraries).
+- Client-only versus SSR constraints.
+- Existing component structure and coding standards.
+- Need for TypeScript types, tests, and documentation.
+- License and compatibility requirements.
+
+## Workflow
+
+1. Confirm the problem or feature that requires Valtio.
+2. Review the official documentation and the data files in this skill.
+3. Install the library using the recommended package manager and version.
+4. Configure the library according to the project setup and constraints.
+5. Build a minimal working example that proves the integration.
+6. Expand the example into production-ready components with error handling.
+7. Run the verification checklist, including performance and accessibility checks.
+8. Document decisions, trade-offs, and any deviations from the official docs.
+9. Clean up temporary code, remove unused imports, and ensure proper disposal.
+
+## Examples
+
+### Good: Minimal usage
+
+`js
+// See data/readme.md and data/docs/ for exact API details.
+import * as Lib from 'valtio'
+
+// Initialize the library according to its documented pattern.
+const instance = Lib.createSetup()
+
+// Use it within a React component or module.
+`
+
+### Bad: Unverified copy-paste
+
+`js
+// Do not copy examples without confirming they match your project version and setup.
+const instance = Lib.createSetup({ wrongOption: true })
+`
+
+## Anti-patterns
+
+- Using Valtio without understanding its primary use case and trade-offs.
+- Combining it with incompatible libraries or conflicting state patterns.
+- Skipping cleanup, ignoring SSR constraints, or leaking resources on unmount.
+- Ignoring performance implications on low-end or mobile devices.
+- Copying examples from documentation without adapting them to the project.
+- Hardcoding configuration that should be environment-specific or shared.
+- Neglecting error handling, loading states, and fallback behavior.
+
+## Common Mistakes
+
+- Installing the wrong version or missing peer dependencies.
+- Forgetting to wrap client-only code in the appropriate lifecycle hooks.
+- Creating new instances inside render loops or event handlers without memoization.
+- Not testing on target devices or with reduced-motion preferences enabled.
+- Mixing multiple solutions from the same domain without clear ownership.
+
+## Verification
+
+- [ ] The library is installed with correct version and peer dependencies.
+- [ ] Usage matches the official documentation and data files in this skill.
+- [ ] A minimal working example has been implemented and verified.
+- [ ] Performance is acceptable on target devices.
+- [ ] SSR and client-only constraints are respected.
+- [ ] Cleanup and disposal are handled correctly.
+- [ ] Error handling and loading states are in place.
+- [ ] Cross-skill references are used when relevant (Frontend, Performance, React Three Drei).
+- [ ] Documentation is updated with decisions and trade-offs.
+
+## Cross Skill References
+
+- **Frontend Engineering:** React lifecycle, component structure, responsive design.
+- **Performance Optimization:** Profiling, budgets, and optimization.
+- **React Three Drei:** When building 3D scenes with pmndrs tools.
+- **Scrollytelling:** When scroll-driven experiences need 3D or animation.
+- **Documentation:** Recording decisions, ADRs, and performance results.
+- **Quality Audit:** Validating this skill and any assets produced with it.
+
+## References
+
+- Repository: https://github.com/pmndrs/valtio
+- data/readme.md â€” latest README from Valtio
+- data/docs/ â€” latest documentation from Valtio
+- LICENSE â€” license of Valtio
+
+---
+name: verification
+description: "Rigorous validation that a task is truly complete and correct."
+---
+
+# Skill: Verification
+> Category: Core Engineering
+> Priority: Critical
+
+---
+
+## Description
+
+Rigorous validation that a task is truly complete and correct.
+
+## Purpose
+
+Prevent false confidence. Never claim success without evidence.
+
+## Trigger
+
+Use this skill when:
+- Declaring a task complete
+- Preparing a pull request
+- Before merging code
+- Before deploying to production
+- After any significant change
+
+## Context
+
+- Requirements and acceptance criteria
+- Test results
+- Security checklist
+- Performance benchmarks
+- Documentation state
+
+## Workflow
+
+1. **Re-read Requirements** - Does the implementation match exactly?
+2. **Run All Tests** - Unit, integration, e2e. All must pass.
+3. **Check Linting** - No style violations.
+4. **Manual Verification** - Test the feature manually if needed.
+5. **Security Check** - Inputs validated? Secrets safe?
+6. **Performance Check** - No regressions?
+7. **Documentation Check** - README updated? API docs current?
+8. **Git Check** - Clean history? No secrets in diff?
+9. **Peer Review** - Has another person reviewed?
+10. **Sign Off** - Only then declare complete.
+
+## Examples
+
+### Good
+
+```
+Task: Add email validation to signup form
+
+Verification:
+[x] Unit tests for validator pass (12 tests)
+[x] Integration test for signup flow passes
+[x] Manual test: invalid email shows error
+[x] Manual test: valid email proceeds
+[x] No secrets in code
+[x] README updated with validation rules
+[x] Commit history clean
+[x] Reviewed by @teammate
+```
+
+### Bad
+
+```
+Task done. It works on my machine.
+```
+
+## Anti-patterns
+
+- Claiming completion without running tests
+- Skipping manual verification for UI changes
+- Ignoring lint errors
+- Not checking for secrets
+- Skipping peer review
+
+## Verification
+
+- [ ] Have all tests been run?
+- [ ] Have you manually verified the feature?
+- [ ] Is documentation updated?
+- [ ] Is the git history clean?
+
+## References
+
+- [Definition of Done by Scrum.org](https://www.scrum.org/resources/blog/done-understanding-definition-done)
+- [Checklist Manifesto by Atul Gawande](https://atulgawande.com/book/the-checklist-manifesto/)
+
+
+---
+
+
+
+# Skill: Viverse
+
+> Category: Frontend Engineering
+> Priority: High
+
+---
+
+## Description
+
+<h1 align="center">@react-three/viverse</h1> This skill provides the essential guidance, workflow, anti-patterns, and verification checklist needed to use Viverse correctly within the pmndrs ecosystem and within DevinOS projects.
+
+## Purpose
+
+Reduce implementation risk and accelerate development by applying the correct patterns, configuration, and integration steps for Viverse. The goal is to produce code that is performant, maintainable, and aligned with the official documentation.
+
+## Trigger
+
+Use this skill when:
+
+- Building a feature that depends on Viverse.
+- Deciding whether Viverse is the right tool for the current architecture.
+- Reviewing, debugging, or refactoring code that uses Viverse.
+- Integrating Viverse with other pmndrs libraries or React patterns.
+- Setting up a new project or adding the library to an existing project.
+- Evaluating performance, accessibility, or SSR implications of Viverse.
+
+## Context
+
+- Project framework, version, and build tooling.
+- Target devices and performance budgets (desktop, mobile, VR/AR).
+- Related libraries already in use (React, Three.js, state managers, animation libraries).
+- Client-only versus SSR constraints.
+- Existing component structure and coding standards.
+- Need for TypeScript types, tests, and documentation.
+- License and compatibility requirements.
+
+## Workflow
+
+1. Confirm the problem or feature that requires Viverse.
+2. Review the official documentation and the data files in this skill.
+3. Install the library using the recommended package manager and version.
+4. Configure the library according to the project setup and constraints.
+5. Build a minimal working example that proves the integration.
+6. Expand the example into production-ready components with error handling.
+7. Run the verification checklist, including performance and accessibility checks.
+8. Document decisions, trade-offs, and any deviations from the official docs.
+9. Clean up temporary code, remove unused imports, and ensure proper disposal.
+
+## Examples
+
+### Good: Minimal usage
+
+`js
+// See data/readme.md and data/docs/ for exact API details.
+import * as Lib from 'viverse'
+
+// Initialize the library according to its documented pattern.
+const instance = Lib.createSetup()
+
+// Use it within a React component or module.
+`
+
+### Bad: Unverified copy-paste
+
+`js
+// Do not copy examples without confirming they match your project version and setup.
+const instance = Lib.createSetup({ wrongOption: true })
+`
+
+## Anti-patterns
+
+- Using Viverse without understanding its primary use case and trade-offs.
+- Combining it with incompatible libraries or conflicting state patterns.
+- Skipping cleanup, ignoring SSR constraints, or leaking resources on unmount.
+- Ignoring performance implications on low-end or mobile devices.
+- Copying examples from documentation without adapting them to the project.
+- Hardcoding configuration that should be environment-specific or shared.
+- Neglecting error handling, loading states, and fallback behavior.
+
+## Common Mistakes
+
+- Installing the wrong version or missing peer dependencies.
+- Forgetting to wrap client-only code in the appropriate lifecycle hooks.
+- Creating new instances inside render loops or event handlers without memoization.
+- Not testing on target devices or with reduced-motion preferences enabled.
+- Mixing multiple solutions from the same domain without clear ownership.
+
+## Verification
+
+- [ ] The library is installed with correct version and peer dependencies.
+- [ ] Usage matches the official documentation and data files in this skill.
+- [ ] A minimal working example has been implemented and verified.
+- [ ] Performance is acceptable on target devices.
+- [ ] SSR and client-only constraints are respected.
+- [ ] Cleanup and disposal are handled correctly.
+- [ ] Error handling and loading states are in place.
+- [ ] Cross-skill references are used when relevant (Frontend, Performance, React Three Drei).
+- [ ] Documentation is updated with decisions and trade-offs.
+
+## Cross Skill References
+
+- **Frontend Engineering:** React lifecycle, component structure, responsive design.
+- **Performance Optimization:** Profiling, budgets, and optimization.
+- **React Three Drei:** When building 3D scenes with pmndrs tools.
+- **Scrollytelling:** When scroll-driven experiences need 3D or animation.
+- **Documentation:** Recording decisions, ADRs, and performance results.
+- **Quality Audit:** Validating this skill and any assets produced with it.
+
+## References
+
+- Repository: https://github.com/pmndrs/viverse
+- data/readme.md â€” latest README from Viverse
+- data/docs/ â€” latest documentation from Viverse
+- LICENSE â€” license of Viverse
+
+# Skill: Xr
+
+> Category: Frontend Engineering
+> Priority: High
+
+---
+
+## Description
+
+<h1 align="center">xr</h1> This skill provides the essential guidance, workflow, anti-patterns, and verification checklist needed to use Xr correctly within the pmndrs ecosystem and within DevinOS projects.
+
+## Purpose
+
+Reduce implementation risk and accelerate development by applying the correct patterns, configuration, and integration steps for Xr. The goal is to produce code that is performant, maintainable, and aligned with the official documentation.
+
+## Trigger
+
+Use this skill when:
+
+- Building a feature that depends on Xr.
+- Deciding whether Xr is the right tool for the current architecture.
+- Reviewing, debugging, or refactoring code that uses Xr.
+- Integrating Xr with other pmndrs libraries or React patterns.
+- Setting up a new project or adding the library to an existing project.
+- Evaluating performance, accessibility, or SSR implications of Xr.
+
+## Context
+
+- Project framework, version, and build tooling.
+- Target devices and performance budgets (desktop, mobile, VR/AR).
+- Related libraries already in use (React, Three.js, state managers, animation libraries).
+- Client-only versus SSR constraints.
+- Existing component structure and coding standards.
+- Need for TypeScript types, tests, and documentation.
+- License and compatibility requirements.
+
+## Workflow
+
+1. Confirm the problem or feature that requires Xr.
+2. Review the official documentation and the data files in this skill.
+3. Install the library using the recommended package manager and version.
+4. Configure the library according to the project setup and constraints.
+5. Build a minimal working example that proves the integration.
+6. Expand the example into production-ready components with error handling.
+7. Run the verification checklist, including performance and accessibility checks.
+8. Document decisions, trade-offs, and any deviations from the official docs.
+9. Clean up temporary code, remove unused imports, and ensure proper disposal.
+
+## Examples
+
+### Good: Minimal usage
+
+`js
+// See data/readme.md and data/docs/ for exact API details.
+import * as Lib from 'xr'
+
+// Initialize the library according to its documented pattern.
+const instance = Lib.createSetup()
+
+// Use it within a React component or module.
+`
+
+### Bad: Unverified copy-paste
+
+`js
+// Do not copy examples without confirming they match your project version and setup.
+const instance = Lib.createSetup({ wrongOption: true })
+`
+
+## Anti-patterns
+
+- Using Xr without understanding its primary use case and trade-offs.
+- Combining it with incompatible libraries or conflicting state patterns.
+- Skipping cleanup, ignoring SSR constraints, or leaking resources on unmount.
+- Ignoring performance implications on low-end or mobile devices.
+- Copying examples from documentation without adapting them to the project.
+- Hardcoding configuration that should be environment-specific or shared.
+- Neglecting error handling, loading states, and fallback behavior.
+
+## Common Mistakes
+
+- Installing the wrong version or missing peer dependencies.
+- Forgetting to wrap client-only code in the appropriate lifecycle hooks.
+- Creating new instances inside render loops or event handlers without memoization.
+- Not testing on target devices or with reduced-motion preferences enabled.
+- Mixing multiple solutions from the same domain without clear ownership.
+
+## Verification
+
+- [ ] The library is installed with correct version and peer dependencies.
+- [ ] Usage matches the official documentation and data files in this skill.
+- [ ] A minimal working example has been implemented and verified.
+- [ ] Performance is acceptable on target devices.
+- [ ] SSR and client-only constraints are respected.
+- [ ] Cleanup and disposal are handled correctly.
+- [ ] Error handling and loading states are in place.
+- [ ] Cross-skill references are used when relevant (Frontend, Performance, React Three Drei).
+- [ ] Documentation is updated with decisions and trade-offs.
+
+## Cross Skill References
+
+- **Frontend Engineering:** React lifecycle, component structure, responsive design.
+- **Performance Optimization:** Profiling, budgets, and optimization.
+- **React Three Drei:** When building 3D scenes with pmndrs tools.
+- **Scrollytelling:** When scroll-driven experiences need 3D or animation.
+- **Documentation:** Recording decisions, ADRs, and performance results.
+- **Quality Audit:** Validating this skill and any assets produced with it.
+
+## References
+
+- Repository: https://github.com/pmndrs/xr
+- data/readme.md â€” latest README from Xr
+- data/docs/ â€” latest documentation from Xr
+- LICENSE â€” license of Xr
+
+# Skill: Zustand
+
+> Category: Frontend Engineering
+> Priority: High
+
+---
+
+## Description
+
+<a href="https://dai-shi.github.io/zustand-banner-sponsorship/sponsors/" target="_blank" rel="noopener"> This skill provides the essential guidance, workflow, anti-patterns, and verification checklist needed to use Zustand correctly within the pmndrs ecosystem and within DevinOS projects.
+
+## Purpose
+
+Reduce implementation risk and accelerate development by applying the correct patterns, configuration, and integration steps for Zustand. The goal is to produce code that is performant, maintainable, and aligned with the official documentation.
+
+## Trigger
+
+Use this skill when:
+
+- Building a feature that depends on Zustand.
+- Deciding whether Zustand is the right tool for the current architecture.
+- Reviewing, debugging, or refactoring code that uses Zustand.
+- Integrating Zustand with other pmndrs libraries or React patterns.
+- Setting up a new project or adding the library to an existing project.
+- Evaluating performance, accessibility, or SSR implications of Zustand.
+
+## Context
+
+- Project framework, version, and build tooling.
+- Target devices and performance budgets (desktop, mobile, VR/AR).
+- Related libraries already in use (React, Three.js, state managers, animation libraries).
+- Client-only versus SSR constraints.
+- Existing component structure and coding standards.
+- Need for TypeScript types, tests, and documentation.
+- License and compatibility requirements.
+
+## Workflow
+
+1. Confirm the problem or feature that requires Zustand.
+2. Review the official documentation and the data files in this skill.
+3. Install the library using the recommended package manager and version.
+4. Configure the library according to the project setup and constraints.
+5. Build a minimal working example that proves the integration.
+6. Expand the example into production-ready components with error handling.
+7. Run the verification checklist, including performance and accessibility checks.
+8. Document decisions, trade-offs, and any deviations from the official docs.
+9. Clean up temporary code, remove unused imports, and ensure proper disposal.
+
+## Examples
+
+### Good: Minimal usage
+
+`js
+// See data/readme.md and data/docs/ for exact API details.
+import * as Lib from 'zustand'
+
+// Initialize the library according to its documented pattern.
+const instance = Lib.createSetup()
+
+// Use it within a React component or module.
+`
+
+### Bad: Unverified copy-paste
+
+`js
+// Do not copy examples without confirming they match your project version and setup.
+const instance = Lib.createSetup({ wrongOption: true })
+`
+
+## Anti-patterns
+
+- Using Zustand without understanding its primary use case and trade-offs.
+- Combining it with incompatible libraries or conflicting state patterns.
+- Skipping cleanup, ignoring SSR constraints, or leaking resources on unmount.
+- Ignoring performance implications on low-end or mobile devices.
+- Copying examples from documentation without adapting them to the project.
+- Hardcoding configuration that should be environment-specific or shared.
+- Neglecting error handling, loading states, and fallback behavior.
+
+## Common Mistakes
+
+- Installing the wrong version or missing peer dependencies.
+- Forgetting to wrap client-only code in the appropriate lifecycle hooks.
+- Creating new instances inside render loops or event handlers without memoization.
+- Not testing on target devices or with reduced-motion preferences enabled.
+- Mixing multiple solutions from the same domain without clear ownership.
+
+## Verification
+
+- [ ] The library is installed with correct version and peer dependencies.
+- [ ] Usage matches the official documentation and data files in this skill.
+- [ ] A minimal working example has been implemented and verified.
+- [ ] Performance is acceptable on target devices.
+- [ ] SSR and client-only constraints are respected.
+- [ ] Cleanup and disposal are handled correctly.
+- [ ] Error handling and loading states are in place.
+- [ ] Cross-skill references are used when relevant (Frontend, Performance, React Three Drei).
+- [ ] Documentation is updated with decisions and trade-offs.
+
+## Cross Skill References
+
+- **Frontend Engineering:** React lifecycle, component structure, responsive design.
+- **Performance Optimization:** Profiling, budgets, and optimization.
+- **React Three Drei:** When building 3D scenes with pmndrs tools.
+- **Scrollytelling:** When scroll-driven experiences need 3D or animation.
+- **Documentation:** Recording decisions, ADRs, and performance results.
+- **Quality Audit:** Validating this skill and any assets produced with it.
+
+## References
+
+- Repository: https://github.com/pmndrs/zustand
+- data/readme.md â€” latest README from Zustand
+- data/docs/ â€” latest documentation from Zustand
+- LICENSE â€” license of Zustand

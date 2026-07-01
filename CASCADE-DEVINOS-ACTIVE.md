@@ -14,7 +14,7 @@ This file confirms that **Cascade (this AI agent)** is now operating under the D
 
 - **Engineering Constitution** (`ENGINEERING_CONSTITUTION.md`) — 10 Articles
 - **21 Immutable Rules** (`.agents/rules/*.md`)
-- **27 Skills** (`.agents/skills/*/SKILL.md`)
+- **40 Skills** (`.agents/skills/*/SKILL.md`)
 
 ---
 
@@ -61,13 +61,14 @@ All decisions follow this order:
 
 ---
 
-## Active Skills (25)
+## Active Skills (40)
 
 | Category | Skills |
 |----------|--------|
 | **Core Engineering** | Planning, Architecture Review, Structured Debugging, Code Review, Refactoring, Testing, Verification |
 | **Specialized** | Security Review, Performance Optimization, Documentation, Git Workflow, Docker, CI/CD, Database Design, API Design, Frontend, Backend, Scrollytelling, React Three Drei |
 | **AI & Operations** | MCP Builder, AI Engineering, Knowledge Distillation, Quality Audit, Incident Response, Root Cause Analysis |
+| **Pmndrs Ecosystem** | React Three Fiber, React Three Drei, React Three A11y, React Postprocessing, React Spring, Zustand, Jotai, Valtio, UI Kit, XR, Leva, Prai, Viverse, Docs |
 
 ---
 
@@ -78,6 +79,7 @@ All decisions follow this order:
 | 2026-06-27 | Initial load | User requested DevinOS activation |
 | 2026-07-01 | Added Scrollytelling skill | New skill added and integrated into lists |
 | 2026-07-01 | Added React Three Drei skill | Skill based on pmndrs/drei with daily sync |
+| 2026-07-01 | Added 13 pmndrs ecosystem skills | react-three-fiber, react-spring, zustand, jotai, valtio, react-three-a11y, react-postprocessing, uikit, xr, docs, prai, viverse, leva |
 
 ---
 

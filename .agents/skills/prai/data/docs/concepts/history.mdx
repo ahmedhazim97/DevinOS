@@ -1,0 +1,321 @@
+---
+title: History
+description: What is prai's history?
+nav: 13
+---
+
+History is **prai**'s conversation tracking system that maintains context across multiple steps, enabling complex workflows where later steps can reference and build upon previous results.
+
+<Keypoints title="History Features">
+  <KeypointsItem>**Context preservation** maintains conversation flow between AI interactions</KeypointsItem>
+  <KeypointsItem>**Reference system** allows steps to reference previous results</KeypointsItem>
+  <KeypointsItem>**Subtasks** enable parallel and isolated workflows</KeypointsItem>
+  <KeypointsItem>**Event system** provides observability and debugging capabilities</KeypointsItem>
+</Keypoints>
+
+## Basic Usage
+
+```typescript {4,14} showLineNumbers
+import { History } from 'prai'
+
+// Create a new history instance
+const history = new History()
+
+// Use history in steps
+const analysis = await step(
+  'Analyze this market data',
+  analysisSchema,
+  { model, history }
+)
+
+const recommendations = await step(
+  `Based on ${history.reference(analysis)}, provide recommendations`,
+  recommendationsSchema,
+  { model, history }
+)
+```
+
+## Reference System
+
+The reference system allows steps to refer to previous results in a natural way:
+
+### Basic References
+
+```typescript {12} showLineNumbers
+const userProfile = await step(
+  'Create a user profile',
+  z.object({
+    name: z.string(),
+    interests: z.array(z.string()),
+    experience: z.string()
+  }),
+  { model, history }
+)
+
+const recommendations = await step(
+  `Given the user profile from ${history.reference(userProfile)}, suggest relevant content`,
+  z.array(z.object({
+    title: z.string(),
+    reason: z.string()
+  })),
+  { model, history }
+)
+```
+
+### Custom References
+
+Add custom data to history with descriptions:
+
+```typescript {3,9} showLineNumbers
+// Add external data to history
+const marketData = { revenue: 1000000, growth: 0.15, customers: 5000 }
+history.add(marketData, {
+  description: 'Q3 market performance data',
+  type: 'data'
+})
+
+const analysis = await step(
+  `Analyze this market data: ${history.reference(marketData)}`,
+  analysisSchema,
+  { model, history }
+)
+```
+
+### Derived References
+
+Reference data that's derived from other data:
+
+```typescript {4-7,10} showLineNumbers
+const salesData = await step('Get sales data', salesSchema, { model, history })
+
+const processedData = processSalesData(salesData)
+history.add(processedData, {
+  derived: { from: salesData, by: 'data processing pipeline' },
+  description: 'Processed sales metrics'
+})
+
+const insights = await step(
+  `Generate insights from ${history.reference(processedData)}`,
+  insightsSchema,
+  { model, history }
+)
+```
+
+## Multimodal Support
+
+
+History supports various data types including images and audio:
+
+### Images
+
+```typescript {2,8} showLineNumbers
+// Add image data
+history.add(imageBuffer, {
+  type: 'image',
+  description: 'Product photo for analysis'
+})
+
+const analysis = await step(
+  `Analyze this product image: ${history.reference(imageBuffer)}. Describe the product and its features.`,
+  z.object({
+    productType: z.string(),
+    features: z.array(z.string()),
+    suggestions: z.array(z.string())
+  }),
+  { model, history }
+)
+```
+
+### Audio
+
+```typescript {2,8} showLineNumbers
+// Add audio data
+history.add(audioBuffer, {
+  type: 'wav',
+  description: 'Customer feedback recording'
+})
+
+const transcription = await step(
+  `Transcribe and analyze this audio: ${history.reference(audioBuffer)}`,
+  z.object({
+    transcription: z.string(),
+    sentiment: z.enum(['positive', 'negative', 'neutral']),
+    keyTopics: z.array(z.string())
+  }),
+  { model, history }
+)
+```
+
+## Subtasks
+
+> [!TIP]
+> Subtasks are perfect for parallel processing and creating isolated workflows that can later be combined in the main history.
+
+Subtasks allow you to create isolated workflows within a larger history:
+
+```typescript {5,21,35-36} showLineNumbers
+const history = new History()
+
+// Run parallel subtasks
+const [brandAnalysis, marketAnalysis] = await Promise.all([
+  history.subtask('Brand analysis', async (subHistory) => {
+    const brandData = await step(
+      'Analyze brand positioning',
+      brandSchema,
+      { model, history: subHistory }
+    )
+    
+    const brandInsights = await step(
+      `Generate insights from ${subHistory.reference(brandData)}`,
+      insightsSchema,
+      { model, history: subHistory }
+    )
+    
+    return brandInsights
+  }),
+  
+  history.subtask('Market analysis', async (subHistory) => {
+    const marketData = await step(
+      'Analyze market conditions',
+      marketSchema,
+      { model, history: subHistory }
+    )
+    
+    return marketData
+  })
+])
+
+// Combine subtask results in main history
+const strategy = await step(
+  `Create strategy based on:
+   - Brand analysis: ${history.reference(brandAnalysis)}
+   - Market analysis: ${history.reference(marketAnalysis)}`,
+  strategySchema,
+  { model, history }
+)
+```
+
+## State Management
+
+### Serialization
+
+History can be serialized and restored:
+
+```typescript showLineNumbers
+// Save history state
+const historyState = history.getState()
+const serialized = JSON.stringify(historyState)
+
+// Later, restore history
+const restoredHistory = new History()
+restoredHistory.setState(JSON.parse(serialized))
+```
+
+## Logging
+
+History provides an event system for observability.
+
+```typescript showLineNumbers
+// Custom event handling
+history.addEventListener('step-request', (event) => {
+  console.log('Step started:', event.historyId)
+})
+
+history.addEventListener('step-response', (event) => {
+  console.log('Step completed:', event.historyId)
+})
+
+history.addEventListener('data-reference-added', (event) => {
+  console.log('Data added to history')
+})
+
+history.addEventListener('subtask-start', (event) => {
+  console.log('Subtask started:', event.subtaskHistoryId)
+})
+```
+
+> [!TIP]
+> Use the event system for debugging, logging, and monitoring your prai workflows in production.
+
+### Console Logger
+
+```typescript showLineNumbers
+import { consoleLogger, History } from 'prai'
+
+const history = new History()
+
+// Built-in console logger
+consoleLogger(history)
+```
+
+### Redis Logger
+
+You can use the Redis logger to persist history events to a Redis stream for monitoring and debugging:
+
+```typescript showLineNumbers
+import { History } from 'prai'
+import { redisLogger } from 'prai-redis'
+import { createClient } from 'redis'
+
+const history = new History()
+
+const client = createClient({ url: process.env.REDIS_URL })
+await client.connect()
+await redisLogger(history, { streamName: 'stream-name', client })
+```
+
+## Cost Tracking
+
+> [!TIP]
+> Cost tracking helps you monitor and optimize AI usage costs across your workflows.
+
+History automatically tracks the cost of all AI model calls and provides methods to retrieve total costs:
+
+### Basic Cost Tracking
+
+```typescript {12} showLineNumbers
+import { openai, buildSimplePrice } from 'prai'
+
+const model = new Model({
+  name: 'gpt-4o-mini',
+  provider: openai({ apiKey: process.env.OPENAI_API_KEY }),
+  price: buildSimplePrice(0.4, 1.6) // $0.4 per 1M input tokens, $1.6 per 1M output tokens
+})
+
+const history = new History()
+
+// Run some steps...
+const analysis = await step('Analyze this data', analysisSchema, { model, history })
+const summary = await step('Summarize the analysis', summarySchema, { model, history })
+
+// Get total cost for all steps
+const totalCost = history.getCost()
+console.log(`Total cost: $${totalCost}`)
+```
+
+### Cost with Subtasks
+
+Costs from subtasks are automatically included in the main history:
+
+```typescript {15,20} showLineNumbers
+const history = new History()
+
+// Run parallel subtasks
+const [analysis1, analysis2] = await Promise.all([
+  history.subtask('Analysis 1', async (subHistory) => {
+    return await step('Analyze dataset 1', schema, { model, history: subHistory })
+  }),
+  
+  history.subtask('Analysis 2', async (subHistory) => {
+    return await step('Analyze dataset 2', schema, { model, history: subHistory })
+  })
+])
+
+// Main history cost includes subtask costs
+const totalCost = history.getCost()
+console.log(`Total cost including subtasks: $${totalCost}`)
+
+// Final step cost is also included
+const final = await step('Combine analyses', finalSchema, { model, history })
+console.log(`Final total cost: $${history.getCost()}`)
+```
