@@ -1,3 +1,8 @@
+---
+name: react-spring-readme
+description: "README for react-spring"
+---
+
 <p align="center">
   <img src="https://i.imgur.com/QZownhg.png" width="240" />
 </p>

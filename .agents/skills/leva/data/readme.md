@@ -1,3 +1,8 @@
+---
+name: leva-readme
+description: "README for leva"
+---
+
 [![npm (tag)](https://img.shields.io/npm/v/leva?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/leva) [![npm bundle size](https://img.shields.io/bundlephobia/minzip/leva?style=flat&colorA=000000&colorB=000000&label=gzipped)](https://bundlephobia.com/result?p=leva) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/pmndrs/leva/CI?style=flat&colorA=000000) [![Discord Shield](https://img.shields.io/discord/740090768164651008?style=flat&colorA=000000&colorB=000000&label=&logo=discord&logoColor=ffffff)](https://discord.gg/poimandres)
 
 <a href=""><img src="https://raw.githubusercontent.com/pmndrs/leva/master/hero.png" /></a>

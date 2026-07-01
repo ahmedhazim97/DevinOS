@@ -1,3 +1,8 @@
+---
+name: viverse-readme
+description: "README for viverse"
+---
+
 <h1 align="center">@react-three/viverse</h1>
 <h3 align="center">Toolkit for building Three.js and React Three Fiber Apps for VIVERSE and beyond.</h3>
 <br/>

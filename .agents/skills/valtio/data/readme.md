@@ -1,3 +1,8 @@
+---
+name: valtio-readme
+description: "README for valtio"
+---
+
 <img src="logo.svg" alt="valtio">
 <br />
 <br />

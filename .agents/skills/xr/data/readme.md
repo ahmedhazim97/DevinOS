@@ -1,3 +1,8 @@
+---
+name: xr-readme
+description: "README for xr"
+---
+
 <p align="center">
   <img src="./docs/getting-started/logo.svg" width="100" />
 </p>

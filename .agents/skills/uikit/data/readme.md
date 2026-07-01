@@ -1,3 +1,8 @@
+---
+name: uikit-readme
+description: "README for uikit"
+---
+
 <p align="center">
   <img src="./docs/getting-started/logo.svg" width="100" />
 </p>

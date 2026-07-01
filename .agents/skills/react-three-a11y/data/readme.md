@@ -1,3 +1,8 @@
+---
+name: react-three-a11y-readme
+description: "README for react-three-a11y"
+---
+
 <h1>@react-three/a11y</h1>
 
 [![Version](https://img.shields.io/npm/v/@react-three/a11y?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/@react-three/a11y)

@@ -1,3 +1,8 @@
+---
+name: jotai-readme
+description: "README for jotai"
+---
+
 <br>
 
 ![Jotai (light mode)](./img/jotai-header-light.png#gh-light-mode-only)

@@ -1,6 +1,6 @@
 ---
 name: scrollytelling
-description: "Engineer scroll-driven interactive websites that remain performant, accessible, and maintainable at production scale."
+description: "Engineer scroll-driven interactive websites that remain performant, accessible, and maintainable at production scale. Covers architecture, animation orchestration, rendering strategy, asset pipeline, and operational discipline for scrollytelling experiences."
 ---
 
 # Skill: Scrollytelling

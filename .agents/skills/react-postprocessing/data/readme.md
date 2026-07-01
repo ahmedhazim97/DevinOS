@@ -1,3 +1,8 @@
+---
+name: react-postprocessing-readme
+description: "README for react-postprocessing"
+---
+
 # react-postprocessing
 
 [![Version](https://img.shields.io/npm/v/@react-three/postprocessing?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/@react-three/postprocessing)

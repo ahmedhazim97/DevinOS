@@ -1,3 +1,8 @@
+---
+name: zustand-readme
+description: "README for zustand"
+---
+
 <p align="center">
   <img src="./docs/bear.jpg" />
 </p>

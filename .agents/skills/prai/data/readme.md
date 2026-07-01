@@ -1,3 +1,8 @@
+---
+name: prai-readme
+description: "README for prai"
+---
+
 <h1 align="center">prai 🤖</h1>
 <h3 align="center">JS Framework for building step-by-step LLM instructions<br>(<ins>pr</ins>ogrammable <ins>ai</ins>)</h3>
 <br/>

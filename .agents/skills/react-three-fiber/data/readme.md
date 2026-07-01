@@ -1,3 +1,8 @@
+---
+name: react-three-fiber-readme
+description: "README for react-three-fiber"
+---
+
 <h1>@react-three/fiber</h1>
 
 [![Version](https://img.shields.io/npm/v/@react-three/fiber?style=flat&colorA=000000&colorB=000000)](https://npmjs.com/package/@react-three/fiber)
