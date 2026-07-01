@@ -1,3 +1,8 @@
+---
+name: viverse
+description: "Use @react-three/viverse from the pmndrs ecosystem."
+---
+
 # Skill: Viverse
 
 > Category: Frontend Engineering

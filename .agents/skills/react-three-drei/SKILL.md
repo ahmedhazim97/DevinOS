@@ -1,3 +1,8 @@
+---
+name: react-three-drei
+description: "Use @react-three/drei helpers and abstractions with @react-three/fiber to build performant, accessible, and maintainable 3D scenes in React."
+---
+
 # Skill: React Three Drei
 
 > Category: Frontend Engineering

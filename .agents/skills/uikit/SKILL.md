@@ -1,3 +1,8 @@
+---
+name: uikit
+description: "Use uikit from the pmndrs ecosystem."
+---
+
 # Skill: Uikit
 
 > Category: Frontend Engineering

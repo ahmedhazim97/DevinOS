@@ -1,3 +1,8 @@
+---
+name: docs
+description: "Use Docs from the pmndrs ecosystem."
+---
+
 # Skill: Docs
 
 > Category: Documentation

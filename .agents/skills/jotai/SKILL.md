@@ -1,3 +1,8 @@
+---
+name: jotai
+description: "Use jotai from the pmndrs ecosystem."
+---
+
 # Skill: Jotai
 
 > Category: Frontend Engineering

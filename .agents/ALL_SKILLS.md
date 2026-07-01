@@ -1,4 +1,4 @@
-# DevinOS - All Global Skills (40)
+﻿# DevinOS - All Global Skills (40)
 
 
 ---
@@ -101,6 +101,12 @@ def review(code):
 
 
 
+
+
+---
+
+
+
 ---
 name: api-design
 description: "Design robust, consistent, and developer-friendly APIs."
@@ -189,6 +195,12 @@ GET /api/users/123/orders/getAllPendingOrders
 
 - [Microsoft REST API Guidelines](https://github.com/microsoft/api-guidelines)
 - [Stripe API Design Guide](https://stripe.com/blog/markdown-structured-data)
+
+
+---
+
+
+
 
 
 ---
@@ -284,6 +296,12 @@ Let us use microservices because they are modern.
 
 - [Martin Fowler - Architecture Patterns](https://martinfowler.com/architecture/)
 - [The Software Architecture Elevator](https://architectelevator.com/)
+
+
+---
+
+
+
 
 
 ---
@@ -396,6 +414,12 @@ function createOrder(req, res) {
 
 
 
+
+
+---
+
+
+
 ---
 name: ci-cd
 description: "Design and maintain automated continuous integration and delivery pipelines."
@@ -500,6 +524,12 @@ script:
 
 
 
+
+
+---
+
+
+
 ---
 name: code-review
 description: "Evaluate code changes for correctness, security, maintainability, and alignment with team standards."
@@ -582,6 +612,12 @@ This is wrong. Fix it.
 ## References
 
 - [Google Code Review Guidelines](https://google.github.io/eng-practices/review/)
+
+
+---
+
+
+
 
 
 ---
@@ -693,6 +729,12 @@ CREATE TABLE orders (
 
 
 
+
+
+---
+
+
+
 ---
 name: debugging
 description: "A systematic, evidence-based approach to finding and fixing bugs."
@@ -779,6 +821,12 @@ Fix: Added try-catch to swallow the error.
 ## References
 
 - [Debug It! by Paul Butcher](https://pragprog.com/titles/pbdp/debug-it/)
+
+
+---
+
+
+
 
 
 ---
@@ -1003,14 +1051,20 @@ Bad response: mix Material UI with shadcn/ui in the same project without a clear
 
 ## References
 
-- `data/components.csv` — component selection guide
-- `data/design-systems.csv` — library comparison
-- `data/resources.csv` — categorized design resources
-- `ui-ux-pro-max` skill — design rules, styles, palettes, UX guidelines
+- `data/components.csv` â€” component selection guide
+- `data/design-systems.csv` â€” library comparison
+- `data/resources.csv` â€” categorized design resources
+- `ui-ux-pro-max` skill â€” design rules, styles, palettes, UX guidelines
 - shadcn/ui: https://ui.shadcn.com
 - Ant Design: https://ant.design
 - Material UI: https://mui.com/material-ui
 - Brad Traversy Design Resources: https://github.com/bradtraversy/design-resources-for-developers
+
+
+
+---
+
+
 
 ---
 name: docker
@@ -1117,6 +1171,17 @@ CMD npm start
 ---
 
 
+
+
+
+---
+
+
+
+---
+name: docs
+description: "Use Docs from the pmndrs ecosystem."
+---
 
 # Skill: Docs
 
@@ -1229,9 +1294,14 @@ const instance = Lib.createSetup({ wrongOption: true })
 ## References
 
 - Repository: https://github.com/pmndrs/docs
-- data/readme.md â€” latest README from Docs
-- data/docs/ â€” latest documentation from Docs
-- LICENSE â€” license of Docs
+- data/readme.md Ã¢â‚¬â€ latest README from Docs
+- data/docs/ Ã¢â‚¬â€ latest documentation from Docs
+- LICENSE Ã¢â‚¬â€ license of Docs
+
+
+---
+
+
 
 ---
 name: documentation
@@ -1332,6 +1402,12 @@ POST /api/users - creates user
 
 - [Diataxis Framework](https://diataxis.fr/)
 - [Google Technical Writing](https://developers.google.com/tech-writing)
+
+
+---
+
+
+
 
 
 ---
@@ -1457,6 +1533,12 @@ function MyButton(props) {
 
 
 
+
+
+---
+
+
+
 ---
 name: git
 description: "Professional version control practices for clean, collaborative development."
@@ -1554,6 +1636,12 @@ really final
 
 - [Conventional Commits](https://www.conventionalcommits.org/)
 - [Git Best Practices](https://sethrobertson.github.io/GitBestPractices/)
+
+
+---
+
+
+
 
 
 ---
@@ -1663,6 +1751,17 @@ Use this skill when:
 ---
 
 
+
+
+
+---
+
+
+
+---
+name: jotai
+description: "Use jotai from the pmndrs ecosystem."
+---
 
 # Skill: Jotai
 
@@ -1775,9 +1874,14 @@ const instance = Lib.createSetup({ wrongOption: true })
 ## References
 
 - Repository: https://github.com/pmndrs/jotai
-- data/readme.md â€” latest README from Jotai
-- data/docs/ â€” latest documentation from Jotai
-- LICENSE â€” license of Jotai
+- data/readme.md Ã¢â‚¬â€ latest README from Jotai
+- data/docs/ Ã¢â‚¬â€ latest documentation from Jotai
+- LICENSE Ã¢â‚¬â€ license of Jotai
+
+
+---
+
+
 
 ---
 name: knowledge-distillation
@@ -1864,6 +1968,17 @@ Project done. Nothing special.
 ---
 
 
+
+
+
+---
+
+
+
+---
+name: leva
+description: "Use leva from the pmndrs ecosystem."
+---
 
 # Skill: Leva
 
@@ -1976,9 +2091,14 @@ const instance = Lib.createSetup({ wrongOption: true })
 ## References
 
 - Repository: https://github.com/pmndrs/leva
-- data/readme.md â€” latest README from Leva
-- data/docs/ â€” latest documentation from Leva
-- LICENSE â€” license of Leva
+- data/readme.md Ã¢â‚¬â€ latest README from Leva
+- data/docs/ Ã¢â‚¬â€ latest documentation from Leva
+- LICENSE Ã¢â‚¬â€ license of Leva
+
+
+---
+
+
 
 ---
 name: mcp
@@ -2088,6 +2208,12 @@ const tool = {
 
 
 
+
+
+---
+
+
+
 ---
 name: performance
 description: "Measure, analyze, and improve system performance with evidence."
@@ -2182,6 +2308,12 @@ The API is slow. Let us add Redis caching everywhere.
 
 - [Systems Performance by Brendan Gregg](http://www.brendangregg.com/sysperfbook.html)
 - [High Performance Browser Networking](https://hpbn.co/)
+
+
+---
+
+
+
 
 
 ---
@@ -2283,6 +2415,17 @@ Step 1: Build the feature (3 days)
 
 
 
+
+
+---
+
+
+
+---
+name: prai
+description: "Use prai from the pmndrs ecosystem."
+---
+
 # Skill: Prai
 
 > Category: Frontend Engineering
@@ -2292,7 +2435,7 @@ Step 1: Build the feature (3 days)
 
 ## Description
 
-<h1 align="center">prai 🤖</h1> This skill provides the essential guidance, workflow, anti-patterns, and verification checklist needed to use Prai correctly within the pmndrs ecosystem and within DevinOS projects.
+<h1 align="center">prai ðŸ¤–</h1> This skill provides the essential guidance, workflow, anti-patterns, and verification checklist needed to use Prai correctly within the pmndrs ecosystem and within DevinOS projects.
 
 ## Purpose
 
@@ -2394,9 +2537,14 @@ const instance = Lib.createSetup({ wrongOption: true })
 ## References
 
 - Repository: https://github.com/pmndrs/prai
-- data/readme.md â€” latest README from Prai
-- data/docs/ â€” latest documentation from Prai
-- LICENSE â€” license of Prai
+- data/readme.md Ã¢â‚¬â€ latest README from Prai
+- data/docs/ Ã¢â‚¬â€ latest documentation from Prai
+- LICENSE Ã¢â‚¬â€ license of Prai
+
+
+---
+
+
 
 ---
 name: quality-audit
@@ -2763,6 +2911,17 @@ Just fix the examples and it should be fine.
 
 
 
+
+
+---
+
+
+
+---
+name: react-postprocessing
+description: "Use react-postprocessing from the pmndrs ecosystem."
+---
+
 # Skill: React Postprocessing
 
 > Category: Frontend Engineering
@@ -2874,9 +3033,19 @@ const instance = Lib.createSetup({ wrongOption: true })
 ## References
 
 - Repository: https://github.com/pmndrs/react-postprocessing
-- data/readme.md â€” latest README from React Postprocessing
-- data/docs/ â€” latest documentation from React Postprocessing
-- LICENSE â€” license of React Postprocessing
+- data/readme.md Ã¢â‚¬â€ latest README from React Postprocessing
+- data/docs/ Ã¢â‚¬â€ latest documentation from React Postprocessing
+- LICENSE Ã¢â‚¬â€ license of React Postprocessing
+
+
+---
+
+
+
+---
+name: react-spring
+description: "Use react-spring from the pmndrs ecosystem."
+---
 
 # Skill: React Spring
 
@@ -2989,9 +3158,19 @@ const instance = Lib.createSetup({ wrongOption: true })
 ## References
 
 - Repository: https://github.com/pmndrs/react-spring
-- data/readme.md â€” latest README from React Spring
-- data/docs/ â€” latest documentation from React Spring
-- LICENSE â€” license of React Spring
+- data/readme.md Ã¢â‚¬â€ latest README from React Spring
+- data/docs/ Ã¢â‚¬â€ latest documentation from React Spring
+- LICENSE Ã¢â‚¬â€ license of React Spring
+
+
+---
+
+
+
+---
+name: react-three-a11y
+description: "Use @react-three/a11y from the pmndrs ecosystem."
+---
 
 # Skill: React Three A11y
 
@@ -3104,9 +3283,19 @@ const instance = Lib.createSetup({ wrongOption: true })
 ## References
 
 - Repository: https://github.com/pmndrs/react-three-a11y
-- data/readme.md â€” latest README from React Three A11y
-- data/docs/ â€” latest documentation from React Three A11y
-- LICENSE â€” license of React Three A11y
+- data/readme.md Ã¢â‚¬â€ latest README from React Three A11y
+- data/docs/ Ã¢â‚¬â€ latest documentation from React Three A11y
+- LICENSE Ã¢â‚¬â€ license of React Three A11y
+
+
+---
+
+
+
+---
+name: react-three-drei
+description: "Use @react-three/drei helpers and abstractions with @react-three/fiber to build performant, accessible, and maintainable 3D scenes in React."
+---
 
 # Skill: React Three Drei
 
@@ -3250,9 +3439,20 @@ import * as Drei from '@react-three/drei'
 - `@react-three/drei` docs: https://pmndrs.github.io/drei
 - `@react-three/fiber` docs: https://docs.pmndrs.rs/react-three-fiber
 - Repository: https://github.com/pmndrs/drei
-- `data/readme.md` — latest README from pmndrs/drei
-- `data/docs/` — latest MDX documentation from pmndrs/drei
-- `LICENSE` — MIT license of pmndrs/drei
+- `data/readme.md` â€” latest README from pmndrs/drei
+- `data/docs/` â€” latest MDX documentation from pmndrs/drei
+- `LICENSE` â€” MIT license of pmndrs/drei
+
+
+
+---
+
+
+
+---
+name: react-three-fiber
+description: "Use @react-three/fiber from the pmndrs ecosystem."
+---
 
 # Skill: React Three Fiber
 
@@ -3365,9 +3565,14 @@ const instance = Lib.createSetup({ wrongOption: true })
 ## References
 
 - Repository: https://github.com/pmndrs/react-three-fiber
-- data/readme.md â€” latest README from React Three Fiber
-- data/docs/ â€” latest documentation from React Three Fiber
-- LICENSE â€” license of React Three Fiber
+- data/readme.md Ã¢â‚¬â€ latest README from React Three Fiber
+- data/docs/ Ã¢â‚¬â€ latest documentation from React Three Fiber
+- LICENSE Ã¢â‚¬â€ license of React Three Fiber
+
+
+---
+
+
 
 ---
 name: refactoring
@@ -3470,6 +3675,12 @@ function processOrder(order) {
 
 
 
+
+
+---
+
+
+
 ---
 name: root-cause-analysis
 description: "Determine the fundamental cause of a problem, not just the symptom."
@@ -3555,6 +3766,17 @@ Prevention: Add test for connection leak, add connection pool alert.
 
 
 
+
+
+---
+
+
+
+---
+name: scrollytelling
+description: "Engineer scroll-driven interactive websites that remain performant, accessible, and maintainable at production scale."
+---
+
 # Skill: Scrollytelling
 
 > Category: Frontend Engineering
@@ -3634,47 +3856,47 @@ Keep these layers decoupled. The scroll source should not know about the rendere
 
 ```
 1. Does the effect need scroll progress to drive animation?
-   ├── No → Use CSS transitions or CSS scroll-driven animations.
-   └── Yes → Continue.
+   â”œâ”€â”€ No â†’ Use CSS transitions or CSS scroll-driven animations.
+   â””â”€â”€ Yes â†’ Continue.
 
 2. Is the effect simple (single element, transform/opacity only, no pinning)?
-   ├── Yes → CSS scroll-driven animation or minimal ScrollTrigger scrub.
-   └── No → Continue.
+   â”œâ”€â”€ Yes â†’ CSS scroll-driven animation or minimal ScrollTrigger scrub.
+   â””â”€â”€ No â†’ Continue.
 
 3. Is React / Next.js / Vue / Svelte in use?
-   ├── Yes → Use framework-specific lifecycle hooks (useGSAP, useEffect cleanup,
-   │          client-only imports). Invoke Frontend and React/Vue/Svelte skills.
-   └── No → Use vanilla GSAP with gsap.context() and explicit cleanup.
+   â”œâ”€â”€ Yes â†’ Use framework-specific lifecycle hooks (useGSAP, useEffect cleanup,
+   â”‚          client-only imports). Invoke Frontend and React/Vue/Svelte skills.
+   â””â”€â”€ No â†’ Use vanilla GSAP with gsap.context() and explicit cleanup.
 
 4. Is smooth scrolling required?
-   ├── Yes → Use Lenis + ScrollTrigger.scrollerProxy() + ScrollTrigger.update.
-   │          Invoke Performance skill to audit rAF and ticker loops.
-   └── No → Use native scroll; register ScrollTrigger once.
+   â”œâ”€â”€ Yes â†’ Use Lenis + ScrollTrigger.scrollerProxy() + ScrollTrigger.update.
+   â”‚          Invoke Performance skill to audit rAF and ticker loops.
+   â””â”€â”€ No â†’ Use native scroll; register ScrollTrigger once.
 
 5. Does the section contain 3D or heavy canvas rendering?
-   ├── Yes → Use Three.js / React Three Fiber. Drive camera and scene via GSAP
-   │          on Three.js object properties or a shared progress value.
-   │          Invoke Architecture and Performance skills.
-   └── No → Continue with DOM animation.
+   â”œâ”€â”€ Yes â†’ Use Three.js / React Three Fiber. Drive camera and scene via GSAP
+   â”‚          on Three.js object properties or a shared progress value.
+   â”‚          Invoke Architecture and Performance skills.
+   â””â”€â”€ No â†’ Continue with DOM animation.
 
 6. Is pinning required?
-   ├── Yes → Pin the section wrapper, animate children. Verify pinSpacing,
-   │          anticipatePin on mobile, and ScrollTrigger.refresh() on layout change.
-   └── No → Use scrub without pin for safer mobile behavior.
+   â”œâ”€â”€ Yes â†’ Pin the section wrapper, animate children. Verify pinSpacing,
+   â”‚          anticipatePin on mobile, and ScrollTrigger.refresh() on layout change.
+   â””â”€â”€ No â†’ Use scrub without pin for safer mobile behavior.
 
 7. Is snapping required?
-   ├── Yes → Implement snap globally or per pinned section. Avoid snap during
-   │          free scrolling regions. Test on touch devices.
-   └── No → Continue.
+   â”œâ”€â”€ Yes â†’ Implement snap globally or per pinned section. Avoid snap during
+   â”‚          free scrolling regions. Test on touch devices.
+   â””â”€â”€ No â†’ Continue.
 
 8. Does the project target public SEO or accessibility-critical pages?
-   ├── Yes → Implement prefers-reduced-motion, static fallbacks, semantic HTML,
-   │          and SSR-friendly content. Invoke Accessibility and Frontend skills.
-   └── No → Still implement reduced-motion support as a baseline.
+   â”œâ”€â”€ Yes â†’ Implement prefers-reduced-motion, static fallbacks, semantic HTML,
+   â”‚          and SSR-friendly content. Invoke Accessibility and Frontend skills.
+   â””â”€â”€ No â†’ Still implement reduced-motion support as a baseline.
 
 9. Are there performance issues or jank?
-   ├── Yes → Invoke Performance and Debugging skills. Profile GPU, JS, and layout.
-   └── No → Run verification checklist before deployment.
+   â”œâ”€â”€ Yes â†’ Invoke Performance and Debugging skills. Profile GPU, JS, and layout.
+   â””â”€â”€ No â†’ Run verification checklist before deployment.
 ```
 
 ## Engineering Principles
@@ -3961,6 +4183,12 @@ Do not produce:
 - [DevinOS Engineering Constitution](/ENGINEERING_CONSTITUTION.md)
 - [DevinOS Quality Rule](/.agents/rules/quality.md)
 
+
+
+---
+
+
+
 ---
 name: security
 description: "Systematic evaluation of code and architecture for security vulnerabilities."
@@ -4051,6 +4279,12 @@ It uses HTTPS so it is secure.
 
 - [OWASP Top 10](https://owasp.org/www-project-top-ten/)
 - [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/)
+
+
+---
+
+
+
 
 
 ---
@@ -4169,6 +4403,17 @@ test("user", () => {
 
 
 
+
+
+---
+
+
+
+---
+name: uikit
+description: "Use uikit from the pmndrs ecosystem."
+---
+
 # Skill: Uikit
 
 > Category: Frontend Engineering
@@ -4280,9 +4525,14 @@ const instance = Lib.createSetup({ wrongOption: true })
 ## References
 
 - Repository: https://github.com/pmndrs/uikit
-- data/readme.md â€” latest README from Uikit
-- data/docs/ â€” latest documentation from Uikit
-- LICENSE â€” license of Uikit
+- data/readme.md Ã¢â‚¬â€ latest README from Uikit
+- data/docs/ Ã¢â‚¬â€ latest documentation from Uikit
+- LICENSE Ã¢â‚¬â€ license of Uikit
+
+
+---
+
+
 
 ---
 name: ui-ux-pro-max
@@ -4965,6 +5215,17 @@ Scope notice: This checklist is for App UI (iOS/Android/React Native/Flutter).
 - [ ] Reduced motion and dynamic text size are supported without layout breakage
 - [ ] Accessibility traits/roles/states (selected, disabled, expanded) are announced correctly
 
+
+
+---
+
+
+
+---
+name: valtio
+description: "Use valtio from the pmndrs ecosystem."
+---
+
 # Skill: Valtio
 
 > Category: Frontend Engineering
@@ -5076,9 +5337,14 @@ const instance = Lib.createSetup({ wrongOption: true })
 ## References
 
 - Repository: https://github.com/pmndrs/valtio
-- data/readme.md â€” latest README from Valtio
-- data/docs/ â€” latest documentation from Valtio
-- LICENSE â€” license of Valtio
+- data/readme.md Ã¢â‚¬â€ latest README from Valtio
+- data/docs/ Ã¢â‚¬â€ latest documentation from Valtio
+- LICENSE Ã¢â‚¬â€ license of Valtio
+
+
+---
+
+
 
 ---
 name: verification
@@ -5177,6 +5443,17 @@ Task done. It works on my machine.
 ---
 
 
+
+
+
+---
+
+
+
+---
+name: viverse
+description: "Use @react-three/viverse from the pmndrs ecosystem."
+---
 
 # Skill: Viverse
 
@@ -5289,9 +5566,19 @@ const instance = Lib.createSetup({ wrongOption: true })
 ## References
 
 - Repository: https://github.com/pmndrs/viverse
-- data/readme.md â€” latest README from Viverse
-- data/docs/ â€” latest documentation from Viverse
-- LICENSE â€” license of Viverse
+- data/readme.md Ã¢â‚¬â€ latest README from Viverse
+- data/docs/ Ã¢â‚¬â€ latest documentation from Viverse
+- LICENSE Ã¢â‚¬â€ license of Viverse
+
+
+---
+
+
+
+---
+name: xr
+description: "Use xr from the pmndrs ecosystem."
+---
 
 # Skill: Xr
 
@@ -5404,9 +5691,19 @@ const instance = Lib.createSetup({ wrongOption: true })
 ## References
 
 - Repository: https://github.com/pmndrs/xr
-- data/readme.md â€” latest README from Xr
-- data/docs/ â€” latest documentation from Xr
-- LICENSE â€” license of Xr
+- data/readme.md Ã¢â‚¬â€ latest README from Xr
+- data/docs/ Ã¢â‚¬â€ latest documentation from Xr
+- LICENSE Ã¢â‚¬â€ license of Xr
+
+
+---
+
+
+
+---
+name: zustand
+description: "Use zustand from the pmndrs ecosystem."
+---
 
 # Skill: Zustand
 
@@ -5519,6 +5816,12 @@ const instance = Lib.createSetup({ wrongOption: true })
 ## References
 
 - Repository: https://github.com/pmndrs/zustand
-- data/readme.md â€” latest README from Zustand
-- data/docs/ â€” latest documentation from Zustand
-- LICENSE â€” license of Zustand
+- data/readme.md Ã¢â‚¬â€ latest README from Zustand
+- data/docs/ Ã¢â‚¬â€ latest documentation from Zustand
+- LICENSE Ã¢â‚¬â€ license of Zustand
+
+
+---
+
+
+

@@ -1,3 +1,8 @@
+---
+name: react-three-fiber
+description: "Use @react-three/fiber from the pmndrs ecosystem."
+---
+
 # Skill: React Three Fiber
 
 > Category: Frontend Engineering

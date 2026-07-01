@@ -1,3 +1,8 @@
+---
+name: prai
+description: "Use prai from the pmndrs ecosystem."
+---
+
 # Skill: Prai
 
 > Category: Frontend Engineering

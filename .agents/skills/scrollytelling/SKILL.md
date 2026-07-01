@@ -1,3 +1,8 @@
+---
+name: scrollytelling
+description: "Engineer scroll-driven interactive websites that remain performant, accessible, and maintainable at production scale."
+---
+
 # Skill: Scrollytelling
 
 > Category: Frontend Engineering

@@ -1,3 +1,8 @@
+---
+name: xr
+description: "Use xr from the pmndrs ecosystem."
+---
+
 # Skill: Xr
 
 > Category: Frontend Engineering

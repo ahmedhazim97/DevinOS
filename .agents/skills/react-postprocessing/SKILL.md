@@ -1,3 +1,8 @@
+---
+name: react-postprocessing
+description: "Use react-postprocessing from the pmndrs ecosystem."
+---
+
 # Skill: React Postprocessing
 
 > Category: Frontend Engineering

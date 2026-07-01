@@ -1,3 +1,8 @@
+---
+name: react-three-a11y
+description: "Use @react-three/a11y from the pmndrs ecosystem."
+---
+
 # Skill: React Three A11y
 
 > Category: Frontend Engineering
